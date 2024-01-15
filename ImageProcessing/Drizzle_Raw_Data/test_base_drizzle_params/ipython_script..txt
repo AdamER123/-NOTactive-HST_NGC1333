@@ -1,0 +1,123 @@
+ipython
+
+#Follow https://nbviewer.org/github/spacetelescope/notebooks/blob/master/notebooks/DrizzlePac/align_to_catalogs/align_to_catalogs.ipynb#Inspect-the-image-header 
+#Also see https://www.stsci.edu/files/live/sites/www/files/home/hst/instrumentation/wfc3/documentation/instrument-science-reports-isrs/_documents/2021/2021-02.pdf
+
+#collecting useful packages
+import os
+import glob
+
+import numpy as np
+import matplotlib.pyplot as plt 
+
+from astropy.io import fits 
+from astropy.table import Table
+from astropy.io import ascii
+from astroquery.mast import Observations
+
+from drizzlepac import astrodrizzle 
+from reduce_dash import DashData
+
+#retrieving and downloading flt and ima observations with astroquery from MAST
+proposal_id=15153
+obstype='all'
+filters=['F126N', 'F128N', 'F164N']
+obs_id=['idn115010', 'idn123010', 'idn107010']
+obsTable = Observations.query_criteria(obs_id=obs_id, proposal_id=proposal_id, obstype=obstype, filters=filters)
+products = Observations.get_product_list(obsTable)
+filtered_products = Observations.filter_products(products, productSubGroupDescription='FLT')
+Observations.download_products(filtered_products, mrp_only=False)
+
+filtered_products_ima = Observations.filter_products(products, productSubGroupDescription='IMA')
+Observations.download_products(filtered_products_ima, mrp_only=False)
+
+
+'''
+Here I see multiple options...one is splitting the root 
+I tend to put the flt and ima files in their own folder, cd to that directory, and use the second option (flt_files, ima_files)
+This way I can label a folder by my test (though, I know working with path + (...) is typically better)
+'''
+
+#for flt in glob.glob('./mastDownload/HST/*/*flt.fits'):
+#     flt_name = os.path.split(flt)[-1]
+#     os.rename(flt, flt_name)
+#
+#for ima in glob.glob('./mastDownload/HST/*/*ima.fits'):
+#     ima_name = os.path.split(ima)[-1]
+#     os.rename(ima, ima_name)
+
+#flt_files = glob.glob('mastDownload/HST/*/*_flt.fits')
+#ima_files = glob.glob('mastDownload/HST/*/*_ima.fits')
+flt_files = np.sort(glob.glob('*flt*'))
+ima_files = np.sort(glob.glob('*ima*'))
+
+#grabbing a catalog to reference for identified sources, uses CRDS server and 'iref' to refer to wfc3
+os.environ['CRDS_SERVER_URL'] = 'https://hst-crds.stsci.edu'
+os.environ['CRDS_SERVER'] = 'https://hst-crds.stsci.edu'
+os.environ['CRDS_PATH'] = './crds_cache'
+os.environ['iref'] = 'iref/'
+if not os.path.exists('iref'):
+    os.mkdir('iref')
+
+for file in ima_files:
+    command_line_input = 'crds bestrefs --files {:} --sync-references=1 --update-bestrefs'.format(file)
+    os.system(command_line_input)
+	
+#putting together a list of myDash objects for each set of observations to loop through them eventually
+myDash_list = []
+
+for i in range(len(flt_files)):
+     myDash_list.append(DashData(ima_files[i], flt_files[i]))
+	 
+#loop is just setup for the long-run in mind
+#currently only looks at 1 image
+#should add filelabel or folder or something to filename (later)
+#in this case, it is working on 'idn107010' which is the F164N image
+threshold = 20. #wasn't sure what to pick, but it doesn't seem to matter yet
+for myDash in [myDash_list[0]]:
+     myDash.split_ima()
+     myDash.make_pointing_asn()
+
+     asn_filename = 'diff/{}_asn.fits'.format(myDash.root)
+     asn_table = Table(fits.getdata(asn_filename, ext=1))
+     asn_table.show_in_notebook()
+
+     myDash.create_seg_map()
+     rootname = myDash.root
+     segmap_name = ('segmentation_maps/'+ rootname + '_seg.fits')
+     segmap = fits.getdata(segmap_name)
+     sourcelist_name = ('segmentation_maps/' + rootname + '_source_list.dat')
+     sourcelist = ascii.read(sourcelist_name)
+     print(sourcelist)
+
+     diffpath = os.path.dirname(os.path.abspath('diff/{}_*_diff.fits'.format(rootname)))
+     cat_images = sorted([os.path.basename(x) for x in glob.glob('diff/{}_*_diff.fits'.format(rootname))])
+     sc_diff_files = [diffpath + '/' + s for s in cat_images]
+
+     myDash.diff_seg_map(cat_images=sc_diff_files)
+     myDash.subtract_background_reads()
+     myDash.fix_cosmic_rays()
+     myDash.align(threshold=threshold, drz_output= myDash.root + '_thresh' + str(threshold)[:-2] + '_drz_sci.fits', updatehdr=False, updatewcs=True, astrodriz=False)
+     sci_name = myDash.root + '_thresh' + str(threshold)[:-2] + '_drz_sci.fits'
+     #og_flt_name = 'mastDownload/HST/' + myDash.root + '/' + myDash.root + '_ima.fits'
+     og_flt_name = myDash.root + '_ima.fits'
+
+     sci = fits.getdata(sci_name)
+     og_flt = fits.getdata(og_flt_name)
+     
+     fig = plt.figure(figsize=(9, 4))
+     ax1 = fig.add_subplot(1,2,2)
+     ax2 = fig.add_subplot(1,2,1)
+
+     ax1.set_title('DASH Pipeline Reduced Science File')
+     ax2.set_title('Original IMA (not reduced using pipeline)')
+
+     ax1.set_xlim(-10,1120)
+     ax2.set_xlim(-10,1120)
+
+     ax1.set_ylim(-10,1050)
+     ax2.set_ylim(-10,1050)
+
+     ax1.imshow(sci, vmin=0, vmax=40, cmap='Greys_r', origin='lower')
+     ax2.imshow(og_flt, vmin=0, vmax=40, cmap='Greys_r', origin='lower')
+     plt.savefig(sci_name + '.png')

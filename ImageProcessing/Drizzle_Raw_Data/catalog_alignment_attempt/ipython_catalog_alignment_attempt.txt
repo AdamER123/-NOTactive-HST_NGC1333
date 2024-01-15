@@ -1,0 +1,111 @@
+source activate astroconda
+ipython
+
+#collecting useful packages
+import os
+import glob
+import numpy as np
+import matplotlib.pyplot as plt 
+
+from astropy.coordinates import SkyCoord
+from astropy.io import ascii
+from astropy.io import fits 
+from astropy.table import Table
+import astropy.units as u
+from astropy.wcs import WCS
+
+from ccdproc import ImageFileCollection
+from drizzlepac import tweakreg
+from drizzlepac import astrodrizzle 
+from reduce_dash import DashData
+import stwcs
+
+#stwcs.updatewcs.updatewcs('*ima*')
+
+#simbad astroquery
+from astroquery.simbad import Simbad
+
+def all_stars(table, keys):
+    star_list = []
+
+    for i in table:
+        name, ra, dec = i['MAIN_ID'], i['RA'], i['DEC']
+        for j in keys:
+             if name.find(j) != -1:
+                star_list.append([name, SkyCoord(ra, dec, unit=(u.hourangle, u.deg))])   
+    return star_list
+
+result_table = Simbad.query_region("HH 6", radius=2./60. * u.deg)  #will need to adjust this and keys                  
+star_keys = ['ASR', '2MASS']
+star_coords = all_stars(result_table, star_keys)
+
+
+# collecting relevant files
+flt_files = glob.glob('*flt*')
+ima_files = glob.glob('*ima*')
+
+#setting up for dash mode images
+os.environ['CRDS_SERVER_URL'] = 'https://hst-crds.stsci.edu'
+os.environ['CRDS_SERVER'] = 'https://hst-crds.stsci.edu'
+os.environ['CRDS_PATH'] = './crds_cache'
+os.environ['iref'] = 'iref/'
+if not os.path.exists('iref'):
+    os.mkdir('iref')
+
+for file in ima_files:
+    command_line_input = 'crds bestrefs --files {:} --sync-references=1 --update-bestrefs'.format(file)
+    os.system(command_line_input)
+
+#putting together a list of myDash objects for each set of observations to loop through them eventually
+myDash_list = []
+
+for i in range(len(flt_files)):
+     myDash_list.append(DashData(ima_files[i], flt_files[i]))
+
+
+# looping through to create diff files and then comparing with my catalog of star coords from earlier
+#also searching for star centroids to make proper cat file
+from photutils.centroids import centroid_sources
+from astropy.wcs.utils import skycoord_to_pixel
+for myDash in myDash_list:
+    myDash.split_ima()
+    myDash.make_pointing_asn()
+    diffpath = os.path.dirname(os.path.abspath('diff/{}_*_diff.fits'.format(myDash.root)))
+    diff_files = glob.glob(diffpath+'/*')
+    diff_hdu = [fits.open(i) for i in diff_files]
+    primaryhdu_list = [hdu[0].header for hdu in diff_hdu]
+    wcs_header_list = [hdu[1].header for hdu in diff_hdu]
+    
+    #now searching diff images for stars, composing cat for each
+    for i in range(len(hdu_list)):
+        refstar_pix_list = []
+        stars_in_field = []
+
+        for refstar in star_coords:
+            refstar_sky = refstar[1]
+            refstar_pix = np.array(skycoord_to_pixel(refstar_sky, WCS(wcs_header_list[i])))
+            refstar_pix_list.append(refstar_pix)
+            stars_in_field.append(centroid_sources(data_list[i], refstar_pix[0], refstar_pix[1]))
+            np.save(primaryhdu[i]['FILENAME'].split('.')[0] + '.cat', stars_in_field)
+
+        
+
+#
+tweakreg.TweakReg('diff/*107*',
+                  imagefindcfg={'threshold': 100,'conv_width': 3.5},
+                  shiftfile=True, outshifts='shift814_flc_test1.txt',
+                  updatehdr=False, interactive=False, ylimit=0.4)
+				  
+# Give the 'fit residual plots' a unique name for comparison with other tests.
+residual_pngs = glob.glob("residual*png")
+for png in residual_pngs: 
+    path = os.path.abspath(os.path.join(os.curdir, png))
+    new_path = os.path.abspath(os.path.join(os.curdir, 'test1_{}'.format(png)))
+    os.rename(path, new_path)
+
+shift_table = Table.read('shift164_flt_test1.txt', format='ascii.no_header',
+                names=['file', 'dx', 'dy', 'rot', 'scale', 'xrms', 'yrms'])
+formats = ['.2f', '.2f', '.3f', '.5f', '.2f', '.2f']
+for i, col in enumerate(shift_table.colnames[1: ]):
+     shift_table[col].format = formats[i]
+shift_table

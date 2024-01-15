@@ -1,0 +1,2119 @@
+[INFO    ] Setting up logfile :  astrodrizzle.log
+[INFO    ] 
+[INFO    ] AstroDrizzle Version 2.2.2(2018-04-18 15:43:44 -0400) started at: 13:52:05.033 (05/06/2019)
+[INFO    ] 
+[INFO    ] Version Information
+[INFO    ] --------------------
+[INFO    ] Python Version 3.6.4 |Anaconda, Inc.| (default, Jan 16 2018, 18:10:19) 
+[GCC 7.2.0]
+[INFO    ] numpy Version -> 1.14.0 
+[INFO    ] astropy Version -> 2.0.3 
+[INFO    ] stwcs Version -> 1.4.0 
+[INFO    ] ==== Processing Step  Initialization  started at  13:52:05.035 (05/06/2019)
+[INFO    ] 
+[INFO    ] Preserving original of:  idgi01hmq_flt.fits as  OrIg_files/idgi01hmq_flt.fits
+[INFO    ] 
+[INFO    ] Preserving original of:  idgi01hnq_flt.fits as  OrIg_files/idgi01hnq_flt.fits
+[INFO    ] 
+[INFO    ] Preserving original of:  idgi01hpq_flt.fits as  OrIg_files/idgi01hpq_flt.fits
+[INFO    ] 
+[INFO    ] Preserving original of:  idgi01hsq_flt.fits as  OrIg_files/idgi01hsq_flt.fits
+[INFO    ] 
+[INFO    ] Preserving original of:  idgi02rwq_flt.fits as  OrIg_files/idgi02rwq_flt.fits
+[INFO    ] 
+[INFO    ] Preserving original of:  idgi02rxq_flt.fits as  OrIg_files/idgi02rxq_flt.fits
+[INFO    ] 
+[INFO    ] Preserving original of:  idgi02ryq_flt.fits as  OrIg_files/idgi02ryq_flt.fits
+[INFO    ] 
+[INFO    ] Preserving original of:  idgi02s0q_flt.fits as  OrIg_files/idgi02s0q_flt.fits
+[INFO    ] 
+[INFO    ] Preserving original of:  idgi03xrq_flt.fits as  OrIg_files/idgi03xrq_flt.fits
+[INFO    ] 
+[INFO    ] Preserving original of:  idgi03xsq_flt.fits as  OrIg_files/idgi03xsq_flt.fits
+[INFO    ] 
+[INFO    ] Preserving original of:  idgi03xtq_flt.fits as  OrIg_files/idgi03xtq_flt.fits
+[INFO    ] 
+[INFO    ] Preserving original of:  idgi03xvq_flt.fits as  OrIg_files/idgi03xvq_flt.fits
+[INFO    ] 
+[INFO    ] Preserving original of:  idgi04cfq_flt.fits as  OrIg_files/idgi04cfq_flt.fits
+[INFO    ] 
+[INFO    ] Preserving original of:  idgi04chq_flt.fits as  OrIg_files/idgi04chq_flt.fits
+[INFO    ] 
+[INFO    ] Preserving original of:  idgi04ciq_flt.fits as  OrIg_files/idgi04ciq_flt.fits
+[INFO    ] 
+[INFO    ] Preserving original of:  idgi04ckq_flt.fits as  OrIg_files/idgi04ckq_flt.fits
+[INFO    ] 
+[INFO    ] Preserving original of:  idgi04clq_flt.fits as  OrIg_files/idgi04clq_flt.fits
+[INFO    ] 
+[INFO    ] Preserving original of:  idgi04cnq_flt.fits as  OrIg_files/idgi04cnq_flt.fits
+[INFO    ] 
+[INFO    ] Preserving original of:  idgi05c8q_flt.fits as  OrIg_files/idgi05c8q_flt.fits
+[INFO    ] 
+[INFO    ] Preserving original of:  idgi05c9q_flt.fits as  OrIg_files/idgi05c9q_flt.fits
+[INFO    ] 
+[INFO    ] Preserving original of:  idgi05caq_flt.fits as  OrIg_files/idgi05caq_flt.fits
+[INFO    ] 
+[INFO    ] Preserving original of:  idgi05ccq_flt.fits as  OrIg_files/idgi05ccq_flt.fits
+[INFO    ] 
+[INFO    ] Executing serially
+[INFO    ] Setting up output name: Hartigan.fits
+[INFO    ] -Creating imageObject List as input for processing steps.
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 11.69309806823731
+[INFO    ] Reading in MDRIZSKY of 11.69309806823731
+[INFO    ] Reading in MDRIZSKY of 11.70252799987793
+[INFO    ] Reading in MDRIZSKY of 11.70252799987793
+[INFO    ] Reading in MDRIZSKY of 11.64465427398682
+[INFO    ] Reading in MDRIZSKY of 11.64465427398682
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi01hmq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi01hmq_flt.fits[DQ,2]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi01hnq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi01hnq_flt.fits[DQ,2]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi01hpq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi01hpq_flt.fits[DQ,2]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi01hsq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi01hsq_flt.fits[DQ,2]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi02rwq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi02rwq_flt.fits[DQ,2]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi02rxq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi02rxq_flt.fits[DQ,2]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi02ryq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi02ryq_flt.fits[DQ,2]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi02s0q_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi02s0q_flt.fits[DQ,2]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi03xrq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi03xrq_flt.fits[DQ,2]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi03xsq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi03xsq_flt.fits[DQ,2]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi03xtq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi03xtq_flt.fits[DQ,2]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi03xvq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi03xvq_flt.fits[DQ,2]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi04cfq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi04cfq_flt.fits[DQ,2]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi04chq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi04chq_flt.fits[DQ,2]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi04ciq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi04ciq_flt.fits[DQ,2]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi04ckq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi04ckq_flt.fits[DQ,2]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi04clq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi04clq_flt.fits[DQ,2]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi04cnq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi04cnq_flt.fits[DQ,2]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi05c8q_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi05c8q_flt.fits[DQ,2]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi05c9q_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi05c9q_flt.fits[DQ,2]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi05caq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi05caq_flt.fits[DQ,2]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi05ccq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in idgi05ccq_flt.fits[DQ,2]
+[INFO    ] -Creating output WCS.
+[INFO    ] WCS Keywords
+[INFO    ] 
+[INFO    ] Number of WCS axes: 2
+[INFO    ] CTYPE : 'RA---TAN'  'DEC--TAN'
+[INFO    ] CRVAL : 52.27500669037019  31.27308494807391
+[INFO    ] CRPIX : 3091.5  2404.5
+[INFO    ] CD1_1 CD1_2  : -8.904156173333024e-06  -6.4682502456824665e-06
+[INFO    ] CD2_1 CD2_2  : -6.4682502456824665e-06  8.904156173333024e-06
+[INFO    ] NAXIS : 6183  4809
+[INFO    ] 
+[INFO    ] ********************************************************************************
+[INFO    ] 
+[INFO    ] *
+[INFO    ] 
+[INFO    ] *  Estimated memory usage:  up to 6469 Mb.
+[INFO    ] 
+[INFO    ] *  Output image size:       6183 X 4809 pixels. 
+[INFO    ] 
+[INFO    ] *  Output image file:       ~ 340 Mb. 
+[INFO    ] 
+[INFO    ] *  Cores available:         16
+[INFO    ] 
+[INFO    ] *
+[INFO    ] 
+[INFO    ] ********************************************************************************
+[INFO    ] 
+[INFO    ] ==== Processing Step  Initialization  finished at  13:56:14.708 (05/06/2019)
+[INFO    ] 
+[INFO    ] USER INPUT PARAMETERS common to all Processing Steps:
+[INFO    ] 	build :	True
+[INFO    ] 	coeffs :	True
+[INFO    ] 	context :	True
+[INFO    ] 	crbit :	4096
+[INFO    ] 	group :	
+[INFO    ] 	in_memory :	False
+[INFO    ] 	input :	*.fits
+[INFO    ] 	mdriztab :	False
+[INFO    ] 	num_cores :	None
+[INFO    ] 	output :	Hartigan.fits
+[INFO    ] 	proc_unit :	native
+[INFO    ] 	resetbits :	4096
+[INFO    ] 	runfile :	astrodrizzle.log
+[INFO    ] 	stepsize :	10
+[INFO    ] 	updatewcs :	False
+[INFO    ] 	wcskey :	
+[INFO    ] ==== Processing Step  Static Mask  started at  13:56:14.71 (05/06/2019)
+[INFO    ] 
+[INFO    ] USER INPUT PARAMETERS for Static Mask Step:
+[INFO    ] 	static :	True
+[INFO    ] 	static_sig :	4.0
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  0.363769;   rms = 7.270953;   static_sig = 4.00
+[INFO    ]   mode =  0.718436;   rms = 28.799820;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  0.131915;   rms = 9.990652;   static_sig = 4.00
+[INFO    ]   mode = -0.622653;   rms = 34.843197;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  0.719644;   rms = 7.117544;   static_sig = 4.00
+[INFO    ]   mode =  0.653251;   rms = 18.041103;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  0.818025;   rms = 14.715176;   static_sig = 4.00
+[INFO    ]   mode =  0.474670;   rms = 46.842533;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  4.186942;   rms = 7.882270;   static_sig = 4.00
+[INFO    ]   mode =  3.825631;   rms = 17.153118;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  3.176830;   rms = 6.719558;   static_sig = 4.00
+[INFO    ]   mode =  2.655373;   rms = 12.401670;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  3.408777;   rms = 7.422666;   static_sig = 4.00
+[INFO    ]   mode =  3.632291;   rms = 15.463537;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  3.824434;   rms = 7.918215;   static_sig = 4.00
+[INFO    ]   mode =  3.046686;   rms = 11.664016;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  0.633943;   rms = 10.873151;   static_sig = 4.00
+[INFO    ]   mode =  1.454861;   rms = 14.185007;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  0.122576;   rms = 13.025085;   static_sig = 4.00
+[INFO    ]   mode =  1.579620;   rms = 14.846683;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.624879;   rms = 9.673495;   static_sig = 4.00
+[INFO    ]   mode =  1.319781;   rms = 14.239784;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.166899;   rms = 13.805408;   static_sig = 4.00
+[INFO    ]   mode =  1.241484;   rms = 16.466860;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode = 12.226705;   rms = 6.775739;   static_sig = 4.00
+[INFO    ]   mode = 12.235928;   rms = 7.002747;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode = 10.762148;   rms = 6.717193;   static_sig = 4.00
+[INFO    ]   mode = 12.119083;   rms = 7.127334;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode = 10.942078;   rms = 6.462135;   static_sig = 4.00
+[INFO    ]   mode = 12.252809;   rms = 6.601076;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.933584;   rms = 5.850332;   static_sig = 4.00
+[INFO    ]   mode =  1.208383;   rms = 7.347113;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.593740;   rms = 5.806931;   static_sig = 4.00
+[INFO    ]   mode =  1.125566;   rms = 7.375281;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.064273;   rms = 5.740517;   static_sig = 4.00
+[INFO    ]   mode =  1.234384;   rms = 7.765950;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode = -0.251750;   rms = 11.802755;   static_sig = 4.00
+[INFO    ]   mode =  0.036446;   rms = 6.454552;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode = -0.020749;   rms = 9.603521;   static_sig = 4.00
+[INFO    ]   mode = -0.081955;   rms = 6.191370;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  0.123929;   rms = 9.462376;   static_sig = 4.00
+[INFO    ]   mode =  0.177174;   rms = 6.125466;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode = -0.063388;   rms = 9.625138;   static_sig = 4.00
+[INFO    ]   mode =  0.147242;   rms = 6.520855;   static_sig = 4.00
+[INFO    ] Saving static mask to disk: ./WFC3UVIS_2051x4096_1_staticMask.fits
+[INFO    ] Saving static mask to disk: ./WFC3UVIS_2051x4096_2_staticMask.fits
+[INFO    ] ==== Processing Step  Static Mask  finished at  13:56:37.55 (05/06/2019)
+[INFO    ] 
+[INFO    ] ==== Processing Step  Subtract Sky  started at  13:56:37.559 (05/06/2019)
+[INFO    ] 
+[INFO    ] USER INPUT PARAMETERS for Sky Subtraction Step:
+[INFO    ] 	sky_bits :	0
+[INFO    ] 	skyclip :	5
+[INFO    ] 	skyfile :	
+[INFO    ] 	skylower :	None
+[INFO    ] 	skylsigma :	4.0
+[INFO    ] 	skymask_cat :	
+[INFO    ] 	skymethod :	globalmin
+[INFO    ] 	skystat :	median
+[INFO    ] 	skysub :	True
+[INFO    ] 	skyupper :	None
+[INFO    ] 	skyuser :	
+[INFO    ] 	skyusigma :	4.0
+[INFO    ] 	skywidth :	0.1
+[INFO    ] 	use_static :	True
+[INFO    ] ***** skymatch started on 2019-06-05 13:57:04.602882
+[INFO    ]       Version 0.9.10 (20-April-2018)
+[INFO    ] 
+[INFO    ] 'skymatch' task will apply computed sky differences to input image file(s).
+[INFO    ] 
+[INFO    ] NOTE: Computed sky values WILL NOT be subtracted from image data ('subtractsky'=False).
+[INFO    ] 'MDRIZSKY' header keyword will represent sky value *computed* from data.
+[INFO    ] 
+[INFO    ] -----  User specified keywords:  -----
+[INFO    ]        Sky Value Keyword:  'MDRIZSKY'
+[INFO    ]        Data Units Keyword: 'BUNIT'
+[INFO    ] 
+[INFO    ] 
+[INFO    ] -----  Input file list:  -----
+[INFO    ] 
+[INFO    ]    **  Input image: 'idgi01hmq_flt.fits'
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',1;	MASK: idgi01hmq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',2;	MASK: idgi01hmq_skymatch_mask_sci2.fits[0]
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    **  Input image: 'idgi01hnq_flt.fits'
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',1;	MASK: idgi01hnq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',2;	MASK: idgi01hnq_skymatch_mask_sci2.fits[0]
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    **  Input image: 'idgi01hpq_flt.fits'
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',1;	MASK: idgi01hpq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',2;	MASK: idgi01hpq_skymatch_mask_sci2.fits[0]
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    **  Input image: 'idgi01hsq_flt.fits'
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',1;	MASK: idgi01hsq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',2;	MASK: idgi01hsq_skymatch_mask_sci2.fits[0]
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    **  Input image: 'idgi02rwq_flt.fits'
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',1;	MASK: idgi02rwq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',2;	MASK: idgi02rwq_skymatch_mask_sci2.fits[0]
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    **  Input image: 'idgi02rxq_flt.fits'
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',1;	MASK: idgi02rxq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',2;	MASK: idgi02rxq_skymatch_mask_sci2.fits[0]
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    **  Input image: 'idgi02ryq_flt.fits'
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',1;	MASK: idgi02ryq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',2;	MASK: idgi02ryq_skymatch_mask_sci2.fits[0]
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    **  Input image: 'idgi02s0q_flt.fits'
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',1;	MASK: idgi02s0q_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',2;	MASK: idgi02s0q_skymatch_mask_sci2.fits[0]
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    **  Input image: 'idgi03xrq_flt.fits'
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',1;	MASK: idgi03xrq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',2;	MASK: idgi03xrq_skymatch_mask_sci2.fits[0]
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    **  Input image: 'idgi03xsq_flt.fits'
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',1;	MASK: idgi03xsq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',2;	MASK: idgi03xsq_skymatch_mask_sci2.fits[0]
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    **  Input image: 'idgi03xtq_flt.fits'
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',1;	MASK: idgi03xtq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',2;	MASK: idgi03xtq_skymatch_mask_sci2.fits[0]
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    **  Input image: 'idgi03xvq_flt.fits'
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',1;	MASK: idgi03xvq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',2;	MASK: idgi03xvq_skymatch_mask_sci2.fits[0]
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    **  Input image: 'idgi04cfq_flt.fits'
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',1;	MASK: idgi04cfq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',2;	MASK: idgi04cfq_skymatch_mask_sci2.fits[0]
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    **  Input image: 'idgi04chq_flt.fits'
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',1;	MASK: idgi04chq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',2;	MASK: idgi04chq_skymatch_mask_sci2.fits[0]
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    **  Input image: 'idgi04ciq_flt.fits'
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',1;	MASK: idgi04ciq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',2;	MASK: idgi04ciq_skymatch_mask_sci2.fits[0]
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    **  Input image: 'idgi04ckq_flt.fits'
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',1;	MASK: idgi04ckq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',2;	MASK: idgi04ckq_skymatch_mask_sci2.fits[0]
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    **  Input image: 'idgi04clq_flt.fits'
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',1;	MASK: idgi04clq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',2;	MASK: idgi04clq_skymatch_mask_sci2.fits[0]
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    **  Input image: 'idgi04cnq_flt.fits'
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',1;	MASK: idgi04cnq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',2;	MASK: idgi04cnq_skymatch_mask_sci2.fits[0]
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    **  Input image: 'idgi05c8q_flt.fits'
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',1;	MASK: idgi05c8q_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',2;	MASK: idgi05c8q_skymatch_mask_sci2.fits[0]
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    **  Input image: 'idgi05c9q_flt.fits'
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',1;	MASK: idgi05c9q_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',2;	MASK: idgi05c9q_skymatch_mask_sci2.fits[0]
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    **  Input image: 'idgi05caq_flt.fits'
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',1;	MASK: idgi05caq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',2;	MASK: idgi05caq_skymatch_mask_sci2.fits[0]
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    **  Input image: 'idgi05ccq_flt.fits'
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',1;	MASK: idgi05ccq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',2;	MASK: idgi05ccq_skymatch_mask_sci2.fits[0]
+[INFO    ] 
+[INFO    ] 
+[INFO    ] -----  Sky statistics parameters:  -----
+[INFO    ]        statistics function: 'median'
+[INFO    ]        lower = None
+[INFO    ]        upper = None
+[INFO    ]        nclip = 5
+[INFO    ]        lsigma = 4.0
+[INFO    ]        usigma = 4.0
+[INFO    ]        binwidth = 0.1
+[INFO    ] 
+[INFO    ] -----  Data->Brightness conversion parameters for input files:  -----
+[INFO    ] 
+[INFO    ]    *   Image: idgi01hmq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 1428.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.44611089635010315
+[INFO    ]        EXT = 'SCI',2
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 1428.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.44611089635010315
+[INFO    ] 
+[INFO    ]    *   Image: idgi01hnq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 1428.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.44611089635010315
+[INFO    ]        EXT = 'SCI',2
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 1428.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.44611089635010315
+[INFO    ] 
+[INFO    ]    *   Image: idgi01hpq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 1461.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.4360344695331604
+[INFO    ]        EXT = 'SCI',2
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 1461.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.4360344695331604
+[INFO    ] 
+[INFO    ]    *   Image: idgi01hsq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 1461.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.4360344695331604
+[INFO    ]        EXT = 'SCI',2
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 1461.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.4360344695331604
+[INFO    ] 
+[INFO    ]    *   Image: idgi02rwq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 1429.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.44579871237784974
+[INFO    ]        EXT = 'SCI',2
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 1429.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.44579871237784974
+[INFO    ] 
+[INFO    ]    *   Image: idgi02rxq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 1429.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.44579871237784974
+[INFO    ]        EXT = 'SCI',2
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 1429.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.44579871237784974
+[INFO    ] 
+[INFO    ]    *   Image: idgi02ryq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 1461.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.4360344695331604
+[INFO    ]        EXT = 'SCI',2
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 1461.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.4360344695331604
+[INFO    ] 
+[INFO    ]    *   Image: idgi02s0q_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 1461.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.4360344695331604
+[INFO    ]        EXT = 'SCI',2
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 1461.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.4360344695331604
+[INFO    ] 
+[INFO    ]    *   Image: idgi03xrq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 1425.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.44705007718452444
+[INFO    ]        EXT = 'SCI',2
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 1425.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.44705007718452444
+[INFO    ] 
+[INFO    ]    *   Image: idgi03xsq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 1432.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.4448647765278962
+[INFO    ]        EXT = 'SCI',2
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 1432.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.4448647765278962
+[INFO    ] 
+[INFO    ]    *   Image: idgi03xtq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 1461.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.4360344695331604
+[INFO    ]        EXT = 'SCI',2
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 1461.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.4360344695331604
+[INFO    ] 
+[INFO    ]    *   Image: idgi03xvq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 1461.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.4360344695331604
+[INFO    ]        EXT = 'SCI',2
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 1461.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.4360344695331604
+[INFO    ] 
+[INFO    ]    *   Image: idgi04cfq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 930.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.6849960860085454
+[INFO    ]        EXT = 'SCI',2
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 930.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.6849960860085454
+[INFO    ] 
+[INFO    ]    *   Image: idgi04chq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 930.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.6849960860085454
+[INFO    ]        EXT = 'SCI',2
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 930.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.6849960860085454
+[INFO    ] 
+[INFO    ]    *   Image: idgi04ciq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 865.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.736469780332887
+[INFO    ]        EXT = 'SCI',2
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 865.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.736469780332887
+[INFO    ] 
+[INFO    ]    *   Image: idgi04ckq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 929.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.6857334337868108
+[INFO    ]        EXT = 'SCI',2
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 929.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.6857334337868108
+[INFO    ] 
+[INFO    ]    *   Image: idgi04clq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 929.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.6857334337868108
+[INFO    ]        EXT = 'SCI',2
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 929.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.6857334337868108
+[INFO    ] 
+[INFO    ]    *   Image: idgi04cnq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 929.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.6857334337868108
+[INFO    ]        EXT = 'SCI',2
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 929.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.6857334337868108
+[INFO    ] 
+[INFO    ]    *   Image: idgi05c8q_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 1428.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.44611089635010315
+[INFO    ]        EXT = 'SCI',2
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 1428.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.44611089635010315
+[INFO    ] 
+[INFO    ]    *   Image: idgi05c9q_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 1428.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.44611089635010315
+[INFO    ]        EXT = 'SCI',2
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 1428.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.44611089635010315
+[INFO    ] 
+[INFO    ]    *   Image: idgi05caq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 1461.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.4360344695331604
+[INFO    ]        EXT = 'SCI',2
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 1461.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.4360344695331604
+[INFO    ] 
+[INFO    ]    *   Image: idgi05ccq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 1461.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.4360344695331604
+[INFO    ]        EXT = 'SCI',2
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 1461.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  0.4360344695331604
+[INFO    ] 
+[INFO    ] 
+[INFO    ] -----  Computing "global" sky on requested image extensions (detector chips):  -----
+[INFO    ] 
+[INFO    ]     "Global" sky value: 0.25936862565729274 (brightness units)
+[INFO    ] 
+[INFO    ]     Computed sky change (data units) for image idgi01hmq_flt.fits['SCI',1,2]:
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.581399   NEW MDRIZSKY = 0.581399
+[INFO    ]       - EXT = 'SCI',2   delta(MDRIZSKY) = 0.581399   NEW MDRIZSKY = 0.581399
+[INFO    ]     Computed sky change (data units) for image idgi01hnq_flt.fits['SCI',1,2]:
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.581399   NEW MDRIZSKY = 0.581399
+[INFO    ]       - EXT = 'SCI',2   delta(MDRIZSKY) = 0.581399   NEW MDRIZSKY = 0.581399
+[INFO    ]     Computed sky change (data units) for image idgi01hpq_flt.fits['SCI',1,2]:
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.594835   NEW MDRIZSKY = 0.594835
+[INFO    ]       - EXT = 'SCI',2   delta(MDRIZSKY) = 0.594835   NEW MDRIZSKY = 0.594835
+[INFO    ]     Computed sky change (data units) for image idgi01hsq_flt.fits['SCI',1,2]:
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.594835   NEW MDRIZSKY = 0.594835
+[INFO    ]       - EXT = 'SCI',2   delta(MDRIZSKY) = 0.594835   NEW MDRIZSKY = 0.594835
+[INFO    ]     Computed sky change (data units) for image idgi02rwq_flt.fits['SCI',1,2]:
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.581807   NEW MDRIZSKY = 0.581807
+[INFO    ]       - EXT = 'SCI',2   delta(MDRIZSKY) = 0.581807   NEW MDRIZSKY = 0.581807
+[INFO    ]     Computed sky change (data units) for image idgi02rxq_flt.fits['SCI',1,2]:
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.581807   NEW MDRIZSKY = 0.581807
+[INFO    ]       - EXT = 'SCI',2   delta(MDRIZSKY) = 0.581807   NEW MDRIZSKY = 0.581807
+[INFO    ]     Computed sky change (data units) for image idgi02ryq_flt.fits['SCI',1,2]:
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.594835   NEW MDRIZSKY = 0.594835
+[INFO    ]       - EXT = 'SCI',2   delta(MDRIZSKY) = 0.594835   NEW MDRIZSKY = 0.594835
+[INFO    ]     Computed sky change (data units) for image idgi02s0q_flt.fits['SCI',1,2]:
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.594835   NEW MDRIZSKY = 0.594835
+[INFO    ]       - EXT = 'SCI',2   delta(MDRIZSKY) = 0.594835   NEW MDRIZSKY = 0.594835
+[INFO    ]     Computed sky change (data units) for image idgi03xrq_flt.fits['SCI',1,2]:
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.580178   NEW MDRIZSKY = 0.580178
+[INFO    ]       - EXT = 'SCI',2   delta(MDRIZSKY) = 0.580178   NEW MDRIZSKY = 0.580178
+[INFO    ]     Computed sky change (data units) for image idgi03xsq_flt.fits['SCI',1,2]:
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.583028   NEW MDRIZSKY = 0.583028
+[INFO    ]       - EXT = 'SCI',2   delta(MDRIZSKY) = 0.583028   NEW MDRIZSKY = 0.583028
+[INFO    ]     Computed sky change (data units) for image idgi03xtq_flt.fits['SCI',1,2]:
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.594835   NEW MDRIZSKY = 0.594835
+[INFO    ]       - EXT = 'SCI',2   delta(MDRIZSKY) = 0.594835   NEW MDRIZSKY = 0.594835
+[INFO    ]     Computed sky change (data units) for image idgi03xvq_flt.fits['SCI',1,2]:
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.594835   NEW MDRIZSKY = 0.594835
+[INFO    ]       - EXT = 'SCI',2   delta(MDRIZSKY) = 0.594835   NEW MDRIZSKY = 0.594835
+[INFO    ]     Computed sky change (data units) for image idgi04cfq_flt.fits['SCI',1,2]:
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.378642   NEW MDRIZSKY = 0.378642
+[INFO    ]       - EXT = 'SCI',2   delta(MDRIZSKY) = 0.378642   NEW MDRIZSKY = 0.378642
+[INFO    ]     Computed sky change (data units) for image idgi04chq_flt.fits['SCI',1,2]:
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.378642   NEW MDRIZSKY = 0.378642
+[INFO    ]       - EXT = 'SCI',2   delta(MDRIZSKY) = 0.378642   NEW MDRIZSKY = 0.378642
+[INFO    ]     Computed sky change (data units) for image idgi04ciq_flt.fits['SCI',1,2]:
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.352178   NEW MDRIZSKY = 0.352178
+[INFO    ]       - EXT = 'SCI',2   delta(MDRIZSKY) = 0.352178   NEW MDRIZSKY = 0.352178
+[INFO    ]     Computed sky change (data units) for image idgi04ckq_flt.fits['SCI',1,2]:
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.378235   NEW MDRIZSKY = 0.378235
+[INFO    ]       - EXT = 'SCI',2   delta(MDRIZSKY) = 0.378235   NEW MDRIZSKY = 0.378235
+[INFO    ]     Computed sky change (data units) for image idgi04clq_flt.fits['SCI',1,2]:
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.378235   NEW MDRIZSKY = 0.378235
+[INFO    ]       - EXT = 'SCI',2   delta(MDRIZSKY) = 0.378235   NEW MDRIZSKY = 0.378235
+[INFO    ]     Computed sky change (data units) for image idgi04cnq_flt.fits['SCI',1,2]:
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.378235   NEW MDRIZSKY = 0.378235
+[INFO    ]       - EXT = 'SCI',2   delta(MDRIZSKY) = 0.378235   NEW MDRIZSKY = 0.378235
+[INFO    ]     Computed sky change (data units) for image idgi05c8q_flt.fits['SCI',1,2]:
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.581399   NEW MDRIZSKY = 0.581399
+[INFO    ]       - EXT = 'SCI',2   delta(MDRIZSKY) = 0.581399   NEW MDRIZSKY = 0.581399
+[INFO    ]     Computed sky change (data units) for image idgi05c9q_flt.fits['SCI',1,2]:
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.581399   NEW MDRIZSKY = 0.581399
+[INFO    ]       - EXT = 'SCI',2   delta(MDRIZSKY) = 0.581399   NEW MDRIZSKY = 0.581399
+[INFO    ]     Computed sky change (data units) for image idgi05caq_flt.fits['SCI',1,2]:
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.594835   NEW MDRIZSKY = 0.594835
+[INFO    ]       - EXT = 'SCI',2   delta(MDRIZSKY) = 0.594835   NEW MDRIZSKY = 0.594835
+[INFO    ]     Computed sky change (data units) for image idgi05ccq_flt.fits['SCI',1,2]:
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.594835   NEW MDRIZSKY = 0.594835
+[INFO    ]       - EXT = 'SCI',2   delta(MDRIZSKY) = 0.594835   NEW MDRIZSKY = 0.594835
+[INFO    ] ***** skymatch ended on 2019-06-05 13:57:38.292018
+[INFO    ] TOTAL RUN TIME: 0:00:33.689136
+[INFO    ] ==== Processing Step  Subtract Sky  finished at  13:58:57.210 (05/06/2019)
+[INFO    ] 
+[INFO    ] ==== Processing Step  Separate Drizzle  started at  13:58:57.223 (05/06/2019)
+[INFO    ] 
+[INFO    ] Interpreted paramDict with single=True as:
+{'build': True, 'stepsize': 10, 'coeffs': True, 'wcskey': '', 'kernel': 'turbo', 'wt_scl': 'exptime', 'pixfrac': 1.0, 'fillval': None, 'bits': 3, 'compress': False, 'units': 'cps'}
+[INFO    ] USER INPUT PARAMETERS for Separate Drizzle Step:
+[INFO    ] 	bits :	3
+[INFO    ] 	build :	False
+[INFO    ] 	clean :	False
+[INFO    ] 	coeffs :	True
+[INFO    ] 	compress :	False
+[INFO    ] 	crbit :	None
+[INFO    ] 	fillval :	None
+[INFO    ] 	kernel :	turbo
+[INFO    ] 	num_cores :	None
+[INFO    ] 	pixfrac :	1.0
+[INFO    ] 	proc_unit :	electrons
+[INFO    ] 	stepsize :	10
+[INFO    ] 	units :	cps
+[INFO    ] 	wcskey :	
+[INFO    ] 	wht_type :	None
+[INFO    ] 	wt_scl :	exptime
+[INFO    ]   **Using sub-sampling value of 10 for kernel turbo
+[INFO    ] Running Drizzle to create output frame with WCS of: 
+[INFO    ] WCS Keywords
+[INFO    ] 
+[INFO    ] Number of WCS axes: 2
+[INFO    ] CTYPE : 'RA---TAN'  'DEC--TAN'
+[INFO    ] CRVAL : 52.27500669037019  31.27308494807391
+[INFO    ] CRPIX : 3091.5  2404.5
+[INFO    ] CD1_1 CD1_2  : -8.904156173333024e-06  -6.4682502456824665e-06
+[INFO    ] CD2_1 CD2_2  : -6.4682502456824665e-06  8.904156173333024e-06
+[INFO    ] NAXIS : 6183  4809
+[INFO    ] 
+[INFO    ] Executing 16 parallel workers
+[INFO    ] -Drizzle input: idgi01hmq_flt.fits[sci,1]
+[INFO    ] -Drizzle input: idgi01hnq_flt.fits[sci,1]
+[INFO    ] -Drizzle input: idgi01hpq_flt.fits[sci,1]
+[INFO    ] -Drizzle input: idgi01hsq_flt.fits[sci,1]
+[INFO    ] -Drizzle input: idgi02rwq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.581399 to idgi01hmq_flt.fits[sci,1]
+[INFO    ] -Drizzle input: idgi02rxq_flt.fits[sci,1]
+[INFO    ] -Drizzle input: idgi02ryq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.594835 to idgi01hpq_flt.fits[sci,1]
+[INFO    ] -Drizzle input: idgi02s0q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.581399 to idgi01hnq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.594835 to idgi01hsq_flt.fits[sci,1]
+[INFO    ] -Drizzle input: idgi03xrq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.581807 to idgi02rwq_flt.fits[sci,1]
+[INFO    ] -Drizzle input: idgi03xsq_flt.fits[sci,1]
+[INFO    ] -Drizzle input: idgi03xtq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.594835 to idgi02ryq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.581807 to idgi02rxq_flt.fits[sci,1]
+[INFO    ] -Drizzle input: idgi03xvq_flt.fits[sci,1]
+[INFO    ] -Drizzle input: idgi04cfq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.594835 to idgi02s0q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.580178 to idgi03xrq_flt.fits[sci,1]
+[INFO    ] -Drizzle input: idgi04chq_flt.fits[sci,1]
+[INFO    ] -Drizzle input: idgi04ciq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.583028 to idgi03xsq_flt.fits[sci,1]
+[INFO    ] -Drizzle input: idgi04ckq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.594835 to idgi03xtq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.594835 to idgi03xvq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.378642 to idgi04cfq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.352178 to idgi04ciq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.378642 to idgi04chq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.378235 to idgi04ckq_flt.fits[sci,1]
+[INFO    ] Writing out mask file: idgi01hmq_sci1_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] Writing out mask file: idgi01hsq_sci1_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi01hmq_flt.fits[sci,2]
+[INFO    ] Applying sky value of 0.581399 to idgi01hmq_flt.fits[sci,2]
+[INFO    ] -Drizzle input: idgi01hsq_flt.fits[sci,2]
+[INFO    ] Writing out mask file: idgi02ryq_sci1_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] Applying sky value of 0.594835 to idgi01hsq_flt.fits[sci,2]
+[INFO    ] Writing out mask file: idgi01hnq_sci1_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi02ryq_flt.fits[sci,2]
+[INFO    ] Applying sky value of 0.594835 to idgi02ryq_flt.fits[sci,2]
+[INFO    ] -Drizzle input: idgi01hnq_flt.fits[sci,2]
+[INFO    ] Writing out mask file: idgi01hpq_sci1_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] Applying sky value of 0.581399 to idgi01hnq_flt.fits[sci,2]
+[INFO    ] Writing out mask file: idgi02rxq_sci1_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] Writing out mask file: idgi03xtq_sci1_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] Writing out mask file: idgi02s0q_sci1_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] Writing out mask file: idgi04ciq_sci1_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] Writing out mask file: idgi02rwq_sci1_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] Writing out mask file: idgi03xrq_sci1_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi01hpq_flt.fits[sci,2]
+[INFO    ] Applying sky value of 0.594835 to idgi01hpq_flt.fits[sci,2]
+[INFO    ] -Drizzle input: idgi02rxq_flt.fits[sci,2]
+[INFO    ] -Drizzle input: idgi02rwq_flt.fits[sci,2]
+[INFO    ] -Drizzle input: idgi04ciq_flt.fits[sci,2]
+[INFO    ] -Drizzle input: idgi03xtq_flt.fits[sci,2]
+[INFO    ] -Drizzle input: idgi02s0q_flt.fits[sci,2]
+[INFO    ] Writing out mask file: idgi04cfq_sci1_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] Writing out mask file: idgi04ckq_sci1_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] Writing out mask file: idgi03xvq_sci1_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] Applying sky value of 0.581807 to idgi02rxq_flt.fits[sci,2]
+[INFO    ] Applying sky value of 0.352178 to idgi04ciq_flt.fits[sci,2]
+[INFO    ] Applying sky value of 0.594835 to idgi02s0q_flt.fits[sci,2]
+[INFO    ] Applying sky value of 0.594835 to idgi03xtq_flt.fits[sci,2]
+[INFO    ] Applying sky value of 0.581807 to idgi02rwq_flt.fits[sci,2]
+[INFO    ] Writing out mask file: idgi03xsq_sci1_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi03xrq_flt.fits[sci,2]
+[INFO    ] Writing out mask file: idgi04chq_sci1_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] Applying sky value of 0.580178 to idgi03xrq_flt.fits[sci,2]
+[INFO    ] Writing out mask file: idgi01hmq_sci2_single_mask.fits
+[INFO    ] Writing out mask file: idgi01hsq_sci2_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi04cfq_flt.fits[sci,2]
+[INFO    ] -Drizzle input: idgi04ckq_flt.fits[sci,2]
+[INFO    ] -Drizzle input: idgi03xsq_flt.fits[sci,2]
+[INFO    ] -Drizzle input: idgi03xvq_flt.fits[sci,2]
+[INFO    ] Applying sky value of 0.378642 to idgi04cfq_flt.fits[sci,2]
+[INFO    ] Applying sky value of 0.378235 to idgi04ckq_flt.fits[sci,2]
+[INFO    ] Applying sky value of 0.583028 to idgi03xsq_flt.fits[sci,2]
+[INFO    ] Applying sky value of 0.594835 to idgi03xvq_flt.fits[sci,2]
+[INFO    ] -Drizzle input: idgi04chq_flt.fits[sci,2]
+[INFO    ] Writing out mask file: idgi02ryq_sci2_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] Applying sky value of 0.378642 to idgi04chq_flt.fits[sci,2]
+[INFO    ] Writing out mask file: idgi01hnq_sci2_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Generating simple FITS output: idgi01hmq_single_sci.fits
+[INFO    ] 
+[INFO    ] -Generating simple FITS output: idgi01hsq_single_sci.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi01hmq_single_sci.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi01hsq_single_sci.fits
+[INFO    ] 
+[INFO    ] Writing out mask file: idgi01hpq_sci2_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Generating simple FITS output: idgi01hnq_single_sci.fits
+[INFO    ] 
+[INFO    ] -Generating simple FITS output: idgi02ryq_single_sci.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi01hnq_single_sci.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi02ryq_single_sci.fits
+[INFO    ] 
+[INFO    ] Writing out mask file: idgi04ciq_sci2_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] Writing out mask file: idgi02rxq_sci2_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] Writing out mask file: idgi02rwq_sci2_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] Writing out mask file: idgi02s0q_sci2_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] Writing out mask file: idgi04cfq_sci2_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] Writing out mask file: idgi04ckq_sci2_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] Writing out mask file: idgi03xtq_sci2_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] Writing out mask file: idgi03xrq_sci2_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] Writing out mask file: idgi04chq_sci2_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Generating simple FITS output: idgi01hpq_single_sci.fits
+[INFO    ] 
+[INFO    ] -Generating simple FITS output: idgi04ciq_single_sci.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi01hpq_single_sci.fits
+[INFO    ] 
+[INFO    ] Writing out mask file: idgi03xvq_sci2_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] Writing out image to disk: idgi04ciq_single_sci.fits
+[INFO    ] 
+[INFO    ] Writing out mask file: idgi03xsq_sci2_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Generating simple FITS output: idgi04ckq_single_sci.fits
+[INFO    ] 
+[INFO    ] -Generating simple FITS output: idgi04chq_single_sci.fits
+[INFO    ] 
+[INFO    ] -Generating simple FITS output: idgi02rxq_single_sci.fits
+[INFO    ] 
+[INFO    ] -Generating simple FITS output: idgi02rwq_single_sci.fits
+[INFO    ] -Generating simple FITS output: idgi02s0q_single_sci.fits
+[INFO    ] 
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi04chq_single_sci.fits
+[INFO    ] 
+[INFO    ] -Generating simple FITS output: idgi03xrq_single_sci.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi04ckq_single_sci.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi02rwq_single_sci.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi02rxq_single_sci.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi02s0q_single_sci.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi03xrq_single_sci.fits
+[INFO    ] 
+[INFO    ] -Generating simple FITS output: idgi04cfq_single_sci.fits
+[INFO    ] 
+[INFO    ] -Generating simple FITS output: idgi03xtq_single_sci.fits
+[INFO    ] 
+[INFO    ] -Generating simple FITS output: idgi03xvq_single_sci.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi04cfq_single_sci.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi03xtq_single_sci.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi03xvq_single_sci.fits
+[INFO    ] 
+[INFO    ] -Generating simple FITS output: idgi03xsq_single_sci.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi03xsq_single_sci.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi01hsq_single_wht.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi01hmq_single_wht.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi02ryq_single_wht.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi04ciq_single_wht.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi01hpq_single_wht.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi04chq_single_wht.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi01hnq_single_wht.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi04ckq_single_wht.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi03xrq_single_wht.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi03xtq_single_wht.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi02rxq_single_wht.fits
+[INFO    ] Writing out image to disk: idgi02s0q_single_wht.fits
+[INFO    ] Writing out image to disk: idgi03xvq_single_wht.fits
+[INFO    ] Writing out image to disk: idgi04cfq_single_wht.fits
+[INFO    ] 
+[INFO    ] 
+[INFO    ] 
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi03xsq_single_wht.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi02rwq_single_wht.fits
+[INFO    ] 
+[INFO    ] -Drizzle input: idgi04clq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.378235 to idgi04clq_flt.fits[sci,1]
+[INFO    ] -Drizzle input: idgi04cnq_flt.fits[sci,1]
+[INFO    ] -Drizzle input: idgi05c8q_flt.fits[sci,1]
+[INFO    ] -Drizzle input: idgi05c9q_flt.fits[sci,1]
+[INFO    ] -Drizzle input: idgi05caq_flt.fits[sci,1]
+[INFO    ] -Drizzle input: idgi05ccq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.581399 to idgi05c8q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.581399 to idgi05c9q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.378235 to idgi04cnq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.594835 to idgi05caq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.594835 to idgi05ccq_flt.fits[sci,1]
+[INFO    ] Writing out mask file: idgi04clq_sci1_single_mask.fits
+[INFO    ] Writing out mask file: idgi05c9q_sci1_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] stepsize = 10
+[INFO    ] Writing out mask file: idgi05c8q_sci1_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] Writing out mask file: idgi05caq_sci1_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] Writing out mask file: idgi05ccq_sci1_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi05c9q_flt.fits[sci,2]
+[INFO    ] -Drizzle input: idgi04clq_flt.fits[sci,2]
+[INFO    ] Applying sky value of 0.581399 to idgi05c9q_flt.fits[sci,2]
+[INFO    ] Applying sky value of 0.378235 to idgi04clq_flt.fits[sci,2]
+[INFO    ] -Drizzle input: idgi05c8q_flt.fits[sci,2]
+[INFO    ] Applying sky value of 0.581399 to idgi05c8q_flt.fits[sci,2]
+[INFO    ] -Drizzle input: idgi05caq_flt.fits[sci,2]
+[INFO    ] Applying sky value of 0.594835 to idgi05caq_flt.fits[sci,2]
+[INFO    ] -Drizzle input: idgi05ccq_flt.fits[sci,2]
+[INFO    ] Applying sky value of 0.594835 to idgi05ccq_flt.fits[sci,2]
+[INFO    ] Writing out mask file: idgi04cnq_sci1_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] Writing out mask file: idgi05c9q_sci2_single_mask.fits
+[INFO    ] Writing out mask file: idgi04clq_sci2_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] Writing out mask file: idgi05c8q_sci2_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi04cnq_flt.fits[sci,2]
+[INFO    ] Applying sky value of 0.378235 to idgi04cnq_flt.fits[sci,2]
+[INFO    ] Writing out mask file: idgi05caq_sci2_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Generating simple FITS output: idgi05c9q_single_sci.fits
+[INFO    ] 
+[INFO    ] -Generating simple FITS output: idgi04clq_single_sci.fits
+[INFO    ] 
+[INFO    ] -Generating simple FITS output: idgi05c8q_single_sci.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi05c9q_single_sci.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi04clq_single_sci.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi05c8q_single_sci.fits
+[INFO    ] 
+[INFO    ] Writing out mask file: idgi05ccq_sci2_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Generating simple FITS output: idgi05caq_single_sci.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi05caq_single_sci.fits
+[INFO    ] 
+[INFO    ] Writing out mask file: idgi04cnq_sci2_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Generating simple FITS output: idgi05ccq_single_sci.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi05ccq_single_sci.fits
+[INFO    ] 
+[INFO    ] -Generating simple FITS output: idgi04cnq_single_sci.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi04cnq_single_sci.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi05c9q_single_wht.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi05c8q_single_wht.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi05caq_single_wht.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi04clq_single_wht.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi05ccq_single_wht.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi04cnq_single_wht.fits
+[INFO    ] 
+[INFO    ] ==== Processing Step  Separate Drizzle  finished at  14:02:15.337 (05/06/2019)
+[INFO    ] 
+[INFO    ] ==== Processing Step  Create Median  started at  14:02:15.341 (05/06/2019)
+[INFO    ] 
+[INFO    ] USER INPUT PARAMETERS for Create Median Step:
+[INFO    ] 	combine_bufsize :	None
+[INFO    ] 	combine_grow :	1
+[INFO    ] 	combine_hthresh :	None
+[INFO    ] 	combine_lthresh :	None
+[INFO    ] 	combine_maskpt :	0.3
+[INFO    ] 	combine_nhigh :	0
+[INFO    ] 	combine_nlow :	0
+[INFO    ] 	combine_nsigma :	4 3
+[INFO    ] 	combine_type :	minmed
+[INFO    ] 	compress :	False
+[INFO    ] 	median :	True
+[INFO    ] 	median_newmasks :	True
+[INFO    ] 	proc_unit :	native
+[INFO    ] reference sky value for image 'idgi01hmq_flt.fits' is 
+[INFO    ] 
+[INFO    ] reference sky value for image 'idgi01hnq_flt.fits' is 
+[INFO    ] 
+[INFO    ] reference sky value for image 'idgi01hpq_flt.fits' is 
+[INFO    ] 
+[INFO    ] reference sky value for image 'idgi01hsq_flt.fits' is 
+[INFO    ] 
+[INFO    ] reference sky value for image 'idgi02rwq_flt.fits' is 
+[INFO    ] 
+[INFO    ] reference sky value for image 'idgi02rxq_flt.fits' is 
+[INFO    ] 
+[INFO    ] reference sky value for image 'idgi02ryq_flt.fits' is 
+[INFO    ] 
+[INFO    ] reference sky value for image 'idgi02s0q_flt.fits' is 
+[INFO    ] 
+[INFO    ] reference sky value for image 'idgi03xrq_flt.fits' is 
+[INFO    ] 
+[INFO    ] reference sky value for image 'idgi03xsq_flt.fits' is 
+[INFO    ] 
+[INFO    ] reference sky value for image 'idgi03xtq_flt.fits' is 
+[INFO    ] 
+[INFO    ] reference sky value for image 'idgi03xvq_flt.fits' is 
+[INFO    ] 
+[INFO    ] reference sky value for image 'idgi04cfq_flt.fits' is 
+[INFO    ] 
+[INFO    ] reference sky value for image 'idgi04chq_flt.fits' is 
+[INFO    ] 
+[INFO    ] reference sky value for image 'idgi04ciq_flt.fits' is 
+[INFO    ] 
+[INFO    ] reference sky value for image 'idgi04ckq_flt.fits' is 
+[INFO    ] 
+[INFO    ] reference sky value for image 'idgi04clq_flt.fits' is 
+[INFO    ] 
+[INFO    ] reference sky value for image 'idgi04cnq_flt.fits' is 
+[INFO    ] 
+[INFO    ] reference sky value for image 'idgi05c8q_flt.fits' is 
+[INFO    ] 
+[INFO    ] reference sky value for image 'idgi05c9q_flt.fits' is 
+[INFO    ] 
+[INFO    ] reference sky value for image 'idgi05caq_flt.fits' is 
+[INFO    ] 
+[INFO    ] reference sky value for image 'idgi05ccq_flt.fits' is 
+[INFO    ] 
+[INFO    ] Saving output median image to: 'Hartigan_med.fits'
+[INFO    ] 
+[INFO    ] ==== Processing Step  Create Median  finished at  14:04:27.692 (05/06/2019)
+[INFO    ] 
+[INFO    ] ==== Processing Step  Blot  started at  14:04:27.695 (05/06/2019)
+[INFO    ] 
+[INFO    ] USER INPUT PARAMETERS for Blot Step:
+[INFO    ] 	blot_addsky :	True
+[INFO    ] 	blot_interp :	poly5
+[INFO    ] 	blot_sinscl :	1.0
+[INFO    ] 	blot_skyval :	0.0
+[INFO    ] 	coeffs :	True
+[INFO    ]     Blot: creating blotted image:  idgi01hmq_flt.fits[sci,1]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.581399 to blotted image idgi01hmq_flt.fits[sci,1]
+[INFO    ] -Generating simple FITS output: idgi01hmq_sci1_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi01hmq_sci1_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi01hmq_flt.fits[sci,2]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.581399 to blotted image idgi01hmq_flt.fits[sci,2]
+[INFO    ] -Generating simple FITS output: idgi01hmq_sci2_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi01hmq_sci2_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi01hnq_flt.fits[sci,1]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.581399 to blotted image idgi01hnq_flt.fits[sci,1]
+[INFO    ] -Generating simple FITS output: idgi01hnq_sci1_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi01hnq_sci1_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi01hnq_flt.fits[sci,2]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.581399 to blotted image idgi01hnq_flt.fits[sci,2]
+[INFO    ] -Generating simple FITS output: idgi01hnq_sci2_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi01hnq_sci2_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi01hpq_flt.fits[sci,1]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.594835 to blotted image idgi01hpq_flt.fits[sci,1]
+[INFO    ] -Generating simple FITS output: idgi01hpq_sci1_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi01hpq_sci1_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi01hpq_flt.fits[sci,2]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.594835 to blotted image idgi01hpq_flt.fits[sci,2]
+[INFO    ] -Generating simple FITS output: idgi01hpq_sci2_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi01hpq_sci2_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi01hsq_flt.fits[sci,1]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.594835 to blotted image idgi01hsq_flt.fits[sci,1]
+[INFO    ] -Generating simple FITS output: idgi01hsq_sci1_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi01hsq_sci1_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi01hsq_flt.fits[sci,2]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.594835 to blotted image idgi01hsq_flt.fits[sci,2]
+[INFO    ] -Generating simple FITS output: idgi01hsq_sci2_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi01hsq_sci2_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi02rwq_flt.fits[sci,1]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.581807 to blotted image idgi02rwq_flt.fits[sci,1]
+[INFO    ] -Generating simple FITS output: idgi02rwq_sci1_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi02rwq_sci1_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi02rwq_flt.fits[sci,2]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.581807 to blotted image idgi02rwq_flt.fits[sci,2]
+[INFO    ] -Generating simple FITS output: idgi02rwq_sci2_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi02rwq_sci2_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi02rxq_flt.fits[sci,1]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.581807 to blotted image idgi02rxq_flt.fits[sci,1]
+[INFO    ] -Generating simple FITS output: idgi02rxq_sci1_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi02rxq_sci1_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi02rxq_flt.fits[sci,2]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.581807 to blotted image idgi02rxq_flt.fits[sci,2]
+[INFO    ] -Generating simple FITS output: idgi02rxq_sci2_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi02rxq_sci2_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi02ryq_flt.fits[sci,1]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.594835 to blotted image idgi02ryq_flt.fits[sci,1]
+[INFO    ] -Generating simple FITS output: idgi02ryq_sci1_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi02ryq_sci1_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi02ryq_flt.fits[sci,2]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.594835 to blotted image idgi02ryq_flt.fits[sci,2]
+[INFO    ] -Generating simple FITS output: idgi02ryq_sci2_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi02ryq_sci2_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi02s0q_flt.fits[sci,1]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.594835 to blotted image idgi02s0q_flt.fits[sci,1]
+[INFO    ] -Generating simple FITS output: idgi02s0q_sci1_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi02s0q_sci1_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi02s0q_flt.fits[sci,2]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.594835 to blotted image idgi02s0q_flt.fits[sci,2]
+[INFO    ] -Generating simple FITS output: idgi02s0q_sci2_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi02s0q_sci2_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi03xrq_flt.fits[sci,1]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.580178 to blotted image idgi03xrq_flt.fits[sci,1]
+[INFO    ] -Generating simple FITS output: idgi03xrq_sci1_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi03xrq_sci1_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi03xrq_flt.fits[sci,2]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.580178 to blotted image idgi03xrq_flt.fits[sci,2]
+[INFO    ] -Generating simple FITS output: idgi03xrq_sci2_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi03xrq_sci2_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi03xsq_flt.fits[sci,1]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.583028 to blotted image idgi03xsq_flt.fits[sci,1]
+[INFO    ] -Generating simple FITS output: idgi03xsq_sci1_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi03xsq_sci1_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi03xsq_flt.fits[sci,2]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.583028 to blotted image idgi03xsq_flt.fits[sci,2]
+[INFO    ] -Generating simple FITS output: idgi03xsq_sci2_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi03xsq_sci2_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi03xtq_flt.fits[sci,1]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.594835 to blotted image idgi03xtq_flt.fits[sci,1]
+[INFO    ] -Generating simple FITS output: idgi03xtq_sci1_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi03xtq_sci1_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi03xtq_flt.fits[sci,2]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.594835 to blotted image idgi03xtq_flt.fits[sci,2]
+[INFO    ] -Generating simple FITS output: idgi03xtq_sci2_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi03xtq_sci2_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi03xvq_flt.fits[sci,1]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.594835 to blotted image idgi03xvq_flt.fits[sci,1]
+[INFO    ] -Generating simple FITS output: idgi03xvq_sci1_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi03xvq_sci1_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi03xvq_flt.fits[sci,2]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.594835 to blotted image idgi03xvq_flt.fits[sci,2]
+[INFO    ] -Generating simple FITS output: idgi03xvq_sci2_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi03xvq_sci2_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi04cfq_flt.fits[sci,1]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.378642 to blotted image idgi04cfq_flt.fits[sci,1]
+[INFO    ] -Generating simple FITS output: idgi04cfq_sci1_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi04cfq_sci1_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi04cfq_flt.fits[sci,2]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.378642 to blotted image idgi04cfq_flt.fits[sci,2]
+[INFO    ] -Generating simple FITS output: idgi04cfq_sci2_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi04cfq_sci2_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi04chq_flt.fits[sci,1]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.378642 to blotted image idgi04chq_flt.fits[sci,1]
+[INFO    ] -Generating simple FITS output: idgi04chq_sci1_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi04chq_sci1_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi04chq_flt.fits[sci,2]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.378642 to blotted image idgi04chq_flt.fits[sci,2]
+[INFO    ] -Generating simple FITS output: idgi04chq_sci2_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi04chq_sci2_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi04ciq_flt.fits[sci,1]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.352178 to blotted image idgi04ciq_flt.fits[sci,1]
+[INFO    ] -Generating simple FITS output: idgi04ciq_sci1_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi04ciq_sci1_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi04ciq_flt.fits[sci,2]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.352178 to blotted image idgi04ciq_flt.fits[sci,2]
+[INFO    ] -Generating simple FITS output: idgi04ciq_sci2_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi04ciq_sci2_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi04ckq_flt.fits[sci,1]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.378235 to blotted image idgi04ckq_flt.fits[sci,1]
+[INFO    ] -Generating simple FITS output: idgi04ckq_sci1_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi04ckq_sci1_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi04ckq_flt.fits[sci,2]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.378235 to blotted image idgi04ckq_flt.fits[sci,2]
+[INFO    ] -Generating simple FITS output: idgi04ckq_sci2_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi04ckq_sci2_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi04clq_flt.fits[sci,1]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.378235 to blotted image idgi04clq_flt.fits[sci,1]
+[INFO    ] -Generating simple FITS output: idgi04clq_sci1_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi04clq_sci1_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi04clq_flt.fits[sci,2]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.378235 to blotted image idgi04clq_flt.fits[sci,2]
+[INFO    ] -Generating simple FITS output: idgi04clq_sci2_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi04clq_sci2_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi04cnq_flt.fits[sci,1]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.378235 to blotted image idgi04cnq_flt.fits[sci,1]
+[INFO    ] -Generating simple FITS output: idgi04cnq_sci1_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi04cnq_sci1_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi04cnq_flt.fits[sci,2]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.378235 to blotted image idgi04cnq_flt.fits[sci,2]
+[INFO    ] -Generating simple FITS output: idgi04cnq_sci2_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi04cnq_sci2_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi05c8q_flt.fits[sci,1]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.581399 to blotted image idgi05c8q_flt.fits[sci,1]
+[INFO    ] -Generating simple FITS output: idgi05c8q_sci1_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi05c8q_sci1_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi05c8q_flt.fits[sci,2]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.581399 to blotted image idgi05c8q_flt.fits[sci,2]
+[INFO    ] -Generating simple FITS output: idgi05c8q_sci2_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi05c8q_sci2_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi05c9q_flt.fits[sci,1]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.581399 to blotted image idgi05c9q_flt.fits[sci,1]
+[INFO    ] -Generating simple FITS output: idgi05c9q_sci1_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi05c9q_sci1_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi05c9q_flt.fits[sci,2]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.581399 to blotted image idgi05c9q_flt.fits[sci,2]
+[INFO    ] -Generating simple FITS output: idgi05c9q_sci2_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi05c9q_sci2_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi05caq_flt.fits[sci,1]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.594835 to blotted image idgi05caq_flt.fits[sci,1]
+[INFO    ] -Generating simple FITS output: idgi05caq_sci1_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi05caq_sci1_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi05caq_flt.fits[sci,2]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.594835 to blotted image idgi05caq_flt.fits[sci,2]
+[INFO    ] -Generating simple FITS output: idgi05caq_sci2_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi05caq_sci2_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi05ccq_flt.fits[sci,1]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.594835 to blotted image idgi05ccq_flt.fits[sci,1]
+[INFO    ] -Generating simple FITS output: idgi05ccq_sci1_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi05ccq_sci1_blt.fits
+[INFO    ] 
+[INFO    ]     Blot: creating blotted image:  idgi05ccq_flt.fits[sci,2]
+[INFO    ] 
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] 
+[INFO    ] Applying sky value of 0.594835 to blotted image idgi05ccq_flt.fits[sci,2]
+[INFO    ] -Generating simple FITS output: idgi05ccq_sci2_blt.fits
+[INFO    ] 
+[INFO    ] Writing out image to disk: idgi05ccq_sci2_blt.fits
+[INFO    ] 
+[INFO    ] ==== Processing Step  Blot  finished at  14:07:51.005 (05/06/2019)
+[INFO    ] 
+[INFO    ] ==== Processing Step  Driz_CR  started at  14:07:51.007 (05/06/2019)
+[INFO    ] 
+[INFO    ] USER INPUT PARAMETERS for Driz_CR Step:
+[INFO    ] 	crbit :	4096
+[INFO    ] 	driz_cr :	True
+[INFO    ] 	driz_cr_corr :	True
+[INFO    ] 	driz_cr_ctegrow :	0
+[INFO    ] 	driz_cr_grow :	1
+[INFO    ] 	driz_cr_scale :	1.2 0.7
+[INFO    ] 	driz_cr_snr :	3.5 3.0
+[INFO    ] 	inmemory :	False
+[INFO    ] Executing 16 parallel workers
+[INFO    ] Creating output :  idgi01hmq_sci1_crmask.fits
+[INFO    ] 
+[INFO    ] Creating output :  idgi01hsq_sci1_crmask.fits
+[INFO    ] 
+[INFO    ] Creating output :  idgi01hnq_sci1_crmask.fits
+[INFO    ] 
+[INFO    ] Creating output :  idgi01hpq_sci1_crmask.fits
+[INFO    ] 
+[INFO    ] Creating output :  idgi02rwq_sci1_crmask.fits
+[INFO    ] 
+[INFO    ] Creating output :  idgi02s0q_sci1_crmask.fits
+[INFO    ] 
+[INFO    ] Creating output :  idgi03xsq_sci1_crmask.fits
+[INFO    ] Creating output :  idgi02ryq_sci1_crmask.fits
+[INFO    ] Creating output :  idgi02rxq_sci1_crmask.fits
+[INFO    ] 
+[INFO    ] 
+[INFO    ] 
+[INFO    ] Creating output :  idgi03xrq_sci1_crmask.fits
+[INFO    ] 
+[INFO    ] Creating output :  idgi03xtq_sci1_crmask.fits
+[INFO    ] 
+[INFO    ] Creating output :  idgi04cfq_sci1_crmask.fits
+[INFO    ] Creating output :  idgi04ciq_sci1_crmask.fits
+[INFO    ] 
+[INFO    ] 
+[INFO    ] Creating output :  idgi04chq_sci1_crmask.fits
+[INFO    ] Creating output :  idgi04ckq_sci1_crmask.fits
+[INFO    ] 
+[INFO    ] 
+[INFO    ] Creating output :  idgi03xvq_sci1_crmask.fits
+[INFO    ] 
+[INFO    ] Creating output :  idgi01hmq_sci2_crmask.fits
+[INFO    ] 
+[INFO    ] Creating output :  idgi01hnq_sci2_crmask.fits
+[INFO    ] 
+[INFO    ] Creating output :  idgi01hsq_sci2_crmask.fits
+[INFO    ] 
+[INFO    ] Creating output :  idgi03xsq_sci2_crmask.fits
+[INFO    ] 
+[INFO    ] Creating output :  idgi02rwq_sci2_crmask.fits
+[INFO    ] 
+[INFO    ] Creating output :  idgi04chq_sci2_crmask.fits
+[INFO    ] 
+[INFO    ] Creating output :  idgi01hpq_sci2_crmask.fits
+[INFO    ] Creating output :  idgi02s0q_sci2_crmask.fits
+[INFO    ] 
+[INFO    ] 
+[INFO    ] Creating output :  idgi04ciq_sci2_crmask.fits
+[INFO    ] Creating output :  idgi03xrq_sci2_crmask.fits
+[INFO    ] Creating output :  idgi03xvq_sci2_crmask.fits
+[INFO    ] 
+[INFO    ] Creating output :  idgi04ckq_sci2_crmask.fits
+[INFO    ] 
+[INFO    ] 
+[INFO    ] Creating output :  idgi03xtq_sci2_crmask.fits
+[INFO    ] Creating output :  idgi02rxq_sci2_crmask.fits
+[INFO    ] 
+[INFO    ] 
+[INFO    ] 
+[INFO    ] Creating output :  idgi02ryq_sci2_crmask.fits
+[INFO    ] Creating output :  idgi04cfq_sci2_crmask.fits
+[INFO    ] 
+[INFO    ] 
+[INFO    ] Created CR corrected file:  idgi02rwq_crclean.fits
+[INFO    ] Created CR corrected file:  idgi01hmq_crclean.fits
+[INFO    ] 
+[INFO    ] 
+[INFO    ] Created CR corrected file:  idgi02s0q_crclean.fits
+[INFO    ] 
+[INFO    ] Created CR corrected file:  idgi01hsq_crclean.fits
+[INFO    ] 
+[INFO    ] Created CR corrected file:  idgi04chq_crclean.fits
+[INFO    ] 
+[INFO    ] Created CR corrected file:  idgi01hnq_crclean.fits
+[INFO    ] 
+[INFO    ] Created CR corrected file:  idgi03xvq_crclean.fits
+[INFO    ] 
+[INFO    ] Created CR corrected file:  idgi03xsq_crclean.fits
+[INFO    ] Created CR corrected file:  idgi04ckq_crclean.fits
+[INFO    ] 
+[INFO    ] 
+[INFO    ] Created CR corrected file:  idgi01hpq_crclean.fits
+[INFO    ] 
+[INFO    ] Created CR corrected file:  idgi04ciq_crclean.fits
+[INFO    ] 
+[INFO    ] Created CR corrected file:  idgi02rxq_crclean.fits
+[INFO    ] 
+[INFO    ] Created CR corrected file:  idgi02ryq_crclean.fits
+[INFO    ] 
+[INFO    ] Created CR corrected file:  idgi03xrq_crclean.fits
+[INFO    ] 
+[INFO    ] Created CR corrected file:  idgi03xtq_crclean.fits
+[INFO    ] 
+[INFO    ] Created CR corrected file:  idgi04cfq_crclean.fits
+[INFO    ] 
+[INFO    ] Creating output :  idgi04clq_sci1_crmask.fits
+[INFO    ] 
+[INFO    ] Creating output :  idgi04cnq_sci1_crmask.fits
+[INFO    ] 
+[INFO    ] Creating output :  idgi05c8q_sci1_crmask.fits
+[INFO    ] Creating output :  idgi05c9q_sci1_crmask.fits
+[INFO    ] 
+[INFO    ] 
+[INFO    ] Creating output :  idgi05caq_sci1_crmask.fits
+[INFO    ] 
+[INFO    ] Creating output :  idgi05ccq_sci1_crmask.fits
+[INFO    ] 
+[INFO    ] Creating output :  idgi04clq_sci2_crmask.fits
+[INFO    ] 
+[INFO    ] Creating output :  idgi05c9q_sci2_crmask.fits
+[INFO    ] Creating output :  idgi05c8q_sci2_crmask.fits
+[INFO    ] 
+[INFO    ] 
+[INFO    ] Creating output :  idgi04cnq_sci2_crmask.fits
+[INFO    ] 
+[INFO    ] Creating output :  idgi05ccq_sci2_crmask.fits
+[INFO    ] 
+[INFO    ] Creating output :  idgi05caq_sci2_crmask.fits
+[INFO    ] 
+[INFO    ] Created CR corrected file:  idgi05c8q_crclean.fits
+[INFO    ] 
+[INFO    ] Created CR corrected file:  idgi04clq_crclean.fits
+[INFO    ] 
+[INFO    ] Created CR corrected file:  idgi04cnq_crclean.fits
+[INFO    ] 
+[INFO    ] Created CR corrected file:  idgi05ccq_crclean.fits
+[INFO    ] 
+[INFO    ] Created CR corrected file:  idgi05caq_crclean.fits
+[INFO    ] 
+[INFO    ] Created CR corrected file:  idgi05c9q_crclean.fits
+[INFO    ] 
+[INFO    ] ==== Processing Step  Driz_CR  finished at  14:10:01.756 (05/06/2019)
+[INFO    ] 
+[INFO    ] ==== Processing Step  Final Drizzle  started at  14:10:01.821 (05/06/2019)
+[INFO    ] 
+[INFO    ] Interpreted paramDict with single=False as:
+{'build': True, 'stepsize': 10, 'coeffs': True, 'wcskey': '', 'wht_type': 'EXP', 'kernel': 'square', 'wt_scl': 'exptime', 'pixfrac': 1.0, 'fillval': None, 'maskval': None, 'bits': 3, 'units': 'cps'}
+[INFO    ] USER INPUT PARAMETERS for Final Drizzle Step:
+[INFO    ] 	bits :	3
+[INFO    ] 	build :	True
+[INFO    ] 	clean :	False
+[INFO    ] 	coeffs :	True
+[INFO    ] 	crbit :	4096
+[INFO    ] 	fillval :	None
+[INFO    ] 	kernel :	square
+[INFO    ] 	maskval :	None
+[INFO    ] 	pixfrac :	1.0
+[INFO    ] 	proc_unit :	native
+[INFO    ] 	stepsize :	10
+[INFO    ] 	units :	cps
+[INFO    ] 	wcskey :	
+[INFO    ] 	wht_type :	EXP
+[INFO    ] 	wt_scl :	exptime
+[INFO    ]   **Using sub-sampling value of 10 for kernel square
+[INFO    ] Running Drizzle to create output frame with WCS of: 
+[INFO    ] WCS Keywords
+[INFO    ] 
+[INFO    ] Number of WCS axes: 2
+[INFO    ] CTYPE : 'RA---TAN'  'DEC--TAN'
+[INFO    ] CRVAL : 52.27500669037019  31.27308494807391
+[INFO    ] CRPIX : 3091.5  2404.5
+[INFO    ] CD1_1 CD1_2  : -8.904156173333024e-06  -6.4682502456824665e-06
+[INFO    ] CD2_1 CD2_2  : -6.4682502456824665e-06  8.904156173333024e-06
+[INFO    ] NAXIS : 6183  4809
+[INFO    ] 
+[INFO    ] -Drizzle input: idgi01hmq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.581399 to idgi01hmq_flt.fits[sci,1]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: idgi01hmq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi01hmq_flt.fits[sci,2]
+[INFO    ] Applying sky value of 0.581399 to idgi01hmq_flt.fits[sci,2]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 2
+[INFO    ] Writing out mask file: idgi01hmq_sci2_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi01hnq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.581399 to idgi01hnq_flt.fits[sci,1]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: idgi01hnq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi01hnq_flt.fits[sci,2]
+[INFO    ] Applying sky value of 0.581399 to idgi01hnq_flt.fits[sci,2]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 2
+[INFO    ] Writing out mask file: idgi01hnq_sci2_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi01hpq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.594835 to idgi01hpq_flt.fits[sci,1]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: idgi01hpq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi01hpq_flt.fits[sci,2]
+[INFO    ] Applying sky value of 0.594835 to idgi01hpq_flt.fits[sci,2]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 2
+[INFO    ] Writing out mask file: idgi01hpq_sci2_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi01hsq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.594835 to idgi01hsq_flt.fits[sci,1]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: idgi01hsq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi01hsq_flt.fits[sci,2]
+[INFO    ] Applying sky value of 0.594835 to idgi01hsq_flt.fits[sci,2]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 2
+[INFO    ] Writing out mask file: idgi01hsq_sci2_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi02rwq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.581807 to idgi02rwq_flt.fits[sci,1]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: idgi02rwq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi02rwq_flt.fits[sci,2]
+[INFO    ] Applying sky value of 0.581807 to idgi02rwq_flt.fits[sci,2]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 2
+[INFO    ] Writing out mask file: idgi02rwq_sci2_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi02rxq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.581807 to idgi02rxq_flt.fits[sci,1]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: idgi02rxq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi02rxq_flt.fits[sci,2]
+[INFO    ] Applying sky value of 0.581807 to idgi02rxq_flt.fits[sci,2]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 2
+[INFO    ] Writing out mask file: idgi02rxq_sci2_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi02ryq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.594835 to idgi02ryq_flt.fits[sci,1]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: idgi02ryq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi02ryq_flt.fits[sci,2]
+[INFO    ] Applying sky value of 0.594835 to idgi02ryq_flt.fits[sci,2]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 2
+[INFO    ] Writing out mask file: idgi02ryq_sci2_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi02s0q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.594835 to idgi02s0q_flt.fits[sci,1]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: idgi02s0q_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi02s0q_flt.fits[sci,2]
+[INFO    ] Applying sky value of 0.594835 to idgi02s0q_flt.fits[sci,2]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 2
+[INFO    ] Writing out mask file: idgi02s0q_sci2_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi03xrq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.580178 to idgi03xrq_flt.fits[sci,1]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: idgi03xrq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi03xrq_flt.fits[sci,2]
+[INFO    ] Applying sky value of 0.580178 to idgi03xrq_flt.fits[sci,2]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 2
+[INFO    ] Writing out mask file: idgi03xrq_sci2_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi03xsq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.583028 to idgi03xsq_flt.fits[sci,1]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: idgi03xsq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi03xsq_flt.fits[sci,2]
+[INFO    ] Applying sky value of 0.583028 to idgi03xsq_flt.fits[sci,2]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 2
+[INFO    ] Writing out mask file: idgi03xsq_sci2_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi03xtq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.594835 to idgi03xtq_flt.fits[sci,1]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: idgi03xtq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi03xtq_flt.fits[sci,2]
+[INFO    ] Applying sky value of 0.594835 to idgi03xtq_flt.fits[sci,2]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 2
+[INFO    ] Writing out mask file: idgi03xtq_sci2_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi03xvq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.594835 to idgi03xvq_flt.fits[sci,1]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: idgi03xvq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi03xvq_flt.fits[sci,2]
+[INFO    ] Applying sky value of 0.594835 to idgi03xvq_flt.fits[sci,2]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 2
+[INFO    ] Writing out mask file: idgi03xvq_sci2_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi04cfq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.378642 to idgi04cfq_flt.fits[sci,1]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: idgi04cfq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi04cfq_flt.fits[sci,2]
+[INFO    ] Applying sky value of 0.378642 to idgi04cfq_flt.fits[sci,2]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 2
+[INFO    ] Writing out mask file: idgi04cfq_sci2_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi04chq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.378642 to idgi04chq_flt.fits[sci,1]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: idgi04chq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi04chq_flt.fits[sci,2]
+[INFO    ] Applying sky value of 0.378642 to idgi04chq_flt.fits[sci,2]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 2
+[INFO    ] Writing out mask file: idgi04chq_sci2_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi04ciq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.352178 to idgi04ciq_flt.fits[sci,1]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: idgi04ciq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi04ciq_flt.fits[sci,2]
+[INFO    ] Applying sky value of 0.352178 to idgi04ciq_flt.fits[sci,2]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 2
+[INFO    ] Writing out mask file: idgi04ciq_sci2_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi04ckq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.378235 to idgi04ckq_flt.fits[sci,1]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: idgi04ckq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi04ckq_flt.fits[sci,2]
+[INFO    ] Applying sky value of 0.378235 to idgi04ckq_flt.fits[sci,2]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 2
+[INFO    ] Writing out mask file: idgi04ckq_sci2_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi04clq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.378235 to idgi04clq_flt.fits[sci,1]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: idgi04clq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi04clq_flt.fits[sci,2]
+[INFO    ] Applying sky value of 0.378235 to idgi04clq_flt.fits[sci,2]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 2
+[INFO    ] Writing out mask file: idgi04clq_sci2_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi04cnq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.378235 to idgi04cnq_flt.fits[sci,1]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: idgi04cnq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi04cnq_flt.fits[sci,2]
+[INFO    ] Applying sky value of 0.378235 to idgi04cnq_flt.fits[sci,2]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 2
+[INFO    ] Writing out mask file: idgi04cnq_sci2_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi05c8q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.581399 to idgi05c8q_flt.fits[sci,1]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: idgi05c8q_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi05c8q_flt.fits[sci,2]
+[INFO    ] Applying sky value of 0.581399 to idgi05c8q_flt.fits[sci,2]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 2
+[INFO    ] Writing out mask file: idgi05c8q_sci2_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi05c9q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.581399 to idgi05c9q_flt.fits[sci,1]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: idgi05c9q_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi05c9q_flt.fits[sci,2]
+[INFO    ] Applying sky value of 0.581399 to idgi05c9q_flt.fits[sci,2]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 2
+[INFO    ] Writing out mask file: idgi05c9q_sci2_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi05caq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.594835 to idgi05caq_flt.fits[sci,1]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: idgi05caq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi05caq_flt.fits[sci,2]
+[INFO    ] Applying sky value of 0.594835 to idgi05caq_flt.fits[sci,2]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 2
+[INFO    ] Writing out mask file: idgi05caq_sci2_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi05ccq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.594835 to idgi05ccq_flt.fits[sci,1]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: idgi05ccq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: idgi05ccq_flt.fits[sci,2]
+[INFO    ] Applying sky value of 0.594835 to idgi05ccq_flt.fits[sci,2]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 2
+[INFO    ] Writing out mask file: idgi05ccq_sci2_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Generating multi-extension output file:  Hartigan.fits
+[INFO    ] 
+[INFO    ] Writing out to disk: Hartigan.fits
+[INFO    ] 
+[INFO    ] ==== Processing Step  Final Drizzle  finished at  14:16:56.124 (05/06/2019)
+[INFO    ] 
+[INFO    ] 
+[INFO    ] AstroDrizzle Version 2.2.2 is finished processing at  14:16:56.129 (05/06/2019)!
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    --------------------          --------------------
+[INFO    ]                    Step          Elapsed time
+[INFO    ]    --------------------          --------------------
+[INFO    ] 
+[INFO    ]          Initialization          249.6737 sec.
+[INFO    ] 
+[INFO    ]             Static Mask          22.8461 sec.
+[INFO    ] 
+[INFO    ]            Subtract Sky          139.6514 sec.
+[INFO    ] 
+[INFO    ]        Separate Drizzle          198.1136 sec.
+[INFO    ] 
+[INFO    ]           Create Median          132.3514 sec.
+[INFO    ] 
+[INFO    ]                    Blot          203.3101 sec.
+[INFO    ] 
+[INFO    ]                 Driz_CR          130.7485 sec.
+[INFO    ] 
+[INFO    ]           Final Drizzle          414.3023 sec.
+[INFO    ] 
+[INFO    ]    ====================          ====================
+[INFO    ] 
+[INFO    ]                   Total          1490.9970 sec.
+[INFO    ] 
+[INFO    ] Trailer file written to:  astrodrizzle.log
+[INFO    ] 

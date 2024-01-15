@@ -1,0 +1,668 @@
+[INFO    ] Setting up logfile :  astrodrizzle.log
+[INFO    ] AstroDrizzle log file: astrodrizzle.log
+[INFO    ] AstroDrizzle Version 3.3.0 (2021-09-28 13:54:56 -0400) started at: 03:29:03.537 (29/04/2022)
+[INFO    ] 
+[INFO    ] Version Information
+[INFO    ] --------------------
+[INFO    ] Python Version [GCC 7.5.0]
+[INFO    ] 3.7.13 (default, Mar 29 2022, 02:18:16) 
+[INFO    ] numpy Version -> 1.21.5 
+[INFO    ] astropy Version -> 4.3.1 
+[INFO    ] stwcs Version -> 1.6.1 
+[INFO    ] ==== Processing Step  Initialization  started at  03:29:03.539 (29/04/2022)
+[INFO    ] 
+[INFO    ] Executing serially
+[INFO    ] Setting up output name: idn107jhq_thresh20_drz_sci.fits
+[INFO    ] ##############################################################################
+[INFO    ] #                                                                            #
+[INFO    ] # “minmed” is highly recommended for three images,                           #
+[INFO    ] #  and is good for four to six images,                                       #
+[INFO    ] #  but should be avoided for ten or more images.                             #
+[INFO    ] #                                                                            #
+[INFO    ] ##############################################################################
+[INFO    ] -Creating imageObject List as input for processing steps.
+[INFO    ] Reading in MDRIZSKY of -0.00675020506605505
+[INFO    ] Reading in MDRIZSKY of -0.03480232506990433
+[INFO    ] Reading in MDRIZSKY of -0.02743567153811455
+[INFO    ] Reading in MDRIZSKY of -0.04681289941072464
+[INFO    ] Reading in MDRIZSKY of -0.02390246465802193
+[INFO    ] Reading in MDRIZSKY of -0.03402600437402725
+[INFO    ] Reading in MDRIZSKY of -0.04216444492340088
+[INFO    ] Reading in MDRIZSKY of -0.04115850850939751
+[INFO    ] Reading in MDRIZSKY of -0.04889685660600662
+[INFO    ] Reading in MDRIZSKY of -0.05514466762542725
+[INFO    ] No context image will be created for /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_01_diff.fits
+[INFO    ] No context image will be created for /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_02_diff.fits
+[INFO    ] No context image will be created for /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_03_diff.fits
+[INFO    ] No context image will be created for /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_04_diff.fits
+[INFO    ] No context image will be created for /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_05_diff.fits
+[INFO    ] No context image will be created for /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_06_diff.fits
+[INFO    ] No context image will be created for /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_07_diff.fits
+[INFO    ] No context image will be created for /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_08_diff.fits
+[INFO    ] No context image will be created for /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_09_diff.fits
+[INFO    ] No context image will be created for /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_10_diff.fits
+[INFO    ] -Creating output WCS.
+[INFO    ] No context image will be created for idn107jhq_thresh20_drz_sci.fits
+[INFO    ] WCS Keywords
+[INFO    ] 
+[INFO    ] Number of WCS axes: 2
+[INFO    ] CTYPE : 'RA---TAN'  'DEC--TAN'  
+[INFO    ] CRVAL : 359.97628146434835  -0.07351238613531096  
+[INFO    ] CRPIX : 213.0  306.0  
+[INFO    ] CD1_1 CD1_2  : -9.220492965556947e-06  -3.441109110587061e-05  
+[INFO    ] CD2_1 CD2_2  : -3.441109110587061e-05  9.220492965556947e-06  
+[INFO    ] NAXIS : 426  612
+[INFO    ] ********************************************************************************
+[INFO    ] *
+[INFO    ] *  Estimated memory usage:  up to 10 Mb.
+[INFO    ] *  Output image size:       426 X 612 pixels. 
+[INFO    ] *  Output image file:       ~ 2 Mb. 
+[INFO    ] *  Cores available:         1
+[INFO    ] *
+[INFO    ] ********************************************************************************
+[INFO    ] ==== Processing Step Initialization finished at 03:29:06.770 (29/04/2022)
+[INFO    ] USER INPUT PARAMETERS common to all Processing Steps:
+[INFO    ] 	build :	False
+[INFO    ] 	coeffs :	True
+[INFO    ] 	context :	False
+[INFO    ] 	crbit :	4096
+[INFO    ] 	group :	
+[INFO    ] 	in_memory :	False
+[INFO    ] 	input :	['diff/idn107jhq_01_diff.fits', 'diff/idn107jhq_02_diff.fits', 'diff/idn107jhq_03_diff.fits', 'diff/idn107jhq_04_diff.fits', 'diff/idn107jhq_05_diff.fits', 'diff/idn107jhq_06_diff.fits', 'diff/idn107jhq_07_diff.fits', 'diff/idn107jhq_08_diff.fits', 'diff/idn107jhq_09_diff.fits', 'diff/idn107jhq_10_diff.fits']
+[INFO    ] 	mdriztab :	False
+[INFO    ] 	num_cores :	1
+[INFO    ] 	output :	idn107jhq_thresh20_drz_sci.fits
+[INFO    ] 	proc_unit :	native
+[INFO    ] 	resetbits :	0
+[INFO    ] 	rules_file :	
+[INFO    ] 	runfile :	astrodrizzle.log
+[INFO    ] 	stepsize :	10
+[INFO    ] 	updatewcs :	False
+[INFO    ] 	wcskey :	
+[INFO    ] ==== Processing Step  Static Mask  started at  03:29:06.771 (29/04/2022)
+[INFO    ] 
+[INFO    ] USER INPUT PARAMETERS for Static Mask Step:
+[INFO    ] 	static :	True
+[INFO    ] 	static_sig :	4.0
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  0.055786;   rms = 0.848526;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode = -0.000474;   rms = 0.847414;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  0.007486;   rms = 0.847640;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  0.090402;   rms = 0.846457;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  0.038345;   rms = 0.845844;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  0.001909;   rms = 0.846301;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  0.072263;   rms = 0.846058;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  0.018684;   rms = 0.847176;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode = -0.008502;   rms = 0.846505;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  0.020687;   rms = 0.845797;   static_sig = 4.00
+[INFO    ] Saving static mask to disk: ./idn107jhq_1014x1014_1_staticMask.fits
+[INFO    ] ==== Processing Step Static Mask finished at 03:29:07.331 (29/04/2022)
+[INFO    ] ==== Processing Step  Subtract Sky  started at  03:29:07.332 (29/04/2022)
+[INFO    ] 
+[INFO    ] USER INPUT PARAMETERS for Sky Subtraction Step:
+[INFO    ] 	sky_bits :	0
+[INFO    ] 	skyclip :	5
+[INFO    ] 	skyfile :	
+[INFO    ] 	skylower :	None
+[INFO    ] 	skylsigma :	4.0
+[INFO    ] 	skymask_cat :	
+[INFO    ] 	skymethod :	localmin
+[INFO    ] 	skystat :	median
+[INFO    ] 	skysub :	True
+[INFO    ] 	skyupper :	None
+[INFO    ] 	skyuser :	
+[INFO    ] 	skyusigma :	4.0
+[INFO    ] 	skywidth :	0.1
+[INFO    ] 	use_static :	True
+[INFO    ] ***** skymatch started on 2022-04-29 03:29:07.734587
+[INFO    ]       Version 1.0.8
+[INFO    ] 
+[INFO    ] 'skymatch' task will apply computed sky differences to input image file(s).
+[INFO    ] 
+[INFO    ] NOTE: Computed sky values WILL NOT be subtracted from image data ('subtractsky'=False).
+[INFO    ] 'MDRIZSKY' header keyword will represent sky value *computed* from data.
+[INFO    ] 
+[INFO    ] -----  User specified keywords:  -----
+[INFO    ]        Sky Value Keyword:  'MDRIZSKY'
+[INFO    ]        Data Units Keyword: 'BUNIT'
+[INFO    ] 
+[INFO    ] 
+[INFO    ] -----  Input file list:  -----
+[INFO    ] 
+[INFO    ]    **  Input image: 'idn107jhq_01_diff.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: idn107jhq_01_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'idn107jhq_02_diff.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: idn107jhq_02_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'idn107jhq_03_diff.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: idn107jhq_03_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'idn107jhq_04_diff.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: idn107jhq_04_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'idn107jhq_05_diff.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: idn107jhq_05_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'idn107jhq_06_diff.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: idn107jhq_06_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'idn107jhq_07_diff.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: idn107jhq_07_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'idn107jhq_08_diff.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: idn107jhq_08_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'idn107jhq_09_diff.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: idn107jhq_09_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'idn107jhq_10_diff.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: idn107jhq_10_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ] -----  Sky statistics parameters:  -----
+[INFO    ]        statistics function: 'median'
+[INFO    ]        lower = None
+[INFO    ]        upper = None
+[INFO    ]        nclip = 5
+[INFO    ]        lsigma = 4.0
+[INFO    ]        usigma = 4.0
+[INFO    ]        binwidth = 0.1
+[INFO    ] 
+[INFO    ] -----  Data->Brightness conversion parameters for input files:  -----
+[INFO    ] 
+[INFO    ]    *   Image: idn107jhq_01_diff.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: idn107jhq_02_diff.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: idn107jhq_03_diff.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: idn107jhq_04_diff.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: idn107jhq_05_diff.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: idn107jhq_06_diff.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: idn107jhq_07_diff.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: idn107jhq_08_diff.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: idn107jhq_09_diff.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: idn107jhq_10_diff.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ] 
+[INFO    ] -----  Computing sky values requested image extensions (detector chips):  -----
+[INFO    ] 
+[INFO    ]    *   Image:   'idn107jhq_01_diff.fits['SCI',1]'  --  SKY = 3.8386477571483 (brightness units)
+[INFO    ]        Sky change (data units):
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.0631383   NEW MDRIZSKY = 0.0631383
+[INFO    ]    *   Image:   'idn107jhq_02_diff.fits['SCI',1]'  --  SKY = 2.830170615007111 (brightness units)
+[INFO    ]        Sky change (data units):
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.0465508   NEW MDRIZSKY = 0.0465508
+[INFO    ]    *   Image:   'idn107jhq_03_diff.fits['SCI',1]'  --  SKY = 3.032742008742235 (brightness units)
+[INFO    ]        Sky change (data units):
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.0498827   NEW MDRIZSKY = 0.0498827
+[INFO    ]    *   Image:   'idn107jhq_04_diff.fits['SCI',1]'  --  SKY = 2.45097067842941 (brightness units)
+[INFO    ]        Sky change (data units):
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.0403137   NEW MDRIZSKY = 0.0403137
+[INFO    ]    *   Image:   'idn107jhq_05_diff.fits['SCI',1]'  --  SKY = 3.2056026958486026 (brightness units)
+[INFO    ]        Sky change (data units):
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.052726   NEW MDRIZSKY = 0.052726
+[INFO    ]    *   Image:   'idn107jhq_06_diff.fits['SCI',1]'  --  SKY = 2.7674655775332244 (brightness units)
+[INFO    ]        Sky change (data units):
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.0455194   NEW MDRIZSKY = 0.0455194
+[INFO    ]    *   Image:   'idn107jhq_07_diff.fits['SCI',1]'  --  SKY = 2.605893056445894 (brightness units)
+[INFO    ]        Sky change (data units):
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.0428619   NEW MDRIZSKY = 0.0428619
+[INFO    ]    *   Image:   'idn107jhq_08_diff.fits['SCI',1]'  --  SKY = 2.5595363817245382 (brightness units)
+[INFO    ]        Sky change (data units):
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.0420994   NEW MDRIZSKY = 0.0420994
+[INFO    ]    *   Image:   'idn107jhq_09_diff.fits['SCI',1]'  --  SKY = 2.2568035779621103 (brightness units)
+[INFO    ]        Sky change (data units):
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.03712   NEW MDRIZSKY = 0.03712
+[INFO    ]    *   Image:   'idn107jhq_10_diff.fits['SCI',1]'  --  SKY = 2.1554281918139795 (brightness units)
+[INFO    ]        Sky change (data units):
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.0354526   NEW MDRIZSKY = 0.0354526
+[INFO    ] ***** skymatch ended on 2022-04-29 03:29:08.894676
+[INFO    ] TOTAL RUN TIME: 0:00:01.160089
+[INFO    ] ==== Processing Step Subtract Sky finished at 03:29:09.259 (29/04/2022)
+[INFO    ] ==== Processing Step  Separate Drizzle  started at  03:29:09.259 (29/04/2022)
+[INFO    ] 
+[INFO    ] Interpreted paramDict with single=True as:
+{'build': False, 'stepsize': 10, 'coeffs': True, 'wcskey': '', 'kernel': 'turbo', 'wt_scl': 'exptime', 'pixfrac': 1.0, 'fillval': None, 'bits': 31486, 'compress': False, 'units': 'cps'}
+[INFO    ] USER INPUT PARAMETERS for Separate Drizzle Step:
+[INFO    ] 	bits :	31486
+[INFO    ] 	build :	False
+[INFO    ] 	clean :	False
+[INFO    ] 	coeffs :	True
+[INFO    ] 	compress :	False
+[INFO    ] 	crbit :	None
+[INFO    ] 	fillval :	None
+[INFO    ] 	kernel :	turbo
+[INFO    ] 	num_cores :	1
+[INFO    ] 	pixfrac :	1.0
+[INFO    ] 	proc_unit :	electrons
+[INFO    ] 	rules_file :	None
+[INFO    ] 	stepsize :	10
+[INFO    ] 	units :	cps
+[INFO    ] 	wcskey :	
+[INFO    ] 	wht_type :	None
+[INFO    ] 	wt_scl :	exptime
+[INFO    ]   **Using sub-sampling value of 10 for kernel turbo
+[INFO    ] Running Drizzle to create output frame with WCS of: 
+[INFO    ] WCS Keywords
+[INFO    ] 
+[INFO    ] Number of WCS axes: 2
+[INFO    ] CTYPE : 'RA---TAN'  'DEC--TAN'  
+[INFO    ] CRVAL : 359.97628146434835  -0.07351238613531096  
+[INFO    ] CRPIX : 213.0  306.0  
+[INFO    ] CD1_1 CD1_2  : -9.220492965556947e-06  -3.441109110587061e-05  
+[INFO    ] CD2_1 CD2_2  : -3.441109110587061e-05  9.220492965556947e-06  
+[INFO    ] NAXIS : 426  612
+[INFO    ] Executing serially
+[INFO    ] -Drizzle input: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_01_diff.fits[sci,1]
+[INFO    ] Applying sky value of 0.063138 to /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_01_diff.fits[sci,1]
+[INFO    ] Writing out mask file: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_01_diff_sci1_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = turbo
+
+[INFO    ] -Generating simple FITS output: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_01_diff_single_sci.fits
+[WARNING ] /media/data/arubinst/ENTER/envs/astroconda/lib/python3.7/site-packages/astropy/io/fits/card.py:1010: VerifyWarning: Card is too long, comment will be truncated.
+  VerifyWarning)
+
+[INFO    ] Writing out image to disk: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_01_diff_single_sci.fits
+[INFO    ] Writing out image to disk: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_01_diff_single_wht.fits
+[INFO    ] -Drizzle input: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_02_diff.fits[sci,1]
+[INFO    ] Applying sky value of 0.046551 to /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_02_diff.fits[sci,1]
+[INFO    ] Writing out mask file: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_02_diff_sci1_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = turbo
+
+[INFO    ] -Generating simple FITS output: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_02_diff_single_sci.fits
+[INFO    ] Writing out image to disk: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_02_diff_single_sci.fits
+[INFO    ] Writing out image to disk: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_02_diff_single_wht.fits
+[INFO    ] -Drizzle input: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_03_diff.fits[sci,1]
+[INFO    ] Applying sky value of 0.049883 to /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_03_diff.fits[sci,1]
+[INFO    ] Writing out mask file: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_03_diff_sci1_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = turbo
+
+[INFO    ] -Generating simple FITS output: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_03_diff_single_sci.fits
+[INFO    ] Writing out image to disk: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_03_diff_single_sci.fits
+[INFO    ] Writing out image to disk: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_03_diff_single_wht.fits
+[INFO    ] -Drizzle input: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_04_diff.fits[sci,1]
+[INFO    ] Applying sky value of 0.040314 to /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_04_diff.fits[sci,1]
+[INFO    ] Writing out mask file: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_04_diff_sci1_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = turbo
+
+[INFO    ] -Generating simple FITS output: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_04_diff_single_sci.fits
+[INFO    ] Writing out image to disk: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_04_diff_single_sci.fits
+[INFO    ] Writing out image to disk: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_04_diff_single_wht.fits
+[INFO    ] -Drizzle input: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_05_diff.fits[sci,1]
+[INFO    ] Applying sky value of 0.052726 to /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_05_diff.fits[sci,1]
+[INFO    ] Writing out mask file: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_05_diff_sci1_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = turbo
+
+[INFO    ] -Generating simple FITS output: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_05_diff_single_sci.fits
+[INFO    ] Writing out image to disk: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_05_diff_single_sci.fits
+[INFO    ] Writing out image to disk: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_05_diff_single_wht.fits
+[INFO    ] -Drizzle input: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_06_diff.fits[sci,1]
+[INFO    ] Applying sky value of 0.045519 to /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_06_diff.fits[sci,1]
+[INFO    ] Writing out mask file: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_06_diff_sci1_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = turbo
+
+[INFO    ] -Generating simple FITS output: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_06_diff_single_sci.fits
+[INFO    ] Writing out image to disk: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_06_diff_single_sci.fits
+[INFO    ] Writing out image to disk: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_06_diff_single_wht.fits
+[INFO    ] -Drizzle input: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_07_diff.fits[sci,1]
+[INFO    ] Applying sky value of 0.042862 to /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_07_diff.fits[sci,1]
+[INFO    ] Writing out mask file: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_07_diff_sci1_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = turbo
+
+[INFO    ] -Generating simple FITS output: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_07_diff_single_sci.fits
+[INFO    ] Writing out image to disk: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_07_diff_single_sci.fits
+[INFO    ] Writing out image to disk: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_07_diff_single_wht.fits
+[INFO    ] -Drizzle input: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_08_diff.fits[sci,1]
+[INFO    ] Applying sky value of 0.042099 to /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_08_diff.fits[sci,1]
+[INFO    ] Writing out mask file: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_08_diff_sci1_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = turbo
+
+[INFO    ] -Generating simple FITS output: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_08_diff_single_sci.fits
+[INFO    ] Writing out image to disk: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_08_diff_single_sci.fits
+[INFO    ] Writing out image to disk: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_08_diff_single_wht.fits
+[INFO    ] -Drizzle input: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_09_diff.fits[sci,1]
+[INFO    ] Applying sky value of 0.037120 to /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_09_diff.fits[sci,1]
+[INFO    ] Writing out mask file: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_09_diff_sci1_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = turbo
+
+[INFO    ] -Generating simple FITS output: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_09_diff_single_sci.fits
+[INFO    ] Writing out image to disk: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_09_diff_single_sci.fits
+[INFO    ] Writing out image to disk: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_09_diff_single_wht.fits
+[INFO    ] -Drizzle input: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_10_diff.fits[sci,1]
+[INFO    ] Applying sky value of 0.035453 to /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_10_diff.fits[sci,1]
+[INFO    ] Writing out mask file: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_10_diff_sci1_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = turbo
+
+[INFO    ] -Generating simple FITS output: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_10_diff_single_sci.fits
+[INFO    ] Writing out image to disk: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_10_diff_single_sci.fits
+[INFO    ] Writing out image to disk: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_10_diff_single_wht.fits
+[INFO    ] ==== Processing Step Separate Drizzle finished at 03:29:15.902 (29/04/2022)
+[INFO    ] ==== Processing Step  Create Median  started at  03:29:15.903 (29/04/2022)
+[INFO    ] 
+[INFO    ] USER INPUT PARAMETERS for Create Median Step:
+[INFO    ] 	combine_bufsize :	None
+[INFO    ] 	combine_grow :	1
+[INFO    ] 	combine_hthresh :	None
+[INFO    ] 	combine_lthresh :	None
+[INFO    ] 	combine_maskpt :	0.3
+[INFO    ] 	combine_nhigh :	0
+[INFO    ] 	combine_nlow :	0
+[INFO    ] 	combine_nsigma :	4 3
+[INFO    ] 	combine_type :	minmed
+[INFO    ] 	compress :	False
+[INFO    ] 	median :	True
+[INFO    ] 	median_newmasks :	True
+[INFO    ] 	proc_unit :	native
+[INFO    ] reference sky value for image '/media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_01_diff.fits' is 1.5784902897335737
+[INFO    ] reference sky value for image '/media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_02_diff.fits' is 1.1637943253257423
+[INFO    ] reference sky value for image '/media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_03_diff.fits' is 1.2470938482527734
+[INFO    ] reference sky value for image '/media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_04_diff.fits' is 1.0078634566345215
+[INFO    ] reference sky value for image '/media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_05_diff.fits' is 1.318175786335617
+[INFO    ] reference sky value for image '/media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_06_diff.fits' is 1.138009890532792
+[INFO    ] reference sky value for image '/media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_07_diff.fits' is 1.0715696325117345
+[INFO    ] reference sky value for image '/media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_08_diff.fits' is 1.052507298095226
+[INFO    ] reference sky value for image '/media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_09_diff.fits' is 0.9280205013425645
+[INFO    ] reference sky value for image '/media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_10_diff.fits' is 0.886333915236593
+[INFO    ] Saving output median image to: 'idn107jhq_thresh20_med.fits'
+[INFO    ] ==== Processing Step Create Median finished at 03:29:16.354 (29/04/2022)
+[INFO    ] ==== Processing Step  Blot  started at  03:29:16.354 (29/04/2022)
+[INFO    ] 
+[INFO    ] USER INPUT PARAMETERS for Blot Step:
+[INFO    ] 	blot_addsky :	True
+[INFO    ] 	blot_interp :	poly5
+[INFO    ] 	blot_sinscl :	1.0
+[INFO    ] 	blot_skyval :	0.0
+[INFO    ] 	coeffs :	True
+[INFO    ]     Blot: creating blotted image:  /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_01_diff.fits[sci,1]
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] Applying sky value of 0.063138 to blotted image /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_01_diff.fits[sci,1]
+[INFO    ] -Generating simple FITS output: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_01_diff_sci1_blt.fits
+[INFO    ] Writing out image to disk: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_01_diff_sci1_blt.fits
+[INFO    ]     Blot: creating blotted image:  /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_02_diff.fits[sci,1]
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] Applying sky value of 0.046551 to blotted image /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_02_diff.fits[sci,1]
+[INFO    ] -Generating simple FITS output: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_02_diff_sci1_blt.fits
+[INFO    ] Writing out image to disk: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_02_diff_sci1_blt.fits
+[INFO    ]     Blot: creating blotted image:  /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_03_diff.fits[sci,1]
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] Applying sky value of 0.049883 to blotted image /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_03_diff.fits[sci,1]
+[INFO    ] -Generating simple FITS output: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_03_diff_sci1_blt.fits
+[INFO    ] Writing out image to disk: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_03_diff_sci1_blt.fits
+[INFO    ]     Blot: creating blotted image:  /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_04_diff.fits[sci,1]
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] Applying sky value of 0.040314 to blotted image /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_04_diff.fits[sci,1]
+[INFO    ] -Generating simple FITS output: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_04_diff_sci1_blt.fits
+[INFO    ] Writing out image to disk: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_04_diff_sci1_blt.fits
+[INFO    ]     Blot: creating blotted image:  /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_05_diff.fits[sci,1]
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] Applying sky value of 0.052726 to blotted image /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_05_diff.fits[sci,1]
+[INFO    ] -Generating simple FITS output: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_05_diff_sci1_blt.fits
+[INFO    ] Writing out image to disk: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_05_diff_sci1_blt.fits
+[INFO    ]     Blot: creating blotted image:  /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_06_diff.fits[sci,1]
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] Applying sky value of 0.045519 to blotted image /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_06_diff.fits[sci,1]
+[INFO    ] -Generating simple FITS output: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_06_diff_sci1_blt.fits
+[INFO    ] Writing out image to disk: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_06_diff_sci1_blt.fits
+[INFO    ]     Blot: creating blotted image:  /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_07_diff.fits[sci,1]
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] Applying sky value of 0.042862 to blotted image /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_07_diff.fits[sci,1]
+[INFO    ] -Generating simple FITS output: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_07_diff_sci1_blt.fits
+[INFO    ] Writing out image to disk: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_07_diff_sci1_blt.fits
+[INFO    ]     Blot: creating blotted image:  /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_08_diff.fits[sci,1]
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] Applying sky value of 0.042099 to blotted image /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_08_diff.fits[sci,1]
+[INFO    ] -Generating simple FITS output: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_08_diff_sci1_blt.fits
+[INFO    ] Writing out image to disk: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_08_diff_sci1_blt.fits
+[INFO    ]     Blot: creating blotted image:  /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_09_diff.fits[sci,1]
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] Applying sky value of 0.037120 to blotted image /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_09_diff.fits[sci,1]
+[INFO    ] -Generating simple FITS output: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_09_diff_sci1_blt.fits
+[INFO    ] Writing out image to disk: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_09_diff_sci1_blt.fits
+[INFO    ]     Blot: creating blotted image:  /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_10_diff.fits[sci,1]
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] Applying sky value of 0.035453 to blotted image /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_10_diff.fits[sci,1]
+[INFO    ] -Generating simple FITS output: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_10_diff_sci1_blt.fits
+[INFO    ] Writing out image to disk: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_10_diff_sci1_blt.fits
+[INFO    ] ==== Processing Step Blot finished at 03:29:21.199 (29/04/2022)
+[INFO    ] ==== Processing Step  Driz_CR  started at  03:29:21.200 (29/04/2022)
+[INFO    ] 
+[INFO    ] USER INPUT PARAMETERS for Driz_CR Step:
+[INFO    ] 	crbit :	4096
+[INFO    ] 	driz_cr :	True
+[INFO    ] 	driz_cr_corr :	False
+[INFO    ] 	driz_cr_ctegrow :	0
+[INFO    ] 	driz_cr_grow :	1
+[INFO    ] 	driz_cr_scale :	2.5 0.7
+[INFO    ] 	driz_cr_snr :	8.0 5.0
+[INFO    ] 	inmemory :	False
+[INFO    ] Executing serially
+[INFO    ] Creating output: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_01_diff_sci1_crmask.fits
+[INFO    ] Creating output: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_02_diff_sci1_crmask.fits
+[INFO    ] Creating output: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_03_diff_sci1_crmask.fits
+[INFO    ] Creating output: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_04_diff_sci1_crmask.fits
+[INFO    ] Creating output: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_05_diff_sci1_crmask.fits
+[INFO    ] Creating output: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_06_diff_sci1_crmask.fits
+[INFO    ] Creating output: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_07_diff_sci1_crmask.fits
+[INFO    ] Creating output: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_08_diff_sci1_crmask.fits
+[INFO    ] Creating output: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_09_diff_sci1_crmask.fits
+[INFO    ] Creating output: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_10_diff_sci1_crmask.fits
+[INFO    ] ==== Processing Step Driz_CR finished at 03:29:23.866 (29/04/2022)
+[INFO    ] ==== Processing Step  Final Drizzle  started at  03:29:23.867 (29/04/2022)
+[INFO    ] 
+[INFO    ] Interpreted paramDict with single=False as:
+{'build': False, 'stepsize': 10, 'coeffs': True, 'wcskey': '', 'wht_type': 'EXP', 'kernel': 'square', 'wt_scl': 'exptime', 'pixfrac': 1.0, 'fillval': None, 'maskval': None, 'bits': 31486, 'units': 'cps'}
+[INFO    ] USER INPUT PARAMETERS for Final Drizzle Step:
+[INFO    ] 	bits :	31486
+[INFO    ] 	build :	False
+[INFO    ] 	clean :	False
+[INFO    ] 	coeffs :	True
+[INFO    ] 	crbit :	4096
+[INFO    ] 	fillval :	None
+[INFO    ] 	kernel :	square
+[INFO    ] 	logfile :	astrodrizzle.log
+[INFO    ] 	maskval :	None
+[INFO    ] 	pixfrac :	1.0
+[INFO    ] 	proc_unit :	native
+[INFO    ] 	rules_file :	None
+[INFO    ] 	stepsize :	10
+[INFO    ] 	units :	cps
+[INFO    ] 	wcskey :	
+[INFO    ] 	wht_type :	EXP
+[INFO    ] 	wt_scl :	exptime
+[INFO    ]   **Using sub-sampling value of 10 for kernel square
+[INFO    ] Running Drizzle to create output frame with WCS of: 
+[INFO    ] WCS Keywords
+[INFO    ] 
+[INFO    ] Number of WCS axes: 2
+[INFO    ] CTYPE : 'RA---TAN'  'DEC--TAN'  
+[INFO    ] CRVAL : 359.97628146434835  -0.07351238613531096  
+[INFO    ] CRPIX : 213.0  306.0  
+[INFO    ] CD1_1 CD1_2  : -9.220492965556947e-06  -3.441109110587061e-05  
+[INFO    ] CD2_1 CD2_2  : -3.441109110587061e-05  9.220492965556947e-06  
+[INFO    ] NAXIS : 426  612
+[INFO    ] -Drizzle input: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_01_diff.fits[sci,1]
+[INFO    ] Applying sky value of 0.063138 to /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_01_diff.fits[sci,1]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_01_diff_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_02_diff.fits[sci,1]
+[INFO    ] Applying sky value of 0.046551 to /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_02_diff.fits[sci,1]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_02_diff_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_03_diff.fits[sci,1]
+[INFO    ] Applying sky value of 0.049883 to /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_03_diff.fits[sci,1]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_03_diff_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_04_diff.fits[sci,1]
+[INFO    ] Applying sky value of 0.040314 to /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_04_diff.fits[sci,1]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_04_diff_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_05_diff.fits[sci,1]
+[INFO    ] Applying sky value of 0.052726 to /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_05_diff.fits[sci,1]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_05_diff_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_06_diff.fits[sci,1]
+[INFO    ] Applying sky value of 0.045519 to /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_06_diff.fits[sci,1]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_06_diff_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_07_diff.fits[sci,1]
+[INFO    ] Applying sky value of 0.042862 to /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_07_diff.fits[sci,1]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_07_diff_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_08_diff.fits[sci,1]
+[INFO    ] Applying sky value of 0.042099 to /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_08_diff.fits[sci,1]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_08_diff_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[WARNING ] ! 1 points were outside the output image.
+[INFO    ] -Drizzle input: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_09_diff.fits[sci,1]
+[INFO    ] Applying sky value of 0.037120 to /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_09_diff.fits[sci,1]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_09_diff_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_10_diff.fits[sci,1]
+[INFO    ] Applying sky value of 0.035453 to /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_10_diff.fits[sci,1]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: /media/data/arubinst/Drizzle_AlignHH6/testing_base_params/diff/idn107jhq_10_diff_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[WARNING ] ! 1 points were outside the output image.
+[INFO    ] -Generating simple FITS output: idn107jhq_thresh20_drz_sci.fits
+[WARNING ] /media/data/arubinst/ENTER/envs/astroconda/lib/python3.7/site-packages/astropy/io/fits/card.py:1010: VerifyWarning: Card is too long, comment will be truncated.
+  VerifyWarning)
+
+[INFO    ] Writing out image to disk: idn107jhq_thresh20_drz_sci.fits
+[INFO    ] Writing out image to disk: idn107jhq_thresh20_drz_wht.fits
+[INFO    ] ==== Processing Step Final Drizzle finished at 03:29:33.578 (29/04/2022)
+[INFO    ] 
+[INFO    ] AstroDrizzle Version 3.3.0 is finished processing at 03:29:33.579 (29/04/2022).
+[INFO    ] 
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    --------------------          --------------------
+[INFO    ]                    Step          Elapsed time
+[INFO    ]    --------------------          --------------------
+[INFO    ] 
+[INFO    ]          Initialization          3.2307 sec.
+[INFO    ]             Static Mask          0.5603 sec.
+[INFO    ]            Subtract Sky          1.9272 sec.
+[INFO    ]        Separate Drizzle          6.6428 sec.
+[INFO    ]           Create Median          0.4508 sec.
+[INFO    ]                    Blot          4.8452 sec.
+[INFO    ]                 Driz_CR          2.6667 sec.
+[INFO    ]           Final Drizzle          9.7110 sec.
+[INFO    ]    ====================          ====================
+[INFO    ]                   Total          30.0346 sec.
+[INFO    ] 
+[INFO    ] Trailer file written to:  astrodrizzle.log

@@ -1,0 +1,1572 @@
+[INFO    ] Setting up logfile :  tweakreg.log
+[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 22:19:23.750 (26/04/2022) 
+[INFO    ] 
+[INFO    ] Version Information
+[INFO    ] --------------------
+[INFO    ] Python Version [GCC 7.5.0]
+[INFO    ] 3.7.13 (default, Mar 29 2022, 02:18:16) 
+[INFO    ] numpy Version -> 1.21.5 
+[INFO    ] astropy Version -> 4.3.1 
+[INFO    ] stwcs Version -> 1.6.1 
+[DEBUG   ] 
+[DEBUG   ] ==== TweakReg was invoked with the following parameters: ====
+[DEBUG   ] 
+[DEBUG   ] input: ['diff/idn107jhq_01_diff.fits', 'diff/idn107jhq_02_diff.fits', 'diff/idn107jhq_03_diff.fits', 'diff/idn107jhq_04_diff.fits', 'diff/idn107jhq_05_diff.fits', 'diff/idn107jhq_06_diff.fits', 'diff/idn107jhq_07_diff.fits', 'diff/idn107jhq_08_diff.fits', 'diff/idn107jhq_09_diff.fits', 'diff/idn107jhq_10_diff.fits']
+[DEBUG   ] refimage: ''
+[DEBUG   ] expand_refcat: False
+[DEBUG   ] enforce_user_order: True
+[DEBUG   ] exclusions: ''
+[DEBUG   ] writecat: True
+[DEBUG   ] clean: False
+[DEBUG   ] interactive: False
+[DEBUG   ] verbose: True
+[DEBUG   ] runfile: 'tweakreg.log'
+[DEBUG   ] updatewcs: False
+[DEBUG   ] 
+[DEBUG   ] UPDATE HEADER:
+[DEBUG   ]   updatehdr: True
+[DEBUG   ]   wcsname: 'DASH'
+[DEBUG   ]   reusename: False
+[DEBUG   ] 
+[DEBUG   ] HEADERLET CREATION:
+[DEBUG   ]   headerlet: False
+[DEBUG   ]   attach: True
+[DEBUG   ]   hdrfile: ''
+[DEBUG   ]   clobber: False
+[DEBUG   ]   hdrname: ''
+[DEBUG   ]   author: ''
+[DEBUG   ]   descrip: ''
+[DEBUG   ]   catalog: ''
+[DEBUG   ]   history: ''
+[DEBUG   ] 
+[DEBUG   ] OPTIONAL SHIFTFILE OUTPUT:
+[DEBUG   ]   shiftfile: True
+[DEBUG   ]   outshifts: 'shifts/shifts_idn107jhq.txt'
+[DEBUG   ]   outwcs: 'shifts/shifts_idn107jhq_wcs.fits'
+[DEBUG   ] 
+[DEBUG   ] COORDINATE FILE DESCRIPTION:
+[DEBUG   ]   catfile: 'catalogs/diff_catfile.cat'
+[DEBUG   ]   xcol: 2
+[DEBUG   ]   ycol: 3
+[DEBUG   ]   fluxcol: ''
+[DEBUG   ]   maxflux: None
+[DEBUG   ]   minflux: None
+[DEBUG   ]   fluxunits: 'counts'
+[DEBUG   ]   xyunits: 'pixels'
+[DEBUG   ]   nbright: None
+[DEBUG   ] 
+[DEBUG   ] REFERENCE CATALOG DESCRIPTION:
+[DEBUG   ]   refcat: ''
+[DEBUG   ]   refxcol: '1'
+[DEBUG   ]   refycol: '2'
+[DEBUG   ]   refxyunits: 'degrees'
+[DEBUG   ]   rfluxcol: ''
+[DEBUG   ]   rmaxflux: None
+[DEBUG   ]   rminflux: None
+[DEBUG   ]   rfluxunits: 'mag'
+[DEBUG   ]   refnbright: None
+[DEBUG   ] 
+[DEBUG   ] OBJECT MATCHING PARAMETERS:
+[DEBUG   ]   minobj: 5
+[DEBUG   ]   searchrad: 20.0
+[DEBUG   ]   searchunits: 'pixels'
+[DEBUG   ]   use2dhist: True
+[DEBUG   ]   see2dplot: True
+[DEBUG   ]   separation: 0.5
+[DEBUG   ]   tolerance: 1.0
+[DEBUG   ]   xoffset: 0.0
+[DEBUG   ]   yoffset: 0.0
+[DEBUG   ] 
+[DEBUG   ] CATALOG FITTING PARAMETERS:
+[DEBUG   ]   fitgeometry: 'rscale'
+[DEBUG   ]   residplot: 'both'
+[DEBUG   ]   ylimit: None
+[DEBUG   ]   labelsize: 8
+[DEBUG   ]   nclip: 3
+[DEBUG   ]   sigma: 3.0
+[DEBUG   ] 
+[INFO    ] 
+[INFO    ] USER INPUT PARAMETERS common to all Processing Steps:
+[INFO    ] 	clean :	False
+[INFO    ] 	enforce_user_order :	True
+[INFO    ] 	exclusions :	
+[INFO    ] 	expand_refcat :	False
+[INFO    ] 	input :	['diff/idn107jhq_01_diff.fits', 'diff/idn107jhq_02_diff.fits', 'diff/idn107jhq_03_diff.fits', 'diff/idn107jhq_04_diff.fits', 'diff/idn107jhq_05_diff.fits', 'diff/idn107jhq_06_diff.fits', 'diff/idn107jhq_07_diff.fits', 'diff/idn107jhq_08_diff.fits', 'diff/idn107jhq_09_diff.fits', 'diff/idn107jhq_10_diff.fits']
+[INFO    ] 	interactive :	False
+[INFO    ] 	refimage :	
+[INFO    ] 	runfile :	tweakreg.log
+[INFO    ] 	updatewcs :	False
+[INFO    ] 	verbose :	True
+[INFO    ] 	writecat :	True
+[INFO    ] 
+[INFO    ] Finding shifts for: 
+[INFO    ]     /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_01_diff.fits
+[INFO    ]     /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_02_diff.fits
+[INFO    ]     /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_03_diff.fits
+[INFO    ]     /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_04_diff.fits
+[INFO    ]     /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_05_diff.fits
+[INFO    ]     /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_06_diff.fits
+[INFO    ]     /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_07_diff.fits
+[INFO    ]     /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_08_diff.fits
+[INFO    ]     /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_09_diff.fits
+[INFO    ]     /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_10_diff.fits
+[INFO    ] 
+[INFO    ] USER INPUT PARAMETERS for finding sources for each input image:
+[INFO    ] 	catfile :	catalogs/diff_catfile.cat
+[INFO    ] 	clean :	False
+[INFO    ] 	computesig :	True
+[INFO    ] 	conv_width :	3.5
+[INFO    ] 	dqbits :	
+[INFO    ] 	enforce_user_order :	True
+[INFO    ] 	expand_refcat :	False
+[INFO    ] 	fluxcol :	
+[INFO    ] 	fluxmax :	None
+[INFO    ] 	fluxmin :	None
+[INFO    ] 	fluxunits :	counts
+[INFO    ] 	input :	['diff/idn107jhq_01_diff.fits', 'diff/idn107jhq_02_diff.fits', 'diff/idn107jhq_03_diff.fits', 'diff/idn107jhq_04_diff.fits', 'diff/idn107jhq_05_diff.fits', 'diff/idn107jhq_06_diff.fits', 'diff/idn107jhq_07_diff.fits', 'diff/idn107jhq_08_diff.fits', 'diff/idn107jhq_09_diff.fits', 'diff/idn107jhq_10_diff.fits']
+[INFO    ] 	interactive :	False
+[INFO    ] 	maxflux :	None
+[INFO    ] 	minflux :	None
+[INFO    ] 	nbright :	None
+[INFO    ] 	nsigma :	1.5
+[INFO    ] 	peakmax :	None
+[INFO    ] 	peakmin :	None
+[INFO    ] 	ratio :	1.0
+[INFO    ] 	refimage :	
+[INFO    ] 	roundhi :	1.0
+[INFO    ] 	roundlo :	-1.0
+[INFO    ] 	runfile :	tweakreg.log
+[INFO    ] 	sharphi :	1.0
+[INFO    ] 	sharplo :	0.2
+[INFO    ] 	skysigma :	0.0
+[INFO    ] 	sort_fluxunits :	counts
+[INFO    ] 	sort_maxflux :	None
+[INFO    ] 	sort_minflux :	None
+[INFO    ] 	sort_nbright :	None
+[INFO    ] 	theta :	0.0
+[INFO    ] 	threshold :	20.0
+[INFO    ] 	updatehdr :	True
+[INFO    ] 	updatewcs :	False
+[INFO    ] 	use_sharp_round :	False
+[INFO    ] 	verbose :	True
+[INFO    ] 	writecat :	True
+[INFO    ] 	xcol :	2
+[INFO    ] 	xyunits :	pixels
+[INFO    ] 	ycol :	3
+[INFO    ] 
+[INFO    ] ===  Source finding for image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_01_diff.fits':
+[INFO    ]      Found 115 objects.
+[INFO    ] ===  FINAL number of objects in image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_01_diff.fits': 115
+[INFO    ] 
+[INFO    ] ===  Source finding for image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_02_diff.fits':
+[INFO    ]      Found 132 objects.
+[INFO    ] ===  FINAL number of objects in image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_02_diff.fits': 132
+[INFO    ] 
+[INFO    ] ===  Source finding for image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_03_diff.fits':
+[INFO    ]      Found 127 objects.
+[INFO    ] ===  FINAL number of objects in image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_03_diff.fits': 127
+[INFO    ] 
+[INFO    ] ===  Source finding for image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_04_diff.fits':
+[INFO    ]      Found 133 objects.
+[WARNING ] /media/data/arubinst/ENTER/envs/astroconda/lib/python3.7/site-packages/spherical_geometry/polygon.py:601: RuntimeWarning: invalid value encountered in triple_product
+  orient = great_circle_arc.triple_product(A-B, C-B, B)
+
+[WARNING ] /media/data/arubinst/ENTER/envs/astroconda/lib/python3.7/site-packages/spherical_geometry/polygon.py:139: RuntimeWarning: invalid value encountered in triple_product
+  orient = great_circle_arc.triple_product(A-B, C-B, B)
+
+[INFO    ] ===  FINAL number of objects in image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_04_diff.fits': 133
+[INFO    ] 
+[INFO    ] ===  Source finding for image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_05_diff.fits':
+[INFO    ]      Found 119 objects.
+[INFO    ] ===  FINAL number of objects in image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_05_diff.fits': 119
+[INFO    ] 
+[INFO    ] ===  Source finding for image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_06_diff.fits':
+[INFO    ]      Found 148 objects.
+[INFO    ] ===  FINAL number of objects in image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_06_diff.fits': 148
+[INFO    ] 
+[INFO    ] ===  Source finding for image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_07_diff.fits':
+[INFO    ]      Found 131 objects.
+[INFO    ] ===  FINAL number of objects in image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_07_diff.fits': 131
+[INFO    ] 
+[INFO    ] ===  Source finding for image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_08_diff.fits':
+[INFO    ]      Found 133 objects.
+[INFO    ] ===  FINAL number of objects in image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_08_diff.fits': 133
+[INFO    ] 
+[INFO    ] ===  Source finding for image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_09_diff.fits':
+[INFO    ]      Found 131 objects.
+[INFO    ] ===  FINAL number of objects in image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_09_diff.fits': 131
+[INFO    ] 
+[INFO    ] ===  Source finding for image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_10_diff.fits':
+[INFO    ]      Found 129 objects.
+[INFO    ] ===  FINAL number of objects in image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_10_diff.fits': 129
+[INFO    ] 
+[INFO    ] Trailer file written to:  tweakreg.log
+[ERROR   ] An unhandled exception ocurred:
+Traceback (most recent call last):
+  File "/media/data/arubinst/ENTER/envs/astroconda/lib/python3.7/site-packages/drizzlepac/util.py", line 230, in wrapper
+    result = func(*args, **kwargs)
+  File "/media/data/arubinst/ENTER/envs/astroconda/lib/python3.7/site-packages/drizzlepac/tweakreg.py", line 497, in run
+    xycatalog=refimg.xy_catalog, **kwargs)
+  File "/media/data/arubinst/ENTER/envs/astroconda/lib/python3.7/site-packages/drizzlepac/imgclasses.py", line 1095, in __init__
+    self.wcs = utils.output_wcs(wcs_list, undistort=undistort)
+  File "/media/data/arubinst/ENTER/envs/astroconda/lib/python3.7/site-packages/stwcs/distortion/utils.py", line 42, in output_wcs
+    outwcs = make_orthogonal_cd(ref_wcs)
+  File "/media/data/arubinst/ENTER/envs/astroconda/lib/python3.7/site-packages/stwcs/distortion/utils.py", line 125, in make_orthogonal_cd
+    scale = (wcs.idcscale) / 3600.  # HST pixel scale provided
+TypeError: unsupported operand type(s) for /: 'NoneType' and 'float'
+[INFO    ] Setting up logfile :  tweakreg.log
+[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 22:23:08.907 (26/04/2022) 
+[INFO    ] 
+[INFO    ] Version Information
+[INFO    ] --------------------
+[INFO    ] Python Version [GCC 7.5.0]
+[INFO    ] 3.7.13 (default, Mar 29 2022, 02:18:16) 
+[INFO    ] numpy Version -> 1.21.5 
+[INFO    ] astropy Version -> 4.3.1 
+[INFO    ] stwcs Version -> 1.6.1 
+[DEBUG   ] 
+[DEBUG   ] ==== TweakReg was invoked with the following parameters: ====
+[DEBUG   ] 
+[DEBUG   ] input: ['diff/idn107jhq_01_diff.fits', 'diff/idn107jhq_02_diff.fits', 'diff/idn107jhq_03_diff.fits', 'diff/idn107jhq_04_diff.fits', 'diff/idn107jhq_05_diff.fits', 'diff/idn107jhq_06_diff.fits', 'diff/idn107jhq_07_diff.fits', 'diff/idn107jhq_08_diff.fits', 'diff/idn107jhq_09_diff.fits', 'diff/idn107jhq_10_diff.fits']
+[DEBUG   ] refimage: ''
+[DEBUG   ] expand_refcat: False
+[DEBUG   ] enforce_user_order: True
+[DEBUG   ] exclusions: ''
+[DEBUG   ] writecat: True
+[DEBUG   ] clean: False
+[DEBUG   ] interactive: False
+[DEBUG   ] verbose: True
+[DEBUG   ] runfile: 'tweakreg.log'
+[DEBUG   ] updatewcs: True
+[DEBUG   ] 
+[DEBUG   ] UPDATE HEADER:
+[DEBUG   ]   updatehdr: False
+[DEBUG   ]   wcsname: 'DASH'
+[DEBUG   ]   reusename: False
+[DEBUG   ] 
+[DEBUG   ] HEADERLET CREATION:
+[DEBUG   ]   headerlet: False
+[DEBUG   ]   attach: True
+[DEBUG   ]   hdrfile: ''
+[DEBUG   ]   clobber: False
+[DEBUG   ]   hdrname: ''
+[DEBUG   ]   author: ''
+[DEBUG   ]   descrip: ''
+[DEBUG   ]   catalog: ''
+[DEBUG   ]   history: ''
+[DEBUG   ] 
+[DEBUG   ] OPTIONAL SHIFTFILE OUTPUT:
+[DEBUG   ]   shiftfile: True
+[DEBUG   ]   outshifts: 'shifts/shifts_idn107jhq.txt'
+[DEBUG   ]   outwcs: 'shifts/shifts_idn107jhq_wcs.fits'
+[DEBUG   ] 
+[DEBUG   ] COORDINATE FILE DESCRIPTION:
+[DEBUG   ]   catfile: 'catalogs/diff_catfile.cat'
+[DEBUG   ]   xcol: 2
+[DEBUG   ]   ycol: 3
+[DEBUG   ]   fluxcol: ''
+[DEBUG   ]   maxflux: None
+[DEBUG   ]   minflux: None
+[DEBUG   ]   fluxunits: 'counts'
+[DEBUG   ]   xyunits: 'pixels'
+[DEBUG   ]   nbright: None
+[DEBUG   ] 
+[DEBUG   ] REFERENCE CATALOG DESCRIPTION:
+[DEBUG   ]   refcat: ''
+[DEBUG   ]   refxcol: '1'
+[DEBUG   ]   refycol: '2'
+[DEBUG   ]   refxyunits: 'degrees'
+[DEBUG   ]   rfluxcol: ''
+[DEBUG   ]   rmaxflux: None
+[DEBUG   ]   rminflux: None
+[DEBUG   ]   rfluxunits: 'mag'
+[DEBUG   ]   refnbright: None
+[DEBUG   ] 
+[DEBUG   ] OBJECT MATCHING PARAMETERS:
+[DEBUG   ]   minobj: 5
+[DEBUG   ]   searchrad: 20.0
+[DEBUG   ]   searchunits: 'pixels'
+[DEBUG   ]   use2dhist: True
+[DEBUG   ]   see2dplot: True
+[DEBUG   ]   separation: 0.5
+[DEBUG   ]   tolerance: 1.0
+[DEBUG   ]   xoffset: 0.0
+[DEBUG   ]   yoffset: 0.0
+[DEBUG   ] 
+[DEBUG   ] CATALOG FITTING PARAMETERS:
+[DEBUG   ]   fitgeometry: 'rscale'
+[DEBUG   ]   residplot: 'both'
+[DEBUG   ]   ylimit: None
+[DEBUG   ]   labelsize: 8
+[DEBUG   ]   nclip: 3
+[DEBUG   ]   sigma: 3.0
+[DEBUG   ] 
+[INFO    ] 
+[INFO    ] USER INPUT PARAMETERS common to all Processing Steps:
+[INFO    ] 	clean :	False
+[INFO    ] 	enforce_user_order :	True
+[INFO    ] 	exclusions :	
+[INFO    ] 	expand_refcat :	False
+[INFO    ] 	input :	['diff/idn107jhq_01_diff.fits', 'diff/idn107jhq_02_diff.fits', 'diff/idn107jhq_03_diff.fits', 'diff/idn107jhq_04_diff.fits', 'diff/idn107jhq_05_diff.fits', 'diff/idn107jhq_06_diff.fits', 'diff/idn107jhq_07_diff.fits', 'diff/idn107jhq_08_diff.fits', 'diff/idn107jhq_09_diff.fits', 'diff/idn107jhq_10_diff.fits']
+[INFO    ] 	interactive :	False
+[INFO    ] 	refimage :	
+[INFO    ] 	runfile :	tweakreg.log
+[INFO    ] 	updatewcs :	True
+[INFO    ] 	verbose :	True
+[INFO    ] 	writecat :	True
+[INFO    ] 
+[INFO    ] Restoring WCS solutions to original state using updatewcs...
+[INFO    ] 
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/availability HTTP/1.1" 200 135
+[INFO    ] AstrometryDB service available...
+[INFO    ] - IDCTAB: Distortion model from row 14 for chip 1 : F164N
+[INFO    ] - IDCTAB: Distortion model from row 14 for chip 1 : F164N
+[INFO    ] Updating astrometry for idn107jhq
+[INFO    ] Accessing AstrometryDB service :
+[INFO    ] 	https://mast.stsci.edu/portal/astrometryDB/observation/read/idn107jhq
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq HTTP/1.1" 200 None
+[INFO    ] AstrometryDB service call succeeded
+[INFO    ] Retrieving astrometrically-updated WCS "OPUS-GSC240" for observation "idn107jhq"
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq?wcsname=OPUS-GSC240 HTTP/1.1" 200 8640
+[INFO    ] Retrieving astrometrically-updated WCS "IDC_w3m18525i-GSC240" for observation "idn107jhq"
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq?wcsname=IDC_w3m18525i-GSC240 HTTP/1.1" 200 8640
+[INFO    ] Retrieving astrometrically-updated WCS "IDC_w3m18525i" for observation "idn107jhq"
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq?wcsname=IDC_w3m18525i HTTP/1.1" 200 8640
+[INFO    ] Retrieving astrometrically-updated WCS "OPUS" for observation "idn107jhq"
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq?wcsname=OPUS HTTP/1.1" 200 5760
+[INFO    ] Updating idn107jhq with:
+[INFO    ] 	Headerlet with WCSNAME=OPUS-GSC240
+[DEBUG   ] verify_destim() returned True
+[DEBUG   ] verify_hdrname() returned True
+[INFO    ] 	Headerlet with WCSNAME=IDC_w3m18525i-GSC240
+[DEBUG   ] verify_destim() returned True
+[DEBUG   ] verify_hdrname() returned True
+[INFO    ] 	Headerlet with WCSNAME=IDC_w3m18525i
+[DEBUG   ] verify_destim() returned True
+[DEBUG   ] verify_hdrname() returned True
+[INFO    ] 	Headerlet with WCSNAME=OPUS
+[DEBUG   ] verify_destim() returned True
+[DEBUG   ] verify_hdrname() returned True
+[DEBUG   ] verify_destim() returned True
+[INFO    ] Initializing new WCSCORR table for  /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_01_diff.fits
+[INFO    ] 
+                Inconsistent SIP distortion information is present in the FITS header and the WCS object:
+                SIP coefficients were detected, but CTYPE is missing a "-SIP" suffix.
+                astropy.wcs is using the SIP distortion coefficients,
+                therefore the coordinates calculated here might be incorrect.
+
+                If you do not want to apply the SIP distortion coefficients,
+                please remove the SIP coefficients from the FITS header or the
+                WCS object.  As an example, if the image is already distortion-corrected
+                (e.g., drizzled) then distortion components should not apply and the SIP
+                coefficients should be removed.
+
+                While the SIP distortion coefficients are being applied here, if that was indeed the intent,
+                for consistency please append "-SIP" to the CTYPE in the FITS header or the WCS object.
+
+                
+[WARNING ] /media/data/arubinst/ENTER/envs/astroconda/lib/python3.7/site-packages/astropy/io/fits/card.py:268: VerifyWarning: Keyword name 'IDCSCALEO' is greater than 8 characters or contains characters not allowed by the FITS standard; a HIERARCH card will be created.
+  keyword), VerifyWarning)
+
+[DEBUG   ] Data extensions from which to create headerlet:
+	 [('SCI', 1)]
+[DEBUG   ] sciext in create_headerlet is [('SCI', 1)]
+[INFO    ] Setting destim to rootname of the science file
+[INFO    ] Setting sipname value to idn107jhq_w3m18525i
+[INFO    ] Setting npolfile value to NOMODEL
+[INFO    ] Setting d2imfile value to NOMODEL
+[INFO    ] Setting distname to idn107jhq_w3m18525i-NOMODEL-NOMODEL
+[INFO    ] Created headerlet 'IDC_w3m18525i' to be attached to file
+[INFO    ] Deleting all WCSs of file /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_01_diff.fits
+[DEBUG   ] Removing D2IM correction from (SCI, 1)
+[DEBUG   ] Removing SIP distortion from (SCI, 1)
+[DEBUG   ] Removing LUT distortion from (SCI, 1)
+[DEBUG   ] Removing Primary WCS from (SCI, 1)
+[DEBUG   ] Removing IDC coefficient from (SCI, 1)
+[DEBUG   ] Removing astrometric fit values from (SCI, 1)
+[WARNING ] /media/data/arubinst/ENTER/envs/astroconda/lib/python3.7/site-packages/astropy/wcs/wcs.py:517: FITSFixedWarning: The WCS transformation has more axes (2) than the image it is associated with (0)
+  wcsprm.naxis, header_naxis), FITSFixedWarning)
+
+[INFO    ] Updating reference files
+[WARNING ] /media/data/arubinst/ENTER/envs/astroconda/lib/python3.7/site-packages/astropy/wcs/wcs.py:517: FITSFixedWarning: The WCS transformation has more axes (2) than the image it is associated with (0)
+  wcsprm.naxis, header_naxis), FITSFixedWarning)
+
+[INFO    ] Replacing primary WCS with
+[INFO    ] 	Headerlet with WCSNAME=OPUS
+[INFO    ] - IDCTAB: Distortion model from row 14 for chip 1 : F164N
+[INFO    ] - IDCTAB: Distortion model from row 14 for chip 1 : F164N
+[INFO    ] Updating astrometry for idn107jhq
+[INFO    ] Accessing AstrometryDB service :
+[INFO    ] 	https://mast.stsci.edu/portal/astrometryDB/observation/read/idn107jhq
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq HTTP/1.1" 200 None
+[INFO    ] AstrometryDB service call succeeded
+[INFO    ] Retrieving astrometrically-updated WCS "OPUS-GSC240" for observation "idn107jhq"
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq?wcsname=OPUS-GSC240 HTTP/1.1" 200 8640
+[INFO    ] Retrieving astrometrically-updated WCS "IDC_w3m18525i-GSC240" for observation "idn107jhq"
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq?wcsname=IDC_w3m18525i-GSC240 HTTP/1.1" 200 8640
+[INFO    ] Retrieving astrometrically-updated WCS "IDC_w3m18525i" for observation "idn107jhq"
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq?wcsname=IDC_w3m18525i HTTP/1.1" 200 8640
+[INFO    ] Retrieving astrometrically-updated WCS "OPUS" for observation "idn107jhq"
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq?wcsname=OPUS HTTP/1.1" 200 5760
+[INFO    ] Updating idn107jhq with:
+[INFO    ] 	Headerlet with WCSNAME=OPUS-GSC240
+[DEBUG   ] verify_destim() returned True
+[DEBUG   ] verify_hdrname() returned True
+[INFO    ] 	Headerlet with WCSNAME=IDC_w3m18525i-GSC240
+[DEBUG   ] verify_destim() returned True
+[DEBUG   ] verify_hdrname() returned True
+[INFO    ] 	Headerlet with WCSNAME=IDC_w3m18525i
+[DEBUG   ] verify_destim() returned True
+[DEBUG   ] verify_hdrname() returned True
+[INFO    ] 	Headerlet with WCSNAME=OPUS
+[DEBUG   ] verify_destim() returned True
+[DEBUG   ] verify_hdrname() returned True
+[DEBUG   ] verify_destim() returned True
+[INFO    ] Initializing new WCSCORR table for  /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_02_diff.fits
+[INFO    ] 
+                Inconsistent SIP distortion information is present in the FITS header and the WCS object:
+                SIP coefficients were detected, but CTYPE is missing a "-SIP" suffix.
+                astropy.wcs is using the SIP distortion coefficients,
+                therefore the coordinates calculated here might be incorrect.
+
+                If you do not want to apply the SIP distortion coefficients,
+                please remove the SIP coefficients from the FITS header or the
+                WCS object.  As an example, if the image is already distortion-corrected
+                (e.g., drizzled) then distortion components should not apply and the SIP
+                coefficients should be removed.
+
+                While the SIP distortion coefficients are being applied here, if that was indeed the intent,
+                for consistency please append "-SIP" to the CTYPE in the FITS header or the WCS object.
+
+                
+[WARNING ] /media/data/arubinst/ENTER/envs/astroconda/lib/python3.7/site-packages/astropy/io/fits/card.py:268: VerifyWarning: Keyword name 'IDCSCALEO' is greater than 8 characters or contains characters not allowed by the FITS standard; a HIERARCH card will be created.
+  keyword), VerifyWarning)
+
+[DEBUG   ] Data extensions from which to create headerlet:
+	 [('SCI', 1)]
+[DEBUG   ] sciext in create_headerlet is [('SCI', 1)]
+[INFO    ] Setting destim to rootname of the science file
+[INFO    ] Setting sipname value to idn107jhq_w3m18525i
+[INFO    ] Setting npolfile value to NOMODEL
+[INFO    ] Setting d2imfile value to NOMODEL
+[INFO    ] Setting distname to idn107jhq_w3m18525i-NOMODEL-NOMODEL
+[INFO    ] Created headerlet 'IDC_w3m18525i' to be attached to file
+[INFO    ] Deleting all WCSs of file /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_02_diff.fits
+[DEBUG   ] Removing D2IM correction from (SCI, 1)
+[DEBUG   ] Removing SIP distortion from (SCI, 1)
+[DEBUG   ] Removing LUT distortion from (SCI, 1)
+[DEBUG   ] Removing Primary WCS from (SCI, 1)
+[DEBUG   ] Removing IDC coefficient from (SCI, 1)
+[DEBUG   ] Removing astrometric fit values from (SCI, 1)
+[WARNING ] /media/data/arubinst/ENTER/envs/astroconda/lib/python3.7/site-packages/astropy/wcs/wcs.py:517: FITSFixedWarning: The WCS transformation has more axes (2) than the image it is associated with (0)
+  wcsprm.naxis, header_naxis), FITSFixedWarning)
+
+[INFO    ] Updating reference files
+[WARNING ] /media/data/arubinst/ENTER/envs/astroconda/lib/python3.7/site-packages/astropy/wcs/wcs.py:517: FITSFixedWarning: The WCS transformation has more axes (2) than the image it is associated with (0)
+  wcsprm.naxis, header_naxis), FITSFixedWarning)
+
+[INFO    ] Replacing primary WCS with
+[INFO    ] 	Headerlet with WCSNAME=OPUS
+[INFO    ] - IDCTAB: Distortion model from row 14 for chip 1 : F164N
+[INFO    ] - IDCTAB: Distortion model from row 14 for chip 1 : F164N
+[INFO    ] Updating astrometry for idn107jhq
+[INFO    ] Accessing AstrometryDB service :
+[INFO    ] 	https://mast.stsci.edu/portal/astrometryDB/observation/read/idn107jhq
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq HTTP/1.1" 200 None
+[INFO    ] AstrometryDB service call succeeded
+[INFO    ] Retrieving astrometrically-updated WCS "OPUS-GSC240" for observation "idn107jhq"
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq?wcsname=OPUS-GSC240 HTTP/1.1" 200 8640
+[INFO    ] Retrieving astrometrically-updated WCS "IDC_w3m18525i-GSC240" for observation "idn107jhq"
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq?wcsname=IDC_w3m18525i-GSC240 HTTP/1.1" 200 8640
+[INFO    ] Retrieving astrometrically-updated WCS "IDC_w3m18525i" for observation "idn107jhq"
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq?wcsname=IDC_w3m18525i HTTP/1.1" 200 8640
+[INFO    ] Retrieving astrometrically-updated WCS "OPUS" for observation "idn107jhq"
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq?wcsname=OPUS HTTP/1.1" 200 5760
+[INFO    ] Updating idn107jhq with:
+[INFO    ] 	Headerlet with WCSNAME=OPUS-GSC240
+[DEBUG   ] verify_destim() returned True
+[DEBUG   ] verify_hdrname() returned True
+[INFO    ] 	Headerlet with WCSNAME=IDC_w3m18525i-GSC240
+[DEBUG   ] verify_destim() returned True
+[DEBUG   ] verify_hdrname() returned True
+[INFO    ] 	Headerlet with WCSNAME=IDC_w3m18525i
+[DEBUG   ] verify_destim() returned True
+[DEBUG   ] verify_hdrname() returned True
+[INFO    ] 	Headerlet with WCSNAME=OPUS
+[DEBUG   ] verify_destim() returned True
+[DEBUG   ] verify_hdrname() returned True
+[DEBUG   ] verify_destim() returned True
+[INFO    ] Initializing new WCSCORR table for  /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_03_diff.fits
+[INFO    ] 
+                Inconsistent SIP distortion information is present in the FITS header and the WCS object:
+                SIP coefficients were detected, but CTYPE is missing a "-SIP" suffix.
+                astropy.wcs is using the SIP distortion coefficients,
+                therefore the coordinates calculated here might be incorrect.
+
+                If you do not want to apply the SIP distortion coefficients,
+                please remove the SIP coefficients from the FITS header or the
+                WCS object.  As an example, if the image is already distortion-corrected
+                (e.g., drizzled) then distortion components should not apply and the SIP
+                coefficients should be removed.
+
+                While the SIP distortion coefficients are being applied here, if that was indeed the intent,
+                for consistency please append "-SIP" to the CTYPE in the FITS header or the WCS object.
+
+                
+[WARNING ] /media/data/arubinst/ENTER/envs/astroconda/lib/python3.7/site-packages/astropy/io/fits/card.py:268: VerifyWarning: Keyword name 'IDCSCALEO' is greater than 8 characters or contains characters not allowed by the FITS standard; a HIERARCH card will be created.
+  keyword), VerifyWarning)
+
+[DEBUG   ] Data extensions from which to create headerlet:
+	 [('SCI', 1)]
+[DEBUG   ] sciext in create_headerlet is [('SCI', 1)]
+[INFO    ] Setting destim to rootname of the science file
+[INFO    ] Setting sipname value to idn107jhq_w3m18525i
+[INFO    ] Setting npolfile value to NOMODEL
+[INFO    ] Setting d2imfile value to NOMODEL
+[INFO    ] Setting distname to idn107jhq_w3m18525i-NOMODEL-NOMODEL
+[INFO    ] Created headerlet 'IDC_w3m18525i' to be attached to file
+[INFO    ] Deleting all WCSs of file /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_03_diff.fits
+[DEBUG   ] Removing D2IM correction from (SCI, 1)
+[DEBUG   ] Removing SIP distortion from (SCI, 1)
+[DEBUG   ] Removing LUT distortion from (SCI, 1)
+[DEBUG   ] Removing Primary WCS from (SCI, 1)
+[DEBUG   ] Removing IDC coefficient from (SCI, 1)
+[DEBUG   ] Removing astrometric fit values from (SCI, 1)
+[WARNING ] /media/data/arubinst/ENTER/envs/astroconda/lib/python3.7/site-packages/astropy/wcs/wcs.py:517: FITSFixedWarning: The WCS transformation has more axes (2) than the image it is associated with (0)
+  wcsprm.naxis, header_naxis), FITSFixedWarning)
+
+[INFO    ] Updating reference files
+[WARNING ] /media/data/arubinst/ENTER/envs/astroconda/lib/python3.7/site-packages/astropy/wcs/wcs.py:517: FITSFixedWarning: The WCS transformation has more axes (2) than the image it is associated with (0)
+  wcsprm.naxis, header_naxis), FITSFixedWarning)
+
+[INFO    ] Replacing primary WCS with
+[INFO    ] 	Headerlet with WCSNAME=OPUS
+[INFO    ] - IDCTAB: Distortion model from row 14 for chip 1 : F164N
+[INFO    ] - IDCTAB: Distortion model from row 14 for chip 1 : F164N
+[INFO    ] Updating astrometry for idn107jhq
+[INFO    ] Accessing AstrometryDB service :
+[INFO    ] 	https://mast.stsci.edu/portal/astrometryDB/observation/read/idn107jhq
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq HTTP/1.1" 200 None
+[INFO    ] AstrometryDB service call succeeded
+[INFO    ] Retrieving astrometrically-updated WCS "OPUS-GSC240" for observation "idn107jhq"
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq?wcsname=OPUS-GSC240 HTTP/1.1" 200 8640
+[INFO    ] Retrieving astrometrically-updated WCS "IDC_w3m18525i-GSC240" for observation "idn107jhq"
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq?wcsname=IDC_w3m18525i-GSC240 HTTP/1.1" 200 8640
+[INFO    ] Retrieving astrometrically-updated WCS "IDC_w3m18525i" for observation "idn107jhq"
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq?wcsname=IDC_w3m18525i HTTP/1.1" 200 8640
+[INFO    ] Retrieving astrometrically-updated WCS "OPUS" for observation "idn107jhq"
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq?wcsname=OPUS HTTP/1.1" 200 5760
+[INFO    ] Updating idn107jhq with:
+[INFO    ] 	Headerlet with WCSNAME=OPUS-GSC240
+[DEBUG   ] verify_destim() returned True
+[DEBUG   ] verify_hdrname() returned True
+[INFO    ] 	Headerlet with WCSNAME=IDC_w3m18525i-GSC240
+[DEBUG   ] verify_destim() returned True
+[DEBUG   ] verify_hdrname() returned True
+[INFO    ] 	Headerlet with WCSNAME=IDC_w3m18525i
+[DEBUG   ] verify_destim() returned True
+[DEBUG   ] verify_hdrname() returned True
+[INFO    ] 	Headerlet with WCSNAME=OPUS
+[DEBUG   ] verify_destim() returned True
+[DEBUG   ] verify_hdrname() returned True
+[DEBUG   ] verify_destim() returned True
+[INFO    ] Initializing new WCSCORR table for  /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_04_diff.fits
+[INFO    ] 
+                Inconsistent SIP distortion information is present in the FITS header and the WCS object:
+                SIP coefficients were detected, but CTYPE is missing a "-SIP" suffix.
+                astropy.wcs is using the SIP distortion coefficients,
+                therefore the coordinates calculated here might be incorrect.
+
+                If you do not want to apply the SIP distortion coefficients,
+                please remove the SIP coefficients from the FITS header or the
+                WCS object.  As an example, if the image is already distortion-corrected
+                (e.g., drizzled) then distortion components should not apply and the SIP
+                coefficients should be removed.
+
+                While the SIP distortion coefficients are being applied here, if that was indeed the intent,
+                for consistency please append "-SIP" to the CTYPE in the FITS header or the WCS object.
+
+                
+[WARNING ] /media/data/arubinst/ENTER/envs/astroconda/lib/python3.7/site-packages/astropy/io/fits/card.py:268: VerifyWarning: Keyword name 'IDCSCALEO' is greater than 8 characters or contains characters not allowed by the FITS standard; a HIERARCH card will be created.
+  keyword), VerifyWarning)
+
+[DEBUG   ] Data extensions from which to create headerlet:
+	 [('SCI', 1)]
+[DEBUG   ] sciext in create_headerlet is [('SCI', 1)]
+[INFO    ] Setting destim to rootname of the science file
+[INFO    ] Setting sipname value to idn107jhq_w3m18525i
+[INFO    ] Setting npolfile value to NOMODEL
+[INFO    ] Setting d2imfile value to NOMODEL
+[INFO    ] Setting distname to idn107jhq_w3m18525i-NOMODEL-NOMODEL
+[INFO    ] Created headerlet 'IDC_w3m18525i' to be attached to file
+[INFO    ] Deleting all WCSs of file /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_04_diff.fits
+[DEBUG   ] Removing D2IM correction from (SCI, 1)
+[DEBUG   ] Removing SIP distortion from (SCI, 1)
+[DEBUG   ] Removing LUT distortion from (SCI, 1)
+[DEBUG   ] Removing Primary WCS from (SCI, 1)
+[DEBUG   ] Removing IDC coefficient from (SCI, 1)
+[DEBUG   ] Removing astrometric fit values from (SCI, 1)
+[WARNING ] /media/data/arubinst/ENTER/envs/astroconda/lib/python3.7/site-packages/astropy/wcs/wcs.py:517: FITSFixedWarning: The WCS transformation has more axes (2) than the image it is associated with (0)
+  wcsprm.naxis, header_naxis), FITSFixedWarning)
+
+[INFO    ] Updating reference files
+[WARNING ] /media/data/arubinst/ENTER/envs/astroconda/lib/python3.7/site-packages/astropy/wcs/wcs.py:517: FITSFixedWarning: The WCS transformation has more axes (2) than the image it is associated with (0)
+  wcsprm.naxis, header_naxis), FITSFixedWarning)
+
+[INFO    ] Replacing primary WCS with
+[INFO    ] 	Headerlet with WCSNAME=OPUS
+[INFO    ] - IDCTAB: Distortion model from row 14 for chip 1 : F164N
+[INFO    ] - IDCTAB: Distortion model from row 14 for chip 1 : F164N
+[INFO    ] Updating astrometry for idn107jhq
+[INFO    ] Accessing AstrometryDB service :
+[INFO    ] 	https://mast.stsci.edu/portal/astrometryDB/observation/read/idn107jhq
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq HTTP/1.1" 200 None
+[INFO    ] AstrometryDB service call succeeded
+[INFO    ] Retrieving astrometrically-updated WCS "OPUS-GSC240" for observation "idn107jhq"
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq?wcsname=OPUS-GSC240 HTTP/1.1" 200 8640
+[INFO    ] Retrieving astrometrically-updated WCS "IDC_w3m18525i-GSC240" for observation "idn107jhq"
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq?wcsname=IDC_w3m18525i-GSC240 HTTP/1.1" 200 8640
+[INFO    ] Retrieving astrometrically-updated WCS "IDC_w3m18525i" for observation "idn107jhq"
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq?wcsname=IDC_w3m18525i HTTP/1.1" 200 8640
+[INFO    ] Retrieving astrometrically-updated WCS "OPUS" for observation "idn107jhq"
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq?wcsname=OPUS HTTP/1.1" 200 5760
+[INFO    ] Updating idn107jhq with:
+[INFO    ] 	Headerlet with WCSNAME=OPUS-GSC240
+[DEBUG   ] verify_destim() returned True
+[DEBUG   ] verify_hdrname() returned True
+[INFO    ] 	Headerlet with WCSNAME=IDC_w3m18525i-GSC240
+[DEBUG   ] verify_destim() returned True
+[DEBUG   ] verify_hdrname() returned True
+[INFO    ] 	Headerlet with WCSNAME=IDC_w3m18525i
+[DEBUG   ] verify_destim() returned True
+[DEBUG   ] verify_hdrname() returned True
+[INFO    ] 	Headerlet with WCSNAME=OPUS
+[DEBUG   ] verify_destim() returned True
+[DEBUG   ] verify_hdrname() returned True
+[DEBUG   ] verify_destim() returned True
+[INFO    ] Initializing new WCSCORR table for  /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_05_diff.fits
+[INFO    ] 
+                Inconsistent SIP distortion information is present in the FITS header and the WCS object:
+                SIP coefficients were detected, but CTYPE is missing a "-SIP" suffix.
+                astropy.wcs is using the SIP distortion coefficients,
+                therefore the coordinates calculated here might be incorrect.
+
+                If you do not want to apply the SIP distortion coefficients,
+                please remove the SIP coefficients from the FITS header or the
+                WCS object.  As an example, if the image is already distortion-corrected
+                (e.g., drizzled) then distortion components should not apply and the SIP
+                coefficients should be removed.
+
+                While the SIP distortion coefficients are being applied here, if that was indeed the intent,
+                for consistency please append "-SIP" to the CTYPE in the FITS header or the WCS object.
+
+                
+[WARNING ] /media/data/arubinst/ENTER/envs/astroconda/lib/python3.7/site-packages/astropy/io/fits/card.py:268: VerifyWarning: Keyword name 'IDCSCALEO' is greater than 8 characters or contains characters not allowed by the FITS standard; a HIERARCH card will be created.
+  keyword), VerifyWarning)
+
+[DEBUG   ] Data extensions from which to create headerlet:
+	 [('SCI', 1)]
+[DEBUG   ] sciext in create_headerlet is [('SCI', 1)]
+[INFO    ] Setting destim to rootname of the science file
+[INFO    ] Setting sipname value to idn107jhq_w3m18525i
+[INFO    ] Setting npolfile value to NOMODEL
+[INFO    ] Setting d2imfile value to NOMODEL
+[INFO    ] Setting distname to idn107jhq_w3m18525i-NOMODEL-NOMODEL
+[INFO    ] Created headerlet 'IDC_w3m18525i' to be attached to file
+[INFO    ] Deleting all WCSs of file /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_05_diff.fits
+[DEBUG   ] Removing D2IM correction from (SCI, 1)
+[DEBUG   ] Removing SIP distortion from (SCI, 1)
+[DEBUG   ] Removing LUT distortion from (SCI, 1)
+[DEBUG   ] Removing Primary WCS from (SCI, 1)
+[DEBUG   ] Removing IDC coefficient from (SCI, 1)
+[DEBUG   ] Removing astrometric fit values from (SCI, 1)
+[WARNING ] /media/data/arubinst/ENTER/envs/astroconda/lib/python3.7/site-packages/astropy/wcs/wcs.py:517: FITSFixedWarning: The WCS transformation has more axes (2) than the image it is associated with (0)
+  wcsprm.naxis, header_naxis), FITSFixedWarning)
+
+[INFO    ] Updating reference files
+[WARNING ] /media/data/arubinst/ENTER/envs/astroconda/lib/python3.7/site-packages/astropy/wcs/wcs.py:517: FITSFixedWarning: The WCS transformation has more axes (2) than the image it is associated with (0)
+  wcsprm.naxis, header_naxis), FITSFixedWarning)
+
+[INFO    ] Replacing primary WCS with
+[INFO    ] 	Headerlet with WCSNAME=OPUS
+[INFO    ] - IDCTAB: Distortion model from row 14 for chip 1 : F164N
+[INFO    ] - IDCTAB: Distortion model from row 14 for chip 1 : F164N
+[INFO    ] Updating astrometry for idn107jhq
+[INFO    ] Accessing AstrometryDB service :
+[INFO    ] 	https://mast.stsci.edu/portal/astrometryDB/observation/read/idn107jhq
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq HTTP/1.1" 200 None
+[INFO    ] AstrometryDB service call succeeded
+[INFO    ] Retrieving astrometrically-updated WCS "OPUS-GSC240" for observation "idn107jhq"
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq?wcsname=OPUS-GSC240 HTTP/1.1" 200 8640
+[INFO    ] Retrieving astrometrically-updated WCS "IDC_w3m18525i-GSC240" for observation "idn107jhq"
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq?wcsname=IDC_w3m18525i-GSC240 HTTP/1.1" 200 8640
+[INFO    ] Retrieving astrometrically-updated WCS "IDC_w3m18525i" for observation "idn107jhq"
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq?wcsname=IDC_w3m18525i HTTP/1.1" 200 8640
+[INFO    ] Retrieving astrometrically-updated WCS "OPUS" for observation "idn107jhq"
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq?wcsname=OPUS HTTP/1.1" 200 5760
+[INFO    ] Updating idn107jhq with:
+[INFO    ] 	Headerlet with WCSNAME=OPUS-GSC240
+[DEBUG   ] verify_destim() returned True
+[DEBUG   ] verify_hdrname() returned True
+[INFO    ] 	Headerlet with WCSNAME=IDC_w3m18525i-GSC240
+[DEBUG   ] verify_destim() returned True
+[DEBUG   ] verify_hdrname() returned True
+[INFO    ] 	Headerlet with WCSNAME=IDC_w3m18525i
+[DEBUG   ] verify_destim() returned True
+[DEBUG   ] verify_hdrname() returned True
+[INFO    ] 	Headerlet with WCSNAME=OPUS
+[DEBUG   ] verify_destim() returned True
+[DEBUG   ] verify_hdrname() returned True
+[DEBUG   ] verify_destim() returned True
+[INFO    ] Initializing new WCSCORR table for  /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_06_diff.fits
+[INFO    ] 
+                Inconsistent SIP distortion information is present in the FITS header and the WCS object:
+                SIP coefficients were detected, but CTYPE is missing a "-SIP" suffix.
+                astropy.wcs is using the SIP distortion coefficients,
+                therefore the coordinates calculated here might be incorrect.
+
+                If you do not want to apply the SIP distortion coefficients,
+                please remove the SIP coefficients from the FITS header or the
+                WCS object.  As an example, if the image is already distortion-corrected
+                (e.g., drizzled) then distortion components should not apply and the SIP
+                coefficients should be removed.
+
+                While the SIP distortion coefficients are being applied here, if that was indeed the intent,
+                for consistency please append "-SIP" to the CTYPE in the FITS header or the WCS object.
+
+                
+[WARNING ] /media/data/arubinst/ENTER/envs/astroconda/lib/python3.7/site-packages/astropy/io/fits/card.py:268: VerifyWarning: Keyword name 'IDCSCALEO' is greater than 8 characters or contains characters not allowed by the FITS standard; a HIERARCH card will be created.
+  keyword), VerifyWarning)
+
+[DEBUG   ] Data extensions from which to create headerlet:
+	 [('SCI', 1)]
+[DEBUG   ] sciext in create_headerlet is [('SCI', 1)]
+[INFO    ] Setting destim to rootname of the science file
+[INFO    ] Setting sipname value to idn107jhq_w3m18525i
+[INFO    ] Setting npolfile value to NOMODEL
+[INFO    ] Setting d2imfile value to NOMODEL
+[INFO    ] Setting distname to idn107jhq_w3m18525i-NOMODEL-NOMODEL
+[INFO    ] Created headerlet 'IDC_w3m18525i' to be attached to file
+[INFO    ] Deleting all WCSs of file /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_06_diff.fits
+[DEBUG   ] Removing D2IM correction from (SCI, 1)
+[DEBUG   ] Removing SIP distortion from (SCI, 1)
+[DEBUG   ] Removing LUT distortion from (SCI, 1)
+[DEBUG   ] Removing Primary WCS from (SCI, 1)
+[DEBUG   ] Removing IDC coefficient from (SCI, 1)
+[DEBUG   ] Removing astrometric fit values from (SCI, 1)
+[WARNING ] /media/data/arubinst/ENTER/envs/astroconda/lib/python3.7/site-packages/astropy/wcs/wcs.py:517: FITSFixedWarning: The WCS transformation has more axes (2) than the image it is associated with (0)
+  wcsprm.naxis, header_naxis), FITSFixedWarning)
+
+[INFO    ] Updating reference files
+[WARNING ] /media/data/arubinst/ENTER/envs/astroconda/lib/python3.7/site-packages/astropy/wcs/wcs.py:517: FITSFixedWarning: The WCS transformation has more axes (2) than the image it is associated with (0)
+  wcsprm.naxis, header_naxis), FITSFixedWarning)
+
+[INFO    ] Replacing primary WCS with
+[INFO    ] 	Headerlet with WCSNAME=OPUS
+[INFO    ] - IDCTAB: Distortion model from row 14 for chip 1 : F164N
+[INFO    ] - IDCTAB: Distortion model from row 14 for chip 1 : F164N
+[INFO    ] Updating astrometry for idn107jhq
+[INFO    ] Accessing AstrometryDB service :
+[INFO    ] 	https://mast.stsci.edu/portal/astrometryDB/observation/read/idn107jhq
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq HTTP/1.1" 200 None
+[INFO    ] AstrometryDB service call succeeded
+[INFO    ] Retrieving astrometrically-updated WCS "OPUS-GSC240" for observation "idn107jhq"
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq?wcsname=OPUS-GSC240 HTTP/1.1" 200 8640
+[INFO    ] Retrieving astrometrically-updated WCS "IDC_w3m18525i-GSC240" for observation "idn107jhq"
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq?wcsname=IDC_w3m18525i-GSC240 HTTP/1.1" 200 8640
+[INFO    ] Retrieving astrometrically-updated WCS "IDC_w3m18525i" for observation "idn107jhq"
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq?wcsname=IDC_w3m18525i HTTP/1.1" 200 8640
+[INFO    ] Retrieving astrometrically-updated WCS "OPUS" for observation "idn107jhq"
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq?wcsname=OPUS HTTP/1.1" 200 5760
+[INFO    ] Updating idn107jhq with:
+[INFO    ] 	Headerlet with WCSNAME=OPUS-GSC240
+[DEBUG   ] verify_destim() returned True
+[DEBUG   ] verify_hdrname() returned True
+[INFO    ] 	Headerlet with WCSNAME=IDC_w3m18525i-GSC240
+[DEBUG   ] verify_destim() returned True
+[DEBUG   ] verify_hdrname() returned True
+[INFO    ] 	Headerlet with WCSNAME=IDC_w3m18525i
+[DEBUG   ] verify_destim() returned True
+[DEBUG   ] verify_hdrname() returned True
+[INFO    ] 	Headerlet with WCSNAME=OPUS
+[DEBUG   ] verify_destim() returned True
+[DEBUG   ] verify_hdrname() returned True
+[DEBUG   ] verify_destim() returned True
+[INFO    ] Initializing new WCSCORR table for  /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_07_diff.fits
+[INFO    ] 
+                Inconsistent SIP distortion information is present in the FITS header and the WCS object:
+                SIP coefficients were detected, but CTYPE is missing a "-SIP" suffix.
+                astropy.wcs is using the SIP distortion coefficients,
+                therefore the coordinates calculated here might be incorrect.
+
+                If you do not want to apply the SIP distortion coefficients,
+                please remove the SIP coefficients from the FITS header or the
+                WCS object.  As an example, if the image is already distortion-corrected
+                (e.g., drizzled) then distortion components should not apply and the SIP
+                coefficients should be removed.
+
+                While the SIP distortion coefficients are being applied here, if that was indeed the intent,
+                for consistency please append "-SIP" to the CTYPE in the FITS header or the WCS object.
+
+                
+[WARNING ] /media/data/arubinst/ENTER/envs/astroconda/lib/python3.7/site-packages/astropy/io/fits/card.py:268: VerifyWarning: Keyword name 'IDCSCALEO' is greater than 8 characters or contains characters not allowed by the FITS standard; a HIERARCH card will be created.
+  keyword), VerifyWarning)
+
+[DEBUG   ] Data extensions from which to create headerlet:
+	 [('SCI', 1)]
+[DEBUG   ] sciext in create_headerlet is [('SCI', 1)]
+[INFO    ] Setting destim to rootname of the science file
+[INFO    ] Setting sipname value to idn107jhq_w3m18525i
+[INFO    ] Setting npolfile value to NOMODEL
+[INFO    ] Setting d2imfile value to NOMODEL
+[INFO    ] Setting distname to idn107jhq_w3m18525i-NOMODEL-NOMODEL
+[INFO    ] Created headerlet 'IDC_w3m18525i' to be attached to file
+[INFO    ] Deleting all WCSs of file /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_07_diff.fits
+[DEBUG   ] Removing D2IM correction from (SCI, 1)
+[DEBUG   ] Removing SIP distortion from (SCI, 1)
+[DEBUG   ] Removing LUT distortion from (SCI, 1)
+[DEBUG   ] Removing Primary WCS from (SCI, 1)
+[DEBUG   ] Removing IDC coefficient from (SCI, 1)
+[DEBUG   ] Removing astrometric fit values from (SCI, 1)
+[WARNING ] /media/data/arubinst/ENTER/envs/astroconda/lib/python3.7/site-packages/astropy/wcs/wcs.py:517: FITSFixedWarning: The WCS transformation has more axes (2) than the image it is associated with (0)
+  wcsprm.naxis, header_naxis), FITSFixedWarning)
+
+[INFO    ] Updating reference files
+[WARNING ] /media/data/arubinst/ENTER/envs/astroconda/lib/python3.7/site-packages/astropy/wcs/wcs.py:517: FITSFixedWarning: The WCS transformation has more axes (2) than the image it is associated with (0)
+  wcsprm.naxis, header_naxis), FITSFixedWarning)
+
+[INFO    ] Replacing primary WCS with
+[INFO    ] 	Headerlet with WCSNAME=OPUS
+[INFO    ] - IDCTAB: Distortion model from row 14 for chip 1 : F164N
+[INFO    ] - IDCTAB: Distortion model from row 14 for chip 1 : F164N
+[INFO    ] Updating astrometry for idn107jhq
+[INFO    ] Accessing AstrometryDB service :
+[INFO    ] 	https://mast.stsci.edu/portal/astrometryDB/observation/read/idn107jhq
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq HTTP/1.1" 200 None
+[INFO    ] AstrometryDB service call succeeded
+[INFO    ] Retrieving astrometrically-updated WCS "OPUS-GSC240" for observation "idn107jhq"
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq?wcsname=OPUS-GSC240 HTTP/1.1" 200 8640
+[INFO    ] Retrieving astrometrically-updated WCS "IDC_w3m18525i-GSC240" for observation "idn107jhq"
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq?wcsname=IDC_w3m18525i-GSC240 HTTP/1.1" 200 8640
+[INFO    ] Retrieving astrometrically-updated WCS "IDC_w3m18525i" for observation "idn107jhq"
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq?wcsname=IDC_w3m18525i HTTP/1.1" 200 8640
+[INFO    ] Retrieving astrometrically-updated WCS "OPUS" for observation "idn107jhq"
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq?wcsname=OPUS HTTP/1.1" 200 5760
+[INFO    ] Updating idn107jhq with:
+[INFO    ] 	Headerlet with WCSNAME=OPUS-GSC240
+[DEBUG   ] verify_destim() returned True
+[DEBUG   ] verify_hdrname() returned True
+[INFO    ] 	Headerlet with WCSNAME=IDC_w3m18525i-GSC240
+[DEBUG   ] verify_destim() returned True
+[DEBUG   ] verify_hdrname() returned True
+[INFO    ] 	Headerlet with WCSNAME=IDC_w3m18525i
+[DEBUG   ] verify_destim() returned True
+[DEBUG   ] verify_hdrname() returned True
+[INFO    ] 	Headerlet with WCSNAME=OPUS
+[DEBUG   ] verify_destim() returned True
+[DEBUG   ] verify_hdrname() returned True
+[DEBUG   ] verify_destim() returned True
+[INFO    ] Initializing new WCSCORR table for  /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_08_diff.fits
+[INFO    ] 
+                Inconsistent SIP distortion information is present in the FITS header and the WCS object:
+                SIP coefficients were detected, but CTYPE is missing a "-SIP" suffix.
+                astropy.wcs is using the SIP distortion coefficients,
+                therefore the coordinates calculated here might be incorrect.
+
+                If you do not want to apply the SIP distortion coefficients,
+                please remove the SIP coefficients from the FITS header or the
+                WCS object.  As an example, if the image is already distortion-corrected
+                (e.g., drizzled) then distortion components should not apply and the SIP
+                coefficients should be removed.
+
+                While the SIP distortion coefficients are being applied here, if that was indeed the intent,
+                for consistency please append "-SIP" to the CTYPE in the FITS header or the WCS object.
+
+                
+[WARNING ] /media/data/arubinst/ENTER/envs/astroconda/lib/python3.7/site-packages/astropy/io/fits/card.py:268: VerifyWarning: Keyword name 'IDCSCALEO' is greater than 8 characters or contains characters not allowed by the FITS standard; a HIERARCH card will be created.
+  keyword), VerifyWarning)
+
+[DEBUG   ] Data extensions from which to create headerlet:
+	 [('SCI', 1)]
+[DEBUG   ] sciext in create_headerlet is [('SCI', 1)]
+[INFO    ] Setting destim to rootname of the science file
+[INFO    ] Setting sipname value to idn107jhq_w3m18525i
+[INFO    ] Setting npolfile value to NOMODEL
+[INFO    ] Setting d2imfile value to NOMODEL
+[INFO    ] Setting distname to idn107jhq_w3m18525i-NOMODEL-NOMODEL
+[INFO    ] Created headerlet 'IDC_w3m18525i' to be attached to file
+[INFO    ] Deleting all WCSs of file /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_08_diff.fits
+[DEBUG   ] Removing D2IM correction from (SCI, 1)
+[DEBUG   ] Removing SIP distortion from (SCI, 1)
+[DEBUG   ] Removing LUT distortion from (SCI, 1)
+[DEBUG   ] Removing Primary WCS from (SCI, 1)
+[DEBUG   ] Removing IDC coefficient from (SCI, 1)
+[DEBUG   ] Removing astrometric fit values from (SCI, 1)
+[WARNING ] /media/data/arubinst/ENTER/envs/astroconda/lib/python3.7/site-packages/astropy/wcs/wcs.py:517: FITSFixedWarning: The WCS transformation has more axes (2) than the image it is associated with (0)
+  wcsprm.naxis, header_naxis), FITSFixedWarning)
+
+[INFO    ] Updating reference files
+[WARNING ] /media/data/arubinst/ENTER/envs/astroconda/lib/python3.7/site-packages/astropy/wcs/wcs.py:517: FITSFixedWarning: The WCS transformation has more axes (2) than the image it is associated with (0)
+  wcsprm.naxis, header_naxis), FITSFixedWarning)
+
+[INFO    ] Replacing primary WCS with
+[INFO    ] 	Headerlet with WCSNAME=OPUS
+[INFO    ] - IDCTAB: Distortion model from row 14 for chip 1 : F164N
+[INFO    ] - IDCTAB: Distortion model from row 14 for chip 1 : F164N
+[INFO    ] Updating astrometry for idn107jhq
+[INFO    ] Accessing AstrometryDB service :
+[INFO    ] 	https://mast.stsci.edu/portal/astrometryDB/observation/read/idn107jhq
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq HTTP/1.1" 200 None
+[INFO    ] AstrometryDB service call succeeded
+[INFO    ] Retrieving astrometrically-updated WCS "OPUS-GSC240" for observation "idn107jhq"
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq?wcsname=OPUS-GSC240 HTTP/1.1" 200 8640
+[INFO    ] Retrieving astrometrically-updated WCS "IDC_w3m18525i-GSC240" for observation "idn107jhq"
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq?wcsname=IDC_w3m18525i-GSC240 HTTP/1.1" 200 8640
+[INFO    ] Retrieving astrometrically-updated WCS "IDC_w3m18525i" for observation "idn107jhq"
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq?wcsname=IDC_w3m18525i HTTP/1.1" 200 8640
+[INFO    ] Retrieving astrometrically-updated WCS "OPUS" for observation "idn107jhq"
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq?wcsname=OPUS HTTP/1.1" 200 5760
+[INFO    ] Updating idn107jhq with:
+[INFO    ] 	Headerlet with WCSNAME=OPUS-GSC240
+[DEBUG   ] verify_destim() returned True
+[DEBUG   ] verify_hdrname() returned True
+[INFO    ] 	Headerlet with WCSNAME=IDC_w3m18525i-GSC240
+[DEBUG   ] verify_destim() returned True
+[DEBUG   ] verify_hdrname() returned True
+[INFO    ] 	Headerlet with WCSNAME=IDC_w3m18525i
+[DEBUG   ] verify_destim() returned True
+[DEBUG   ] verify_hdrname() returned True
+[INFO    ] 	Headerlet with WCSNAME=OPUS
+[DEBUG   ] verify_destim() returned True
+[DEBUG   ] verify_hdrname() returned True
+[DEBUG   ] verify_destim() returned True
+[INFO    ] Initializing new WCSCORR table for  /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_09_diff.fits
+[INFO    ] 
+                Inconsistent SIP distortion information is present in the FITS header and the WCS object:
+                SIP coefficients were detected, but CTYPE is missing a "-SIP" suffix.
+                astropy.wcs is using the SIP distortion coefficients,
+                therefore the coordinates calculated here might be incorrect.
+
+                If you do not want to apply the SIP distortion coefficients,
+                please remove the SIP coefficients from the FITS header or the
+                WCS object.  As an example, if the image is already distortion-corrected
+                (e.g., drizzled) then distortion components should not apply and the SIP
+                coefficients should be removed.
+
+                While the SIP distortion coefficients are being applied here, if that was indeed the intent,
+                for consistency please append "-SIP" to the CTYPE in the FITS header or the WCS object.
+
+                
+[WARNING ] /media/data/arubinst/ENTER/envs/astroconda/lib/python3.7/site-packages/astropy/io/fits/card.py:268: VerifyWarning: Keyword name 'IDCSCALEO' is greater than 8 characters or contains characters not allowed by the FITS standard; a HIERARCH card will be created.
+  keyword), VerifyWarning)
+
+[DEBUG   ] Data extensions from which to create headerlet:
+	 [('SCI', 1)]
+[DEBUG   ] sciext in create_headerlet is [('SCI', 1)]
+[INFO    ] Setting destim to rootname of the science file
+[INFO    ] Setting sipname value to idn107jhq_w3m18525i
+[INFO    ] Setting npolfile value to NOMODEL
+[INFO    ] Setting d2imfile value to NOMODEL
+[INFO    ] Setting distname to idn107jhq_w3m18525i-NOMODEL-NOMODEL
+[INFO    ] Created headerlet 'IDC_w3m18525i' to be attached to file
+[INFO    ] Deleting all WCSs of file /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_09_diff.fits
+[DEBUG   ] Removing D2IM correction from (SCI, 1)
+[DEBUG   ] Removing SIP distortion from (SCI, 1)
+[DEBUG   ] Removing LUT distortion from (SCI, 1)
+[DEBUG   ] Removing Primary WCS from (SCI, 1)
+[DEBUG   ] Removing IDC coefficient from (SCI, 1)
+[DEBUG   ] Removing astrometric fit values from (SCI, 1)
+[WARNING ] /media/data/arubinst/ENTER/envs/astroconda/lib/python3.7/site-packages/astropy/wcs/wcs.py:517: FITSFixedWarning: The WCS transformation has more axes (2) than the image it is associated with (0)
+  wcsprm.naxis, header_naxis), FITSFixedWarning)
+
+[INFO    ] Updating reference files
+[WARNING ] /media/data/arubinst/ENTER/envs/astroconda/lib/python3.7/site-packages/astropy/wcs/wcs.py:517: FITSFixedWarning: The WCS transformation has more axes (2) than the image it is associated with (0)
+  wcsprm.naxis, header_naxis), FITSFixedWarning)
+
+[INFO    ] Replacing primary WCS with
+[INFO    ] 	Headerlet with WCSNAME=OPUS
+[INFO    ] - IDCTAB: Distortion model from row 14 for chip 1 : F164N
+[INFO    ] - IDCTAB: Distortion model from row 14 for chip 1 : F164N
+[INFO    ] Updating astrometry for idn107jhq
+[INFO    ] Accessing AstrometryDB service :
+[INFO    ] 	https://mast.stsci.edu/portal/astrometryDB/observation/read/idn107jhq
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq HTTP/1.1" 200 None
+[INFO    ] AstrometryDB service call succeeded
+[INFO    ] Retrieving astrometrically-updated WCS "OPUS-GSC240" for observation "idn107jhq"
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq?wcsname=OPUS-GSC240 HTTP/1.1" 200 8640
+[INFO    ] Retrieving astrometrically-updated WCS "IDC_w3m18525i-GSC240" for observation "idn107jhq"
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq?wcsname=IDC_w3m18525i-GSC240 HTTP/1.1" 200 8640
+[INFO    ] Retrieving astrometrically-updated WCS "IDC_w3m18525i" for observation "idn107jhq"
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq?wcsname=IDC_w3m18525i HTTP/1.1" 200 8640
+[INFO    ] Retrieving astrometrically-updated WCS "OPUS" for observation "idn107jhq"
+[DEBUG   ] Starting new HTTPS connection (1): mast.stsci.edu:443
+[DEBUG   ] https://mast.stsci.edu:443 "GET /portal/astrometryDB/observation/read/idn107jhq?wcsname=OPUS HTTP/1.1" 200 5760
+[INFO    ] Updating idn107jhq with:
+[INFO    ] 	Headerlet with WCSNAME=OPUS-GSC240
+[DEBUG   ] verify_destim() returned True
+[DEBUG   ] verify_hdrname() returned True
+[INFO    ] 	Headerlet with WCSNAME=IDC_w3m18525i-GSC240
+[DEBUG   ] verify_destim() returned True
+[DEBUG   ] verify_hdrname() returned True
+[INFO    ] 	Headerlet with WCSNAME=IDC_w3m18525i
+[DEBUG   ] verify_destim() returned True
+[DEBUG   ] verify_hdrname() returned True
+[INFO    ] 	Headerlet with WCSNAME=OPUS
+[DEBUG   ] verify_destim() returned True
+[DEBUG   ] verify_hdrname() returned True
+[DEBUG   ] verify_destim() returned True
+[INFO    ] Initializing new WCSCORR table for  /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_10_diff.fits
+[INFO    ] 
+                Inconsistent SIP distortion information is present in the FITS header and the WCS object:
+                SIP coefficients were detected, but CTYPE is missing a "-SIP" suffix.
+                astropy.wcs is using the SIP distortion coefficients,
+                therefore the coordinates calculated here might be incorrect.
+
+                If you do not want to apply the SIP distortion coefficients,
+                please remove the SIP coefficients from the FITS header or the
+                WCS object.  As an example, if the image is already distortion-corrected
+                (e.g., drizzled) then distortion components should not apply and the SIP
+                coefficients should be removed.
+
+                While the SIP distortion coefficients are being applied here, if that was indeed the intent,
+                for consistency please append "-SIP" to the CTYPE in the FITS header or the WCS object.
+
+                
+[WARNING ] /media/data/arubinst/ENTER/envs/astroconda/lib/python3.7/site-packages/astropy/io/fits/card.py:268: VerifyWarning: Keyword name 'IDCSCALEO' is greater than 8 characters or contains characters not allowed by the FITS standard; a HIERARCH card will be created.
+  keyword), VerifyWarning)
+
+[DEBUG   ] Data extensions from which to create headerlet:
+	 [('SCI', 1)]
+[DEBUG   ] sciext in create_headerlet is [('SCI', 1)]
+[INFO    ] Setting destim to rootname of the science file
+[INFO    ] Setting sipname value to idn107jhq_w3m18525i
+[INFO    ] Setting npolfile value to NOMODEL
+[INFO    ] Setting d2imfile value to NOMODEL
+[INFO    ] Setting distname to idn107jhq_w3m18525i-NOMODEL-NOMODEL
+[INFO    ] Created headerlet 'IDC_w3m18525i' to be attached to file
+[INFO    ] Deleting all WCSs of file /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_10_diff.fits
+[DEBUG   ] Removing D2IM correction from (SCI, 1)
+[DEBUG   ] Removing SIP distortion from (SCI, 1)
+[DEBUG   ] Removing LUT distortion from (SCI, 1)
+[DEBUG   ] Removing Primary WCS from (SCI, 1)
+[DEBUG   ] Removing IDC coefficient from (SCI, 1)
+[DEBUG   ] Removing astrometric fit values from (SCI, 1)
+[WARNING ] /media/data/arubinst/ENTER/envs/astroconda/lib/python3.7/site-packages/astropy/wcs/wcs.py:517: FITSFixedWarning: The WCS transformation has more axes (2) than the image it is associated with (0)
+  wcsprm.naxis, header_naxis), FITSFixedWarning)
+
+[INFO    ] Updating reference files
+[WARNING ] /media/data/arubinst/ENTER/envs/astroconda/lib/python3.7/site-packages/astropy/wcs/wcs.py:517: FITSFixedWarning: The WCS transformation has more axes (2) than the image it is associated with (0)
+  wcsprm.naxis, header_naxis), FITSFixedWarning)
+
+[INFO    ] Replacing primary WCS with
+[INFO    ] 	Headerlet with WCSNAME=OPUS
+[INFO    ] 
+[INFO    ] Finding shifts for: 
+[INFO    ]     /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_01_diff.fits
+[INFO    ]     /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_02_diff.fits
+[INFO    ]     /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_03_diff.fits
+[INFO    ]     /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_04_diff.fits
+[INFO    ]     /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_05_diff.fits
+[INFO    ]     /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_06_diff.fits
+[INFO    ]     /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_07_diff.fits
+[INFO    ]     /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_08_diff.fits
+[INFO    ]     /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_09_diff.fits
+[INFO    ]     /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_10_diff.fits
+[INFO    ] 
+[INFO    ] USER INPUT PARAMETERS for finding sources for each input image:
+[INFO    ] 	catfile :	catalogs/diff_catfile.cat
+[INFO    ] 	clean :	False
+[INFO    ] 	computesig :	True
+[INFO    ] 	conv_width :	3.5
+[INFO    ] 	dqbits :	
+[INFO    ] 	enforce_user_order :	True
+[INFO    ] 	expand_refcat :	False
+[INFO    ] 	fluxcol :	
+[INFO    ] 	fluxmax :	None
+[INFO    ] 	fluxmin :	None
+[INFO    ] 	fluxunits :	counts
+[INFO    ] 	input :	['diff/idn107jhq_01_diff.fits', 'diff/idn107jhq_02_diff.fits', 'diff/idn107jhq_03_diff.fits', 'diff/idn107jhq_04_diff.fits', 'diff/idn107jhq_05_diff.fits', 'diff/idn107jhq_06_diff.fits', 'diff/idn107jhq_07_diff.fits', 'diff/idn107jhq_08_diff.fits', 'diff/idn107jhq_09_diff.fits', 'diff/idn107jhq_10_diff.fits']
+[INFO    ] 	interactive :	False
+[INFO    ] 	maxflux :	None
+[INFO    ] 	minflux :	None
+[INFO    ] 	nbright :	None
+[INFO    ] 	nsigma :	1.5
+[INFO    ] 	peakmax :	None
+[INFO    ] 	peakmin :	None
+[INFO    ] 	ratio :	1.0
+[INFO    ] 	refimage :	
+[INFO    ] 	roundhi :	1.0
+[INFO    ] 	roundlo :	-1.0
+[INFO    ] 	runfile :	tweakreg.log
+[INFO    ] 	sharphi :	1.0
+[INFO    ] 	sharplo :	0.2
+[INFO    ] 	skysigma :	0.0
+[INFO    ] 	sort_fluxunits :	counts
+[INFO    ] 	sort_maxflux :	None
+[INFO    ] 	sort_minflux :	None
+[INFO    ] 	sort_nbright :	None
+[INFO    ] 	theta :	0.0
+[INFO    ] 	threshold :	50.0
+[INFO    ] 	updatehdr :	False
+[INFO    ] 	updatewcs :	True
+[INFO    ] 	use_sharp_round :	False
+[INFO    ] 	verbose :	True
+[INFO    ] 	writecat :	True
+[INFO    ] 	xcol :	2
+[INFO    ] 	xyunits :	pixels
+[INFO    ] 	ycol :	3
+[INFO    ] 
+[INFO    ] ===  Source finding for image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_01_diff.fits':
+[INFO    ]      Found 115 objects.
+[INFO    ] ===  FINAL number of objects in image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_01_diff.fits': 115
+[INFO    ] 
+[INFO    ] ===  Source finding for image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_02_diff.fits':
+[INFO    ]      Found 132 objects.
+[INFO    ] ===  FINAL number of objects in image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_02_diff.fits': 132
+[INFO    ] 
+[INFO    ] ===  Source finding for image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_03_diff.fits':
+[INFO    ]      Found 127 objects.
+[INFO    ] ===  FINAL number of objects in image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_03_diff.fits': 127
+[INFO    ] 
+[INFO    ] ===  Source finding for image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_04_diff.fits':
+[INFO    ]      Found 133 objects.
+[WARNING ] /media/data/arubinst/ENTER/envs/astroconda/lib/python3.7/site-packages/spherical_geometry/polygon.py:601: RuntimeWarning: invalid value encountered in triple_product
+  orient = great_circle_arc.triple_product(A-B, C-B, B)
+
+[WARNING ] /media/data/arubinst/ENTER/envs/astroconda/lib/python3.7/site-packages/spherical_geometry/polygon.py:139: RuntimeWarning: invalid value encountered in triple_product
+  orient = great_circle_arc.triple_product(A-B, C-B, B)
+
+[INFO    ] ===  FINAL number of objects in image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_04_diff.fits': 133
+[INFO    ] 
+[INFO    ] ===  Source finding for image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_05_diff.fits':
+[INFO    ]      Found 119 objects.
+[INFO    ] ===  FINAL number of objects in image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_05_diff.fits': 119
+[INFO    ] 
+[INFO    ] ===  Source finding for image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_06_diff.fits':
+[INFO    ]      Found 148 objects.
+[INFO    ] ===  FINAL number of objects in image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_06_diff.fits': 148
+[INFO    ] 
+[INFO    ] ===  Source finding for image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_07_diff.fits':
+[INFO    ]      Found 131 objects.
+[INFO    ] ===  FINAL number of objects in image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_07_diff.fits': 131
+[INFO    ] 
+[INFO    ] ===  Source finding for image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_08_diff.fits':
+[INFO    ]      Found 133 objects.
+[INFO    ] ===  FINAL number of objects in image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_08_diff.fits': 133
+[INFO    ] 
+[INFO    ] ===  Source finding for image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_09_diff.fits':
+[INFO    ]      Found 131 objects.
+[INFO    ] ===  FINAL number of objects in image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_09_diff.fits': 131
+[INFO    ] 
+[INFO    ] ===  Source finding for image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_10_diff.fits':
+[INFO    ]      Found 129 objects.
+[INFO    ] ===  FINAL number of objects in image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_10_diff.fits': 129
+[INFO    ] 
+[INFO    ] Converting RA/Dec positions of reference sources from "/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_01_diff.fits" to X,Y positions in reference WCS...
+[INFO    ] 
+[INFO    ] ===============================================================
+[INFO    ] Performing alignment in the projection plane defined by the WCS
+[INFO    ] derived from '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_01_diff.fits'
+[INFO    ] ===============================================================
+[INFO    ] 
+[INFO    ] USER INPUT PARAMETERS for matching sources:
+[INFO    ] 	minobj :	5
+[INFO    ] 	residplot :	both
+[INFO    ] 	searchrad :	20.0
+[INFO    ] 	searchunits :	pixels
+[INFO    ] 	see2dplot :	True
+[INFO    ] 	separation :	0.5
+[INFO    ] 	tolerance :	1.0
+[INFO    ] 	use2dhist :	True
+[INFO    ] 	xoffset :	0.0
+[INFO    ] 	yoffset :	0.0
+[INFO    ] 
+[INFO    ] USER INPUT PARAMETERS for fitting source lists:
+[INFO    ] 	fitgeometry :	rscale
+[INFO    ] 	labelsize :	8
+[INFO    ] 	minobj :	5
+[INFO    ] 	nclip :	3
+[INFO    ] 	residplot :	both
+[INFO    ] 	sigma :	3.0
+[INFO    ] 	ylimit :	None
+[INFO    ] 
+[INFO    ] USER INPUT PARAMETERS for creating a shiftfile:
+[INFO    ] 	outshifts :	shifts/shifts_idn107jhq.txt
+[INFO    ] 	outwcs :	shifts/shifts_idn107jhq_wcs.fits
+[INFO    ] 	shiftfile :	True
+[INFO    ] 
+[INFO    ] ====================
+[INFO    ] Performing fit for: /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_02_diff.fits
+[INFO    ] 
+[INFO    ] Matching sources from '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_02_diff.fits' with sources from reference image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_01_diff.fits'
+[INFO    ] Computing initial guess for X and Y shifts...
+[INFO    ] Found initial X and Y shifts of -0.4077, -0.4017 with significance of 20.89 and 33 matches
+[DEBUG   ] locator: <matplotlib.ticker.AutoLocator object at 0x7f7aa2383090>
+[INFO    ] Found 22 matches for /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_02_diff.fits...
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Computed  rscale  fit for  /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_02_diff.fits : 
+[INFO    ] XSH: -0.0154  YSH: -0.0161    ROT: 359.9947115    SCALE: 0.999874
+[INFO    ] FIT XRMS: 0.056      FIT YRMS: 0.05   
+[INFO    ] FIT RMSE: 0.075      FIT MAE: 0.064  
+[INFO    ] 
+[INFO    ] RMS_RA: 2.2e-06 (deg)   RMS_DEC: 1.5e-06 (deg)
+[INFO    ] 
+[INFO    ] Final solution based on  21  objects.
+[INFO    ] Creating catalog for the fit: idn107jhq_02_diff_catalog_fit.match
+[INFO    ] wrote XY data to:  idn107jhq_02_diff_catalog_fit.match
+[INFO    ] Total # points: 21
+[INFO    ] # of points after clipping: 21
+[INFO    ] Total # points: 21
+[INFO    ] # of points after clipping: 21
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[INFO    ] ....Updating header for '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_02_diff.fits' ...
+[INFO    ] Processing /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_02_diff.fits['SCI',1]
+[INFO    ] Updating header for /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_02_diff.fits[1]
+[INFO    ] 
+[INFO    ] ====================
+[INFO    ] Performing fit for: /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_03_diff.fits
+[INFO    ] 
+[INFO    ] Matching sources from '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_03_diff.fits' with sources from reference image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_01_diff.fits'
+[INFO    ] Computing initial guess for X and Y shifts...
+[INFO    ] Found initial X and Y shifts of -0.004451, -0.2764 with significance of 20.28 and 40 matches
+[DEBUG   ] locator: <matplotlib.ticker.AutoLocator object at 0x7f7aa2263690>
+[INFO    ] Found 22 matches for /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_03_diff.fits...
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Computed  rscale  fit for  /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_03_diff.fits : 
+[INFO    ] XSH: -0.0407  YSH: -0.0017    ROT: 0.008917215095    SCALE: 0.999901
+[INFO    ] FIT XRMS: 0.24       FIT YRMS: 0.13   
+[INFO    ] FIT RMSE: 0.28       FIT MAE: 0.19   
+[INFO    ] 
+[INFO    ] RMS_RA: 6.7e-06 (deg)   RMS_DEC: 7.2e-06 (deg)
+[INFO    ] 
+[INFO    ] Final solution based on  22  objects.
+[INFO    ] Creating catalog for the fit: idn107jhq_03_diff_catalog_fit.match
+[INFO    ] wrote XY data to:  idn107jhq_03_diff_catalog_fit.match
+[INFO    ] Total # points: 22
+[INFO    ] # of points after clipping: 22
+[INFO    ] Total # points: 22
+[INFO    ] # of points after clipping: 22
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[INFO    ] ....Updating header for '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_03_diff.fits' ...
+[INFO    ] Processing /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_03_diff.fits['SCI',1]
+[INFO    ] Updating header for /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_03_diff.fits[1]
+[INFO    ] 
+[INFO    ] ====================
+[INFO    ] Performing fit for: /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_04_diff.fits
+[INFO    ] 
+[INFO    ] Matching sources from '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_04_diff.fits' with sources from reference image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_01_diff.fits'
+[INFO    ] Computing initial guess for X and Y shifts...
+[INFO    ] Found initial X and Y shifts of -0.08301, -0.3219 with significance of 16.54 and 30 matches
+[DEBUG   ] locator: <matplotlib.ticker.AutoLocator object at 0x7f7aa24c0750>
+[INFO    ] Found 21 matches for /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_04_diff.fits...
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Computed  rscale  fit for  /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_04_diff.fits : 
+[INFO    ] XSH: -0.1219  YSH: 0.0151    ROT: 0.003102809833    SCALE: 0.999574
+[INFO    ] FIT XRMS: 0.17       FIT YRMS: 0.086  
+[INFO    ] FIT RMSE: 0.19       FIT MAE: 0.17   
+[INFO    ] 
+[INFO    ] RMS_RA: 4.5e-06 (deg)   RMS_DEC: 5.1e-06 (deg)
+[INFO    ] 
+[INFO    ] Final solution based on  18  objects.
+[INFO    ] Creating catalog for the fit: idn107jhq_04_diff_catalog_fit.match
+[INFO    ] wrote XY data to:  idn107jhq_04_diff_catalog_fit.match
+[INFO    ] Total # points: 18
+[INFO    ] # of points after clipping: 18
+[INFO    ] Total # points: 18
+[INFO    ] # of points after clipping: 18
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[INFO    ] ....Updating header for '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_04_diff.fits' ...
+[INFO    ] Processing /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_04_diff.fits['SCI',1]
+[INFO    ] Updating header for /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_04_diff.fits[1]
+[INFO    ] 
+[INFO    ] ====================
+[INFO    ] Performing fit for: /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_05_diff.fits
+[INFO    ] 
+[INFO    ] Matching sources from '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_05_diff.fits' with sources from reference image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_01_diff.fits'
+[INFO    ] Computing initial guess for X and Y shifts...
+[INFO    ] Found initial X and Y shifts of -0.2421, -0.1148 with significance of 17.42 and 32 matches
+[DEBUG   ] locator: <matplotlib.ticker.AutoLocator object at 0x7f7aa256a8d0>
+[INFO    ] Found 19 matches for /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_05_diff.fits...
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Computed  rscale  fit for  /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_05_diff.fits : 
+[INFO    ] XSH: -0.0659  YSH: -0.0283    ROT: 0.001645634876    SCALE: 0.999898
+[INFO    ] FIT XRMS: 0.14       FIT YRMS: 0.087  
+[INFO    ] FIT RMSE: 0.17       FIT MAE: 0.15   
+[INFO    ] 
+[INFO    ] RMS_RA: 4.3e-06 (deg)   RMS_DEC: 4.1e-06 (deg)
+[INFO    ] 
+[INFO    ] Final solution based on  18  objects.
+[INFO    ] Creating catalog for the fit: idn107jhq_05_diff_catalog_fit.match
+[INFO    ] wrote XY data to:  idn107jhq_05_diff_catalog_fit.match
+[INFO    ] Total # points: 18
+[INFO    ] # of points after clipping: 18
+[INFO    ] Total # points: 18
+[INFO    ] # of points after clipping: 18
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[INFO    ] ....Updating header for '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_05_diff.fits' ...
+[INFO    ] Processing /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_05_diff.fits['SCI',1]
+[INFO    ] Updating header for /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_05_diff.fits[1]
+[INFO    ] 
+[INFO    ] ====================
+[INFO    ] Performing fit for: /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_06_diff.fits
+[INFO    ] 
+[INFO    ] Matching sources from '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_06_diff.fits' with sources from reference image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_01_diff.fits'
+[INFO    ] Computing initial guess for X and Y shifts...
+[INFO    ] Found initial X and Y shifts of -0.3149, -0.1244 with significance of 18.45 and 36 matches
+[DEBUG   ] locator: <matplotlib.ticker.AutoLocator object at 0x7f7aa1deaf10>
+[INFO    ] Found 19 matches for /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_06_diff.fits...
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Computed  rscale  fit for  /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_06_diff.fits : 
+[INFO    ] XSH: -0.0684  YSH: -0.0207    ROT: 359.9998294    SCALE: 0.999589
+[INFO    ] FIT XRMS: 0.15       FIT YRMS: 0.11   
+[INFO    ] FIT RMSE: 0.19       FIT MAE: 0.16   
+[INFO    ] 
+[INFO    ] RMS_RA: 5.3e-06 (deg)   RMS_DEC: 4e-06 (deg)
+[INFO    ] 
+[INFO    ] Final solution based on  19  objects.
+[INFO    ] Creating catalog for the fit: idn107jhq_06_diff_catalog_fit.match
+[INFO    ] wrote XY data to:  idn107jhq_06_diff_catalog_fit.match
+[INFO    ] Total # points: 19
+[INFO    ] # of points after clipping: 19
+[INFO    ] Total # points: 19
+[INFO    ] # of points after clipping: 19
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[INFO    ] ....Updating header for '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_06_diff.fits' ...
+[INFO    ] Processing /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_06_diff.fits['SCI',1]
+[INFO    ] Updating header for /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_06_diff.fits[1]
+[INFO    ] 
+[INFO    ] ====================
+[INFO    ] Performing fit for: /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_07_diff.fits
+[INFO    ] 
+[INFO    ] Matching sources from '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_07_diff.fits' with sources from reference image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_01_diff.fits'
+[INFO    ] Computing initial guess for X and Y shifts...
+[INFO    ] Found initial X and Y shifts of -0.07238, -0.1915 with significance of 16.26 and 32 matches
+[DEBUG   ] locator: <matplotlib.ticker.AutoLocator object at 0x7f7aa18b9e10>
+[INFO    ] Found 18 matches for /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_07_diff.fits...
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Computed  rscale  fit for  /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_07_diff.fits : 
+[INFO    ] XSH: 0.0550  YSH: -0.0588    ROT: 0.01566195833    SCALE: 0.999959
+[INFO    ] FIT XRMS: 0.082      FIT YRMS: 0.07   
+[INFO    ] FIT RMSE: 0.11       FIT MAE: 0.1    
+[INFO    ] 
+[INFO    ] RMS_RA: 3.2e-06 (deg)   RMS_DEC: 2.2e-06 (deg)
+[INFO    ] 
+[INFO    ] Final solution based on  17  objects.
+[INFO    ] Creating catalog for the fit: idn107jhq_07_diff_catalog_fit.match
+[INFO    ] wrote XY data to:  idn107jhq_07_diff_catalog_fit.match
+[INFO    ] Total # points: 17
+[INFO    ] # of points after clipping: 17
+[INFO    ] Total # points: 17
+[INFO    ] # of points after clipping: 17
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[INFO    ] ....Updating header for '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_07_diff.fits' ...
+[INFO    ] Processing /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_07_diff.fits['SCI',1]
+[INFO    ] Updating header for /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_07_diff.fits[1]
+[INFO    ] 
+[INFO    ] ====================
+[INFO    ] Performing fit for: /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_08_diff.fits
+[INFO    ] 
+[INFO    ] Matching sources from '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_08_diff.fits' with sources from reference image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_01_diff.fits'
+[INFO    ] Computing initial guess for X and Y shifts...
+[INFO    ] Found initial X and Y shifts of -0.2444, -0.02684 with significance of 12.34 and 36 matches
+[DEBUG   ] locator: <matplotlib.ticker.AutoLocator object at 0x7f7aa1e551d0>
+[INFO    ] Found 19 matches for /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_08_diff.fits...
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Computed  rscale  fit for  /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_08_diff.fits : 
+[INFO    ] XSH: 0.1665  YSH: -0.0879    ROT: 359.9938877    SCALE: 0.999587
+[INFO    ] FIT XRMS: 0.33       FIT YRMS: 0.3    
+[INFO    ] FIT RMSE: 0.45       FIT MAE: 0.36   
+[INFO    ] 
+[INFO    ] RMS_RA: 1.3e-05 (deg)   RMS_DEC: 8.7e-06 (deg)
+[INFO    ] 
+[INFO    ] Final solution based on  19  objects.
+[INFO    ] Creating catalog for the fit: idn107jhq_08_diff_catalog_fit.match
+[INFO    ] wrote XY data to:  idn107jhq_08_diff_catalog_fit.match
+[INFO    ] Total # points: 19
+[INFO    ] # of points after clipping: 19
+[INFO    ] Total # points: 19
+[INFO    ] # of points after clipping: 19
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[INFO    ] ....Updating header for '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_08_diff.fits' ...
+[INFO    ] Processing /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_08_diff.fits['SCI',1]
+[INFO    ] Updating header for /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_08_diff.fits[1]
+[INFO    ] 
+[INFO    ] ====================
+[INFO    ] Performing fit for: /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_09_diff.fits
+[INFO    ] 
+[INFO    ] Matching sources from '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_09_diff.fits' with sources from reference image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_01_diff.fits'
+[INFO    ] Computing initial guess for X and Y shifts...
+[INFO    ] Found initial X and Y shifts of 0.1675, 0.06551 with significance of 10.49 and 29 matches
+[DEBUG   ] locator: <matplotlib.ticker.AutoLocator object at 0x7f7aa8b94450>
+[INFO    ] Found 19 matches for /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_09_diff.fits...
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Computed  rscale  fit for  /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_09_diff.fits : 
+[INFO    ] XSH: 0.2142  YSH: -0.1551    ROT: 0.02915937721    SCALE: 0.999866
+[INFO    ] FIT XRMS: 0.43       FIT YRMS: 0.27   
+[INFO    ] FIT RMSE: 0.51       FIT MAE: 0.46   
+[INFO    ] 
+[INFO    ] RMS_RA: 1.3e-05 (deg)   RMS_DEC: 1.2e-05 (deg)
+[INFO    ] 
+[INFO    ] Final solution based on  19  objects.
+[INFO    ] Creating catalog for the fit: idn107jhq_09_diff_catalog_fit.match
+[INFO    ] wrote XY data to:  idn107jhq_09_diff_catalog_fit.match
+[INFO    ] Total # points: 19
+[INFO    ] # of points after clipping: 19
+[INFO    ] Total # points: 19
+[INFO    ] # of points after clipping: 19
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[INFO    ] ....Updating header for '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_09_diff.fits' ...
+[INFO    ] Processing /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_09_diff.fits['SCI',1]
+[INFO    ] Updating header for /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_09_diff.fits[1]
+[INFO    ] 
+[INFO    ] ====================
+[INFO    ] Performing fit for: /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_10_diff.fits
+[INFO    ] 
+[INFO    ] Matching sources from '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_10_diff.fits' with sources from reference image '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_01_diff.fits'
+[INFO    ] Computing initial guess for X and Y shifts...
+[INFO    ] Found initial X and Y shifts of 0.1345, -0.1417 with significance of 10.35 and 31 matches
+[DEBUG   ] locator: <matplotlib.ticker.AutoLocator object at 0x7f7aa18b0d90>
+[INFO    ] Found 13 matches for /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_10_diff.fits...
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Computed  rscale  fit for  /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_10_diff.fits : 
+[INFO    ] XSH: 0.0629  YSH: -0.1174    ROT: 359.9751455    SCALE: 1.000082
+[INFO    ] FIT XRMS: 0.26       FIT YRMS: 0.27   
+[INFO    ] FIT RMSE: 0.38       FIT MAE: 0.28   
+[INFO    ] 
+[INFO    ] RMS_RA: 1.2e-05 (deg)   RMS_DEC: 6.4e-06 (deg)
+[INFO    ] 
+[INFO    ] Final solution based on  13  objects.
+[INFO    ] Creating catalog for the fit: idn107jhq_10_diff_catalog_fit.match
+[INFO    ] wrote XY data to:  idn107jhq_10_diff_catalog_fit.match
+[INFO    ] Total # points: 13
+[INFO    ] # of points after clipping: 13
+[INFO    ] Total # points: 13
+[INFO    ] # of points after clipping: 13
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[DEBUG   ] top of Axes not in the figure, so title not moved
+[INFO    ] ....Updating header for '/media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_10_diff.fits' ...
+[INFO    ] Processing /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_10_diff.fits['SCI',1]
+[INFO    ] Updating header for /media/data/arubinst/Drizzle_AlignHH6/no_wcs_update/diff/idn107jhq_10_diff.fits[1]
+[INFO    ] Writing out shiftfile : shifts/shifts_idn107jhq.txt
+[INFO    ] Trailer file written to:  tweakreg.log

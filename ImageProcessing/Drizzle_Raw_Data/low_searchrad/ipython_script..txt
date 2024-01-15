@@ -1,0 +1,115 @@
+source activate astroconda
+
+ipython
+
+#Follow https://nbviewer.org/github/spacetelescope/notebooks/blob/master/notebooks/DrizzlePac/align_to_catalogs/align_to_catalogs.ipynb#Inspect-the-image-header 
+#Also see https://www.stsci.edu/files/live/sites/www/files/home/hst/instrumentation/wfc3/documentation/instrument-science-reports-isrs/_documents/2021/2021-02.pdf
+
+#collecting useful packages
+import os
+import glob
+
+import numpy as np
+import matplotlib.pyplot as plt 
+
+from astropy.io import fits 
+from astropy.table import Table
+from astropy.io import ascii
+from astroquery.mast import Observations
+
+from drizzlepac import tweakreg
+from drizzlepac import astrodrizzle 
+from reduce_dash import DashData
+
+
+'''
+Here I see multiple options...one is splitting the root 
+I tend to put the flt and ima files in their own folder, cd to that directory, and use the second option (flt_files, ima_files)
+This way I can label a folder by my test (though, I know working with path + (...) is typically better)
+'''
+flt_files = glob.glob('*flt*')
+ima_files = glob.glob('*ima*')
+
+#grabbing a catalog to reference for identified sources, uses CRDS server and 'iref' to refer to wfc3
+os.environ['CRDS_SERVER_URL'] = 'https://hst-crds.stsci.edu'
+os.environ['CRDS_SERVER'] = 'https://hst-crds.stsci.edu'
+os.environ['CRDS_PATH'] = './crds_cache'
+os.environ['iref'] = 'iref/'
+if not os.path.exists('iref'):
+    os.mkdir('iref')
+
+for file in ima_files:
+    command_line_input = 'crds bestrefs --files {:} --sync-references=1 --update-bestrefs'.format(file)
+    os.system(command_line_input)
+	
+#putting together a list of myDash objects for each set of observations to loop through them eventually
+myDash_list = []
+
+for i in range(len(flt_files)):
+     myDash_list.append(DashData(ima_files[i], flt_files[i]))
+
+myDash = myDash_list[0]
+myDash.split_ima()
+myDash.make_pointing_asn()
+
+asn_filename = 'diff/{}_asn.fits'.format(myDash.root)
+asn_table = Table(fits.getdata(asn_filename, ext=1))
+asn_table.show_in_notebook()
+
+input_images = sorted(glob.glob('diff/{}_*_diff.fits'.format(myDash.root)))
+
+if not os.path.exists('shifts'):
+     os.mkdir('shifts')
+outshifts = 'shifts/shifts_{}.txt'.format(myDash.root)
+outwcs = 'shifts/shifts_{}_wcs.fits'.format(myDash.root)
+
+drz_output=myDash.root
+subtract_background = True
+align_method = None
+ref_catalog = None
+create_diff_source_lists=True
+updatehdr=True
+updatewcs=True
+wcsname = 'DASH'
+threshold = 100.
+cw = 3.5
+searchrad=20.
+astrodriz=True
+cat_file='catalogs/diff_catfile.cat'
+move_files=False
+
+
+tweakreg.TweakReg(input_images, xcol=2, ycol=3, shiftfile=True, imagefindcfg={'threshold': threshold,'conv_width': cw}, fitgeometry='general',
+                  updatehdr=False, updatewcs=updatewcs, wcsname=wcsname, interactive=False, searchrad=searchrad, minobj=5, tolerance=0.5, separation=5, outshifts=outshifts, outwcs=outwcs, verbose=True)
+tweakreg.TweakReg(input_flcs, shiftfile=True, imagefindcfg={'threshold': 4000,'conv_width': cw},interactive=False, searchrad=searchrad, outshifts='shift_thresh.txt', verbose=True)
+
+				  
+# Give the 'fit residual plots' a unique name for comparison with other tests.
+residual_pngs = glob.glob("residual*png")
+for png in residual_pngs: 
+    path = os.path.abspath(os.path.join(os.curdir, png))
+    new_path = os.path.abspath(os.path.join(os.curdir, 'test1_{}'.format(png)))
+    os.rename(path, new_path)
+
+shift_table = Table.read('shifts/shifts_idn107jhq.txt', format='ascii.no_header',
+                names=['file', 'dx', 'dy', 'rot', 'scale', 'xrms', 'yrms'])
+formats = ['.2f', '.2f', '.3f', '.5f', '.2f', '.2f']
+for i, col in enumerate(shift_table.colnames[1: ]):
+     shift_table[col].format = formats[i]
+shift_table
+
+#Do not have drizzle take 256 flags into account
+no_tfs = 2,4,8,16,32,64,128,512,2048,4096,8192,16384
+
+astrodrizzle.AstroDrizzle(input_images,
+    output=drz_output,
+    clean=False,
+    final_pixfrac=1.0,
+    context=False,
+    resetbits=0,
+    preserve=False,
+    driz_cr_snr='8.0 5.0',
+    driz_cr_scale = '2.5 0.7',
+    driz_sep_bits=no_tfs,
+    final_bits=no_tfs, num_cores=1) #added num cores = 1
+

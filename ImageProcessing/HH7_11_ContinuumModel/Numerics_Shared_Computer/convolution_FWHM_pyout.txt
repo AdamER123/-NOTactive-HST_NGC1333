@@ -1,0 +1,33 @@
+D001SCAL:  0.03962000086903572  D001SCAL/206265:  1.9208300423744078e-07
+D001SCAL:  0.03962000086903572  D001SCAL/206265:  1.9208300423744078e-07
+D001SCAL:  0.03962000086903572  D001SCAL/206265:  1.9208300423744078e-07
+D001SCAL:  0.1282500028610229  D001SCAL/206265:  6.217729758370198e-07
+D001SCAL:  0.1282500028610229  D001SCAL/206265:  6.217729758370198e-07
+D001SCAL:  0.1282500028610229  D001SCAL/206265:  6.217729758370198e-07
+loaded data!
+Angular Res (rads):  3.2813999999999997e-07  File Name to Convolve With:  ../ngc1333_fits/656_hareproject_shifted_up5_left3.fits  Lambda:  0.65628
+Angular Res (pixels):  1.7083239680819142  File Name to Convolve With:  ../ngc1333_fits/656_hareproject_shifted_up5_left3.fits  Lambda:  0.65628
+WARNING: nan_treatment='interpolate', however, NaN values detected post convolution. A contiguous region of NaN values, larger than the kernel size, are present in the input array. Increase the kernel size to avoid this. [astropy.convolution.convolve]
+Angular Res (rads):  3.152165e-07  File Name to Convolve With:  ../ngc1333_fits/0301_oIreproject2.fits  Lambda:  0.630433
+Angular Res (pixels):  1.6410431586667056  File Name to Convolve With:  ../ngc1333_fits/0301_oIreproject2.fits  Lambda:  0.630433
+Angular Res (rads):  3.36e-07  File Name to Convolve With:  ../ngc1333_fits/672_sIIreproject.fits  Lambda:  0.672
+Angular Res (pixels):  1.749243777886034  File Name to Convolve With:  ../ngc1333_fits/672_sIIreproject.fits  Lambda:  0.672
+Angular Res (rads):  6.2581e-07  File Name to Convolve With:  ../ngc1333_fits/Background_corr/background_corr_126_aligned.fits  Lambda:  1.25162
+Angular Res (pixels):  1.0064927623423092  File Name to Convolve With:  ../ngc1333_fits/Background_corr/background_corr_126_aligned.fits  Lambda:  1.25162
+Angular Res (rads):  6.4183e-07  File Name to Convolve With:  ../ngc1333_fits/Background_corr/background_corr_128_aligned.fits  Lambda:  1.28366
+Angular Res (pixels):  1.032257793346486  File Name to Convolve With:  ../ngc1333_fits/Background_corr/background_corr_128_aligned.fits  Lambda:  1.28366
+Angular Res (rads):  8.22505e-07  File Name to Convolve With:  ../ngc1333_fits/Background_corr/background_corr_164_aligned.fits  Lambda:  1.64501
+Angular Res (pixels):  1.3228381289694335  File Name to Convolve With:  ../ngc1333_fits/Background_corr/background_corr_164_aligned.fits  Lambda:  1.64501
+Angular Res (rads):  8.22505e-07  File Name to Convolve With:  164_dash  Lambda:  1.64501
+Angular Res (pixels):  4.2820290283635485  File Name to Convolve With:  164_dash  Lambda:  1.64501
+Angular Res (rads):  8.22505e-07  File Name to Convolve With:  164_dash  Lambda:  1.64501
+Angular Res (pixels):  4.2820290283635485  File Name to Convolve With:  164_dash  Lambda:  1.64501
+Angular Res (rads):  8.22505e-07  File Name to Convolve With:  164_dash  Lambda:  1.64501
+Angular Res (pixels):  4.2820290283635485  File Name to Convolve With:  164_dash  Lambda:  1.64501
+Angular Res (rads):  8.22505e-07  File Name to Convolve With:  164_dash  Lambda:  1.64501
+Angular Res (pixels):  1.3228381289694335  File Name to Convolve With:  164_dash  Lambda:  1.64501
+Angular Res (rads):  8.22505e-07  File Name to Convolve With:  164_dash  Lambda:  1.64501
+Angular Res (pixels):  1.3228381289694335  File Name to Convolve With:  164_dash  Lambda:  1.64501
+Angular Res (rads):  8.22505e-07  File Name to Convolve With:  164_dash  Lambda:  1.64501
+Angular Res (pixels):  1.3228381289694335  File Name to Convolve With:  164_dash  Lambda:  1.64501
+convolved!
